@@ -15,32 +15,32 @@ My research lies at the intersection of image synthesis and artificial intellige
 
 News
 ======
-1. [9/2019] Completed internship program in Huawei Research Center.
-1. [4/2019] Completed internship program in Intel Mobile Communication.
-1. [3/2019] One paper was rejected by ICIP 2019.
-1. [9/2018] Completed internship program in SAP Research Center.
-1. [9/2017] Obtained Bachelor's degree in Xidian University.
+* [9/2019] Completed internship program in Huawei Research Center.
+* [4/2019] Completed internship program in Intel Mobile Communication.
+* [3/2019] One paper was rejected by ICIP 2019.
+* [9/2018] Completed internship program in SAP Research Center.
+* [9/2017] Obtained Bachelor's degree in Xidian University.
 
 
 Activities
 ======
-1. Working on adversarial learning for biomedical image synthesis.
-1. Co-organize a tutorial on Reed Solomon Coding. slides come soon.
-1. Co-organize a tutorial on Adversarial Learning. 
+* Working on adversarial learning for biomedical image synthesis.
+* Co-organize a tutorial on Reed Solomon Coding. slides come soon.
+* Co-organize a tutorial on Adversarial Learning. 
 
 
 Publications
 ------
-PSEUDOISOCHROMATIC PLATES SYNTHESIS FOR DICHROMATS (not published yet).
+* PSEUDOISOCHROMATIC PLATES SYNTHESIS FOR DICHROMATS (not published yet).
 
 
 Experience
 ------
-1. [Jun,2019-Sep,2019] Internship program in Huawei Research Center.
-1. [Oct,2018-Apr,2019] Internship program in Intel Mobile Communication.
-1. [Feb,2018-Sep,2018] Internship program in SAP Research Center.
-1. [Feb,2018-Apr,2018] Internship program in 215 Hospital.
-1. [Aug,2013-Jul,2017] Obtained Bachelor's degree in Xidian University.
+* [Jun,2019-Sep,2019] Internship program in Huawei Research Center.
+* [Oct,2018-Apr,2019] Internship program in Intel Mobile Communication.
+* [Feb,2018-Sep,2018] Internship program in SAP Research Center.
+* [Feb,2018-Apr,2018] Internship program in 215 Hospital.
+* [Aug,2013-Jul,2017] Obtained Bachelor's degree in Xidian University.
 
 
 For more info
