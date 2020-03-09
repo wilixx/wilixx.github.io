@@ -10,15 +10,15 @@ redirect_from:
 
 I am a postgraduate research student in Xidian University, supervised by Prof. X.D. Zhang. Before that, I received the B.Eng. degree from the School of Telecommunication Engineering in Xidian University in July 2017. Previously, I conducted internship programs in SAP Research Center, Intel Mobile Communications and Huawei Technologies Co.，Ltd. for 6, 6, 3 months respectively.
 
-My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G wireless cryptography. Recently, I am working on new adversarial learning algorithms while exploring human color vision.
+My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G Wireless Cryptography. Recently, I am working on new adversarial learning algorithms while exploring human color vision.
 
 
 News
 ======
-* [9/2019] Completed internship program in Huawei Research Center.
-* [4/2019] Completed internship program in Intel Mobile Communication.
+* [9/2019] Completed internship program in Huawei Research Center, 3 months.
+* [4/2019] Completed internship program in Intel Mobile Communication，6 months.
 * [3/2019] One paper was rejected by ICIP 2019.
-* [9/2018] Completed internship program in SAP Research Center.
+* [9/2018] Completed internship program in SAP Research Center，6 months.
 * [9/2017] Obtained Bachelor's degree in Xidian University.
 
 
@@ -31,7 +31,7 @@ Activities
 
 Publications
 ------
-* PSEUDOISOCHROMATIC PLATES SYNTHESIS FOR DICHROMATS (not published yet).
+* PSEUDOISOCHROMATIC PLATES SYNTHESIS FOR DICHROMATS ([not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd/blob/master/Guo-draft-v1.pdf)).
 
 
 Experience
