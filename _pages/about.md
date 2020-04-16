@@ -31,7 +31,9 @@ Activities
 
 Publications
 ------
-* PSEUDOISOCHROMATIC PLATES SYNTHESIS FOR DICHROMATS ([not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd/blob/master/Guo-draft-v1.pdf)).
+* Pseudoisochromatic Plates Synthesis For Dichromats ([Not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd)).
+* Pseudoisochromatic Plates Synthesis Using Conditional Generative Networks. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
+* A Pseudoisochromatic Pairs Acquisition Method Based on Global Maximum Color Difference. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
 
 
 Experience
