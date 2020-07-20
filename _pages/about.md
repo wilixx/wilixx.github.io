@@ -15,6 +15,7 @@ My research lies at the intersection of image synthesis and artificial intellige
 
 News
 ======
+* [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [9/2019] Completed internship program in Huawei Research Center, 3 months.
 * [4/2019] Completed internship program in Intel Mobile Communication，6 months.
 * [3/2019] One paper was rejected by ICIP 2019.
@@ -24,6 +25,7 @@ News
 
 Activities
 ======
+* Working on 5G technologies.
 * Working on adversarial learning for biomedical image synthesis.
 * Co-organize a tutorial on Reed Solomon Coding. slides come soon.
 * Co-organize a tutorial on Adversarial Learning. 
