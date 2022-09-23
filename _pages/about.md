@@ -15,7 +15,7 @@ My research lies at the intersection of image synthesis and artificial intellige
 
 News
 ======
-* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Globe Communication Conference, 2022.
+* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022.
 * [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [6/2020] Obtained Master's degree in Xidian University.
 * [9/2019] Completed internship program in Huawei Research Center, 3 months.
@@ -35,7 +35,7 @@ Activities
 
 Publications
 ------
-* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Globe Communication Conference.
+* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022.
 * Pseudoisochromatic Plates Synthesis for Dichromats ([Not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd)).
 * Pseudoisochromatic Plates Synthesis Using Conditional Generative Adversarial Networks. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
 * A Pseudoisochromatic Pairs Acquisition Method Based on Global Maximum Color Difference. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
