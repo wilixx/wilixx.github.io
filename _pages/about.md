@@ -10,7 +10,7 @@ redirect_from:
 
 I was a postgraduate research student in Xidian University, supervised by Prof. X.D. Zhang. Before that, I received the B.Eng. degree from the School of Telecommunication Engineering in Xidian University in July 2017. Previously, I conducted internship programs in SAP Research Center, Intel Mobile Communications and Huawei Technologies Co.，Ltd. for 6, 6, 3 months respectively.
 
-My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G Wireless Cryptography. Previously, I am working on new adversarial learning algorithms while exploring human color vision. Recently, I am focusing on network slicing, routing and resource scheduling in deterministic networking. 
+My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G Wireless Cryptography. Serveral years ago, I was working on new adversarial learning algorithms while exploring human color vision. Recently, I am focusing on network slicing, routing and resource scheduling in deterministic networking. 
 
 
 News
