@@ -10,14 +10,14 @@ redirect_from:
 
 I was a postgraduate research student in Xidian University, supervised by Prof. X.D. Zhang. Before that, I received the B.Eng. degree from the School of Telecommunication Engineering in Xidian University in July 2017. Previously, I conducted internship programs in SAP Research Center, Intel Mobile Communications and Huawei Technologies Co.，Ltd. for 6, 6, 3 months respectively.
 
-My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G Wireless Cryptography. Serveral years ago, I was working on new adversarial learning algorithms while exploring human color vision. Recently, I am focusing on network slicing, routing and resource scheduling in deterministic networking. 
+My research lies at the intersection of image synthesis and artificial intelligence. I am dedicated to designing data-efficient learning methods for biomedical image synthesis. I also have expertise in deep learning for 5G Wireless Cryptography. Serveral years ago, I was working on new adversarial learning algorithms while exploring human color vision. Recently, I am focusing on network slicing, routing and resource scheduling in deterministic networking. ([Feel free to contact me if you may have any questions](https://sites.google.com/view/binquanguo/home)).
 
 
 News
 ======
 * [1/2023] Paper entitled 'Online Network Slicing for Real Time Applications in Large-scale Satellite Networks', accepted by IEEE International Conference on Communications, 2023 ([Preprint will be soon](https://www.researchgate.net/profile/Binquan-Guo)).
 * [1/2023] Paper entitled 'Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications', accepted by IEEE International Conference on Communications, 2023 ([Preprint will be soon](https://www.researchgate.net/profile/Binquan-Guo)).
-* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([Full text](https://ieeexplore.ieee.org/document/10001450)).
+* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([Full text available now](https://ieeexplore.ieee.org/document/10001450)).
 * [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [6/2020] Obtained Master's degree in Xidian University.
 * [9/2019] Completed internship program in Huawei Research Center, 3 months.
@@ -39,7 +39,7 @@ Publications
 ------
 * [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. A preprint version of this article will be available soon. 
 * [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023. A preprint version of this article will be available soon. 
-* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([Full text](https://ieeexplore.ieee.org/document/10001450)).
+* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([Full text available now](https://ieeexplore.ieee.org/document/10001450)).
 * Pseudoisochromatic Plates Synthesis for Dichromats ([Not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd)).
 * Pseudoisochromatic Plates Synthesis Using Conditional Generative Adversarial Networks. ([M.D. thesis](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202101&filename=1020156894.nh&uniplatform=NZKPT&v=BZiLbj5YSYVT3Ib728GpZ8_gVnayjmC0C80nPEn7bPpHAOUJhxg0IC00TlWIfCLO)).
 * A Pseudoisochromatic Pairs Acquisition Method Based on Global Maximum Color Difference. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
