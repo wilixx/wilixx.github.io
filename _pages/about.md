@@ -13,6 +13,9 @@ Binquan Guo received the B.S. degree and the master's degree in telecommunicatio
 
 News
 ======
+* [6/2023] Attended and presented two papers in IEEE ICC 2023 conference in Rome, Italy.
+* [5/2023] Patent entitled 'A Color Vision Test Chart Synthesis Method Based on pseudoisochromatic Color Searching', authorized by the State Intellectual Property Office of China.
+* [3/2023] Project entitled 'Research on Deterministic Resource Slicing and Scheduling Method for Time-varying Networks' is approved by the postgraduate innovation fundation , 2023~2024.
 * [1/2023] Paper entitled 'Online Network Slicing for Real Time Applications in Large-scale Satellite Networks', accepted by IEEE International Conference on Communications, 2023 ([Preprint download](https://arxiv.org/abs/2301.09372)).
 * [1/2023] Paper entitled 'Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications', accepted by IEEE International Conference on Communications, 2023 ([Preprint download](https://arxiv.org/abs/2301.11831)).
 * [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([Full text download](https://ieeexplore.ieee.org/document/10001450), [slides](https://github.com/wilixx/ICCTS/blob/main/GC22-Slides-Optimal%20Job%20Scheduling%20and%20Bandwidth%20Augmentation%20in%20Hybrid%20Data%20Center%20Networks.pdf)).
