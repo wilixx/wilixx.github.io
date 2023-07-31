@@ -35,8 +35,8 @@ Activities
 * Teaching Assistantship:  B37VB- Practical Programming, Xidian University, Fall, 2020.
 * Working on 5G technologies.
 * Working on adversarial learning for biomedical image synthesis.
-* Co-organize a tutorial on Reed Solomon Coding. 
-* Co-organize a tutorial on Adversarial Learning. 
+<!-- * Co-organize a tutorial on Reed Solomon Coding.  -->
+<!-- * Co-organize a tutorial on Adversarial Learning.  -->
 
 
 Publications
