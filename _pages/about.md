@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Binquan Guo received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an. His research interests include job scheduling, network slicing, graph theory, routing and resource allocation algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research). ([Feel free to contact me if you may have any questions](https://sites.google.com/view/binquanguo/home)).
+Binquan Guo received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an. He is also a Visiting Ph.D. student in University of Houston hosted by [Prof Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong in SUTD) (2024~). His research interests include job scheduling, network slicing, graph theory, routing and resource allocation algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research). ([Feel free to contact me if you may have any questions](https://sites.google.com/view/binquanguo/home)).
 
 
 News
 ======
-* [12/2023] Paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 (To be presented).
-* [7/2023] Awarded a scholarship under the Fund of China Scholarship Council. 
+* [12/2023] Co-authored paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 (To be presented).
+* [7/2023] Awarded a scholarship under the Fund of China Scholarship Council, hosted by  [Prof Pan Miao](http://www2.egr.uh.edu/~mpan2/) in University of Houston, and [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong in SUTD). 
 * [6/2023] Presented two accepted papers in IEEE ICC 2023, in Rome, Italy. 
 * [5/2023] Patent entitled 'A Color Vision Test Chart Synthesis Method Based on pseudoisochromatic Color Searching', authorized by the State Intellectual Property Office of China  ([Detailed info](http://epub.cnipa.gov.cn/cred/CN111429547B?8kt2YOWWXQBD=1686801432039)) .
 * [3/2023] Project entitled 'Research on Deterministic Resource Slicing and Scheduling Method for Time-varying Networks' is approved by the postgraduate innovation fundation , 2023~2024.
