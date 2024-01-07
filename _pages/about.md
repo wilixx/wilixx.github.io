@@ -45,7 +45,7 @@ Activities
 
 Publications
 ------
-* [WCNC'24] Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 (To be presented).
+* [WCNC'24] Peng Liang, Jie Yan, Binquan Guo, Xiaoxiang Wang, Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 (To be presented).
 * [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. ([Preprint download](https://arxiv.org/abs/2301.09372)).
 * [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023.([Preprint download](https://arxiv.org/abs/2301.11831))..
 * [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([Full text download](https://ieeexplore.ieee.org/document/10001450)).
