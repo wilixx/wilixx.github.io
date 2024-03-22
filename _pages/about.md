@@ -13,7 +13,7 @@ Binquan Guo received the B.S. degree and the master's degree in telecommunicatio
 
 News
 ======
-* [3/2024] Co-authored paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 (To be published, preprint version will be available soon).
+* [3/2024] Co-authored paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 ([Early access version download](https://ieeexplore.ieee.org/document/10477426)).
 * [12/2023] Co-authored paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 (To be presented).
 * [7/2023] Awarded a scholarship under the Fund of China Scholarship Council, hosted by  [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) in University of Houston (remotely), and [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) in Singapore University of Technology and Design. 
 * [6/2023] Presented two accepted papers in IEEE ICC 2023, in Rome, Italy. 
