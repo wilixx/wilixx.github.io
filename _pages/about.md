@@ -46,7 +46,7 @@ Activities
 
 Publications
 ------
-* [Network'24] Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions, accepted by IEEE Network 2024 (To be published).
+* [Network'24] Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions, accepted by IEEE Network 2024 ([Early access](https://ieeexplore.ieee.org/document/10477426)).
 * [WCNC'24] Liang Peng, Jie Yan, Binquan Guo, Xiaoxiang Wang, Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 (To be presented).
 * [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. ([Preprint download](https://arxiv.org/abs/2301.09372)).
 * [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023.([Preprint download](https://arxiv.org/abs/2301.11831))..
