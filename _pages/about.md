@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Binquan Guo received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an, under the guidance of [Prof. Hongyan Li](https://web.xidian.edu.cn/hyli/) (2020.9 ~ ). He is also a Visiting Ph.D. student in University of Houston hosted by [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) (2024~). His research interests include job scheduling, network slicing, graph theory, routing and resource allocation algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research). ([Feel free to contact me via google sites if you may have any questions](https://sites.google.com/view/binquanguo/home)).
+Binquan Guo received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an, under the guidance of [Prof. Hongyan Li](https://web.xidian.edu.cn/hyli/) (2020.9 ~ ). He is also a Visiting Ph.D. student in University of Houston hosted by [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) (2024~). He has worked in SAP, Intel and Huawei for internship programs during the year of 2018.2~2019.9. His research interests include job scheduling, network slicing, graph theory, routing and resource allocation algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ) and [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research). ([Feel free to contact me via google sites if you may have any questions](https://sites.google.com/view/binquanguo/home)). 
 
 
 News
@@ -24,7 +24,7 @@ News
 * [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([Full text download](https://ieeexplore.ieee.org/document/10001450), [slides](https://github.com/wilixx/ICCTS/blob/main/GC22-Slides-Optimal%20Job%20Scheduling%20and%20Bandwidth%20Augmentation%20in%20Hybrid%20Data%20Center%20Networks.pdf)).
 * [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [6/2020] Obtained Master's degree in Xidian University.
-* [9/2019] Completed internship program in HW Research Center, 3 months.
+* [9/2019] Completed internship program in Huawei Research Center, 3 months.
 * [4/2019] Completed internship program in Intel Mobile Communication，6 months.
 * [3/2019] One paper was rejected by ICIP 2019.
 * [9/2018] Completed internship program in SAP Research Center，6 months.
@@ -33,6 +33,7 @@ News
 
 Activities
 ======
+* Visiting Ph.D student in Singapore University of Technology and Design, 2024~.
 * Working on time-deterministic network slicing technologies, 2022~.
 * Teaching Assistantship: B38CJ- Sustainable Development, Xidian University, Fall, 2023. 
 * Teaching Assistantship:  Introduction Course for Freshman Students, Xidian University, Fall, 2022.
@@ -59,7 +60,7 @@ Publications
 Experience
 ------
 * [Aug,2017-Jul,2020] Obtained Master's degree in Xidian University.
-* [Jun,2019-Sep,2019] Internship program in HW Research Center, Xi'an, China.
+* [Jun,2019-Sep,2019] Internship program in Huawei Research Center, Xi'an, China.
 * [Oct,2018-Apr,2019] Internship program in Intel Mobile Communication, Xi'an, China.
 * [Feb,2018-Sep,2018] Internship program in SAP (German) Research Center, Xi'an, China.
 * [Feb,2018-Apr,2018] Internship program in 215 Hospital for Radiography, Xianyang, China.
