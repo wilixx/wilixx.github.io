@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Binquan Guo"
   avatar           : "profile.png"
-  bio              : "Postgraduate Research Scientist"
+  bio              : "Ph.D Scientist"
   location         : "Xi'an, China"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : # "http://orcid.org/yourorcidurl"
+  orcid            :  "https://orcid.org/0000-0002-0660-1830"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -115,6 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  ieee  : "https://ieeexplore.ieee.org/author/37089678912"
 
 
 # Reading Files
