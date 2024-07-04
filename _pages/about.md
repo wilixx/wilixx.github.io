@@ -14,15 +14,15 @@ Life is a hard but precious journey. If you are interested to collaborate with h
 
 News
 ======
-* [3/2024] Co-authored paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 ([Early access version download](https://ieeexplore.ieee.org/document/10477426)).
-* [12/2023] Co-authored paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 (To be presented).
+* [3/2024] Co-authored paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
+* [12/2023] Co-authored paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
 * [7/2023] Awarded a scholarship under the Fund of China Scholarship Council, hosted by  [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) in University of Houston (remotely), and [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) in Singapore University of Technology and Design. 
 * [6/2023] Presented two accepted papers in IEEE ICC 2023, in Rome, Italy. 
 * [5/2023] Patent entitled 'A Color Vision Test Chart Synthesis Method Based on pseudoisochromatic Color Searching', authorized by the State Intellectual Property Office of China  ([Detailed info](http://epub.cnipa.gov.cn/cred/CN111429547B?8kt2YOWWXQBD=1686801432039)) .
 * [3/2023] Project entitled 'Research on Deterministic Resource Slicing and Scheduling Method for Time-varying Networks' is approved by the postgraduate innovation fundation , 2023~2024.
-* [1/2023] Paper entitled 'Online Network Slicing for Real Time Applications in Large-scale Satellite Networks', accepted by IEEE International Conference on Communications, 2023 ([Preprint download](https://arxiv.org/abs/2301.09372)).
-* [1/2023] Paper entitled 'Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications', accepted by IEEE International Conference on Communications, 2023 ([Preprint download](https://arxiv.org/abs/2301.11831)).
-* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([Full text download](https://ieeexplore.ieee.org/document/10001450), [slides](https://github.com/wilixx/ICCTS/blob/main/GC22-Slides-Optimal%20Job%20Scheduling%20and%20Bandwidth%20Augmentation%20in%20Hybrid%20Data%20Center%20Networks.pdf)).
+* [1/2023] Paper entitled 'Online Network Slicing for Real Time Applications in Large-scale Satellite Networks', accepted by IEEE International Conference on Communications, 2023 ([PDF download](https://ieeexplore.ieee.org/document/10279431)).
+* [1/2023] Paper entitled 'Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications', accepted by IEEE International Conference on Communications, 2023 ([PDF download](https://ieeexplore.ieee.org/document/10278747)).
+* [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([PDF download](https://ieeexplore.ieee.org/document/10001450), [slides](https://github.com/wilixx/ICCTS/blob/main/GC22-Slides-Optimal%20Job%20Scheduling%20and%20Bandwidth%20Augmentation%20in%20Hybrid%20Data%20Center%20Networks.pdf)).
 * [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [6/2020] Obtained Master's degree in Xidian University.
 * [9/2019] Completed internship program in Huawei Research Center, 3 months.
