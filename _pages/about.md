@@ -48,11 +48,11 @@ Activities
 
 Publications
 ------
-* [Network'24] Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions, accepted by IEEE Network 2024 ([Early access](https://ieeexplore.ieee.org/document/10477426)).
-* [WCNC'24] Liang Peng, Jie Yan, Binquan Guo, Xiaoxiang Wang, Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 (To be presented).
-* [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. ([Preprint download](https://arxiv.org/abs/2301.09372)).
-* [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023.([Preprint download](https://arxiv.org/abs/2301.11831))..
-* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([Full text download](https://ieeexplore.ieee.org/document/10001450)).
+* [Network'24] Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions, accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
+* [WCNC'24] Liang Peng, Jie Yan, Binquan Guo, Xiaoxiang Wang, Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
+* [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. ([PDF download](https://ieeexplore.ieee.org/document/10279431)).
+* [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023.([PDF download](https://ieeexplore.ieee.org/document/10278747)).
+* [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([PDF download](https://ieeexplore.ieee.org/document/10001450)).
 * Pseudoisochromatic Plates Synthesis for Dichromats ([Not published yet](https://github.com/wilixx/bichromatic-plates-for-cvd)).
 * Pseudoisochromatic Plates Synthesis Using Conditional Generative Adversarial Networks. ([M.D. thesis](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202101&filename=1020156894.nh&uniplatform=NZKPT&v=BZiLbj5YSYVT3Ib728GpZ8_gVnayjmC0C80nPEn7bPpHAOUJhxg0IC00TlWIfCLO)).
 * A Pseudoisochromatic Pairs Acquisition Method Based on Global Maximum Color Difference. ([To be published](https://github.com/wilixx/bichromatic-plates-for-cvd)).
