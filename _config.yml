@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Binquan Guo / Carlos Allen"
 title_separator          : "-"
 name                     : &name "Binquan Guo"
-description              : &description "PhD Research Scientist"
+description              : &description "PhD Candidate, Information and Communciation Systems, Xidian University"
 url                      : https://wilixx.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wilixx/wilixx.github.io"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    :  "https://scholar.google.com/citations?user=NA8egm4AAAAJ&hl"
-  email            :
+  email            : "bqguo@stu.xidian.edu.cn"
   researchgate     :  "https://www.researchgate.net/profile/Binquan-Guo"
   uri              :
   bitbucket        :
