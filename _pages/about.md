@@ -48,8 +48,16 @@ Activities
 
 Publications
 ------
+2024
 * [Network'24] Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions, accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
 * [WCNC'24] Liang Peng, Jie Yan, Binquan Guo, Xiaoxiang Wang, Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks, accepted by IEEE WCNC 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
+* [MASS'24] Co-authored paper entitled  "Multi-path transmission of real-time remote sensing data via heterogeneous LEO inter-satellite-links", in Proceedings of IEEE International Conference on Mobile Ad Hoc and Smart Systems (MASS), Seoul, South Korea, September 2024.
+* [ICCC'24] Co-authored paper entitled "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024.
+* [MetaCom'24] Co-authored paper entitled "Semantic communication-aware end-to-end routing in large-scale LEO satellite networks", in IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom), Hong Kong, China, August 2024.
+* [WCL'24] Co-authored paper entitled "Network slicing strategy for real-time applications in large-scale satellite networks with heterogeneous transceivers", IEEE Wireless Communications Letters, accepted.
+* [WCL'24] Co-authored paper entitled "Enhanced Time Discretization for Temporal Graph-Based Continuous Service Provisioning in Large-Scale Satellite Networks", IEEE Wireless Communications Letters, accepted.
+
+2023
 * [ICC'23] Binquan Guo, Hongyan Li, Zhou Zhang, Ye Yan, Online Network Slicing for Real Time Applications in Large-scale Satellite Networks, accepted by IEEE ICC 2023. ([PDF download](https://ieeexplore.ieee.org/document/10279431)).
 * [ICC'23] Binquan Guo, Hongyan Li, Ye Yan, Zhou Zhang, Data Volume-aware Computation Task Scheduling for Smart Grid Data Analytic Applications, accepted by IEEE ICC 2023.([PDF download](https://ieeexplore.ieee.org/document/10278747)).
 * [GC'22] Binquan Guo, Zhou Zhang, Ye Yan, Hongyan Li, Optimal job scheduling and bandwidth augmentation in hybrid data center networks. IEEE Global Communications Conference 2022 ([PDF download](https://ieeexplore.ieee.org/document/10001450)).
