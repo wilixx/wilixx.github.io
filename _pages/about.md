@@ -10,7 +10,9 @@ redirect_from:
 
 **Binquan Guo** received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He is currently pursuing the Ph.D. degree with the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an, under the guidance of [Prof. Hongyan Li](https://web.xidian.edu.cn/hyli/) (2020.9 ~ ). He is also a Visiting Ph.D. student in University of Houston hosted by [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) (2024~). He has worked in Xi'an Institute of Optics and Precision Mechanics, Xianyang Nuclear Industry 215 Hospital, SAP China Research Center, Intel Mobile Communications, and Huawei Research Center for internship programs during the year of 2016.2~2019.9. His research interests include satellite networking, network slicing, graph theory, routing and scheduling algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ),  [IEEE Explore](https://ieeexplore.ieee.org/author/37089678912), [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research), and [Google sites](https://sites.google.com/view/binquanguo/home). 
 
-Life is a hard but precious journey. **If you are interested to collaborate with him or exchange ideas, please feel free to email him** (bqguo@stu.xidian.edu.cn) **or add his wechat** (ID: QuantifyingAll). He always enjoys connecting with and learning from different people. **Also, feel free to call him for a badminton game anytime** ^_^! 
+Life is a hard but precious journey. **If you are interested to collaborate with him or exchange ideas, please feel free to email him** (bqguo@stu.xidian.edu.cn) **or add his wechat** (ID: QuantifyingAll，[Scan QR code](https://github.com/wilixx/wilixx.github.io/blob/master/images/BinquanGuo_weichatCode.jpg)). He always enjoys connecting with and learning from different people. **Also, feel free to call him for a badminton game anytime** ^_^! 
+
+
 
 News
 ======
