@@ -84,7 +84,18 @@ Experience
 * [Feb,2016-Feb,2017] Internship program in Xi'an Institute of Optics and Precision Mechanics, Xi'an, China.
 
 
+Academic Services
+======
+* Conference Session Chair: [MetaCom' 24](https://www.ieee-metacom.org/program.html), Hongkong. 
+* Reviewer for IEEE Journal/Magazine/Conference: IEEE TCCN, TMC, TNSE, IoTJ, IEEE Netw., IEEE Commun. Mag., IETCom, VTC, ICNC, ICC and more. 
+
+ 
 
 For more info
 ------
-More info about academic detail, please leave comments below.
+
+> "Life is like a box of chocolates. You never know what you're gonna get." ----- Forrest Gump
+
+> 随缘不变，顺其自然。
+
+
