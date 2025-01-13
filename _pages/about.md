@@ -18,7 +18,8 @@ News
 ======
 * [9/2024] Presented one co-authored paper in IEEE MASS 2024, in Seoul, South Korea. 
 * [8/2024] Co-authored paper entitled "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024.  ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
-* Awarded 2024 Tencent Scholarship of Xidian University. 
+* Awarded 2024 Tencent Scholarship of Xidian University.
+* Awarded 2022 Siyi Ceyear Scholarship of Xidian University. 
 * [8/2024] Served as a Session Chair and presented one co-authored paper in IEEE MetaCOM 2024, in Hongkong, China, ([Final technical program](https://www.ieee-metacom.org/2024/program.html)). 
 * [8/2024] Presented one co-authored paper in IEEE ICCC 2024, in Hangzhou, China. 
 * [3/2024] Co-authored paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
