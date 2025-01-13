@@ -60,6 +60,7 @@ Publications
 * [ICCC'24] Wei Ding, **Binquan Guo**, Zehui Xiong, "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024 ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
 * [MASS'24] Co-authored paper entitled  "Multi-path transmission of real-time remote sensing data via heterogeneous LEO inter-satellite-links", in Proceedings of IEEE International Conference on Mobile Ad Hoc and Smart Systems (MASS), Seoul, South Korea, September 2024 [Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/MASS2024-Slides-0915.pdf).
 * [MetaCom'24] Co-authored paper entitled "Semantic communication-aware end-to-end routing in large-scale LEO satellite networks", in IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom), Hong Kong, China, August 2024 ([PDF download](https://ieeexplore.ieee.org/document/10740143)) [Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/GUO_metacom2024_ppt_0814.pdf).
+* [VT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
 * [WCL'24] Co-authored paper entitled "Network slicing strategy for real-time applications in large-scale satellite networks with heterogeneous transceivers", IEEE Wireless Communications Letters, accepted ([PDF download](https://ieeexplore.ieee.org/document/10540358)).
 * [WCL'24] Co-authored paper entitled "Enhanced Time Discretization for Temporal Graph-Based Continuous Service Provisioning in Large-Scale Satellite Networks", IEEE Wireless Communications Letters, accepted ([PDF download](https://ieeexplore.ieee.org/document/10612837)).
 
@@ -86,7 +87,7 @@ Experience
 
 Academic Services
 ======
-* Conference Session Chair: [MetaCom' 24](https://www.ieee-metacom.org/program.html), Hongkong. 
+* Conference Session Chair: MetaCom' 24, Hongkong. 
 * Reviewer for IEEE Journal/Magazine/Conference: IEEE TCCN, TMC, TNSE, IoTJ, IEEE Netw., IEEE Commun. Mag., IETCom, VTC, ICNC, ICC and more. 
 
  
