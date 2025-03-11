@@ -16,7 +16,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
-* [3/2025]  Paper entitled "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. (PDF available soon)
+* [3/2025]  **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. (PDF available soon)
 * [9/2024] Presented one co-authored paper in IEEE MASS 2024, in Seoul, South Korea. 
 * [8/2024] Co-authored paper entitled "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024.  ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
 * Awarded 2024 Tencent Scholarship of Xidian University.
