@@ -16,7 +16,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
-* [3/2025]  **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. (PDF available soon)
+* [3/2025]  **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133)).
 * [9/2024] Presented one co-authored paper in IEEE MASS 2024, in Seoul, South Korea. 
 * [8/2024] Co-authored paper entitled "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024.  ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
 * Awarded 2024 Tencent Scholarship of Xidian University.
@@ -58,15 +58,15 @@ Activities
 Publications
 ------
 2025
-* [VT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. (To be published)
+* [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133))
 
 2024
+* [TVT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
 * [Network'24] Yu Hun, **Binquan Guo**, Chungang Yang, Zhu Han, "Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions", accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
 * [WCNC'24] Liang Peng, Jie Yan, **Binquan Guo**, Xiaoxiang Wang, "Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks", accepted by IEEE WCNC 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
 * [ICCC'24] Wei Ding, **Binquan Guo**, Zehui Xiong, "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024 ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
 * [MASS'24] Co-authored paper entitled  "Multi-path transmission of real-time remote sensing data via heterogeneous LEO inter-satellite-links", in Proceedings of IEEE International Conference on Mobile Ad Hoc and Smart Systems (MASS), Seoul, South Korea, September 2024 [Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/MASS2024-Slides-0915.pdf).
 * [MetaCom'24] Co-authored paper entitled "Semantic communication-aware end-to-end routing in large-scale LEO satellite networks", in IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom), Hong Kong, China, August 2024 ([PDF download](https://ieeexplore.ieee.org/document/10740143)) [Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/GUO_metacom2024_ppt_0814.pdf).
-* [VT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
 * [WCL'24] Co-authored paper entitled "Network slicing strategy for real-time applications in large-scale satellite networks with heterogeneous transceivers", IEEE Wireless Communications Letters, accepted ([PDF download](https://ieeexplore.ieee.org/document/10540358)).
 * [WCL'24] Co-authored paper entitled "Enhanced Time Discretization for Temporal Graph-Based Continuous Service Provisioning in Large-Scale Satellite Networks", IEEE Wireless Communications Letters, accepted ([PDF download](https://ieeexplore.ieee.org/document/10612837)).
 
