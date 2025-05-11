@@ -95,7 +95,7 @@ Experience
 Academic Services
 ======
 * Conference Session Chair: MetaCom' 24, Hongkong. 
-* Reviewer for IEEE Journal/Magazine/Conference: IEEE TCCN, TMC, TNSE, IoTJ, IEEE Netw., IEEE Commun. Mag., IETCom, VTC, ICNC, ICC and more. 
+* Reviewer for IEEE Journal/Magazine/Conference: IEEE TCCN, TWC, TCOM, TMC, TNSE, IoTJ, IEEE Netw., IEEE WirelessComMag., IEEE Commun. Mag., IETCom, VTC, ICNC, ICC and more. 
 
  
 
