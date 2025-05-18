@@ -16,7 +16,8 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
-* [4/2025] **Algorithms aim to make real-time data processing possible anywhere on Earth**, research from Singapore University of Technology and Design and Xidian University, reported by Techxplore. Source: https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html ([link](https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html))
+* [5/2025] **Algorithms aim to make real-time data processing possible anywhere on Earth**, research from Singapore University of Technology and Design, Xidian University, Hunan University, Nanyang
+Technological University, and University of Houston, reported by Techxplore. Source: https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html ([link](https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html))
 * [3/2025]  **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133)).
 * [12/2024] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, 2025, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
 * [9/2024] Presented one co-authored paper in IEEE MASS 2024, in Seoul, South Korea. 
