@@ -62,6 +62,7 @@ Publications
 ------
 2025
 * [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133))
+* [COMSTD'25] **Binquan Guo**, Miao Du, Xiaoming He, Zhou Zhang, Baosheng Li, Zehui Xiong, "Semantic Communication in 6G Mega-Satellite Networks: System Design and Standardization", accepted by IEEE Communications Standards Magazine, 2025. (PDF available soon)
 
 2024
 * [TVT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
