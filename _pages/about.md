@@ -63,9 +63,8 @@ Publications
 2025
 * [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133))
 * [COMSTD'25] **Binquan Guo**, Miao Du, Xiaoming He, Zhou Zhang, Baosheng Li, Zehui Xiong, "Semantic Communication in 6G Mega-Satellite Networks: System Design and Standardization", accepted by IEEE Communications Standards Magazine, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11052732
-))
-2024
-* [TVT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
+)).
+* [TVT'24] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2024. ([PDF download](https://ieeexplore.ieee.org/document/10797674)).
 * [Network'24] Yu Hun, **Binquan Guo**, Chungang Yang, Zhu Han, "Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions", accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
 * [WCNC'24] Liang Peng, Jie Yan, **Binquan Guo**, Xiaoxiang Wang, "Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks", accepted by IEEE WCNC 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
 * [ICCC'24] Wei Ding, **Binquan Guo**, Zehui Xiong, "Virtualized computing and communication service provision in large-scale software defined satellite networks", in Proceedings of IEEE/CIC International Conference on Communications in China (ICCC), Hangzhou, China, August 2024 ([PDF download](https://ieeexplore.ieee.org/document/10681883)), ([Slides download](https://github.com/wilixx/wilixx.github.io/blob/master/files/guo_ICCC2024_ppt_0808.pdf)).
