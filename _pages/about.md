@@ -16,7 +16,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 News
 ======
 * [7/2025] Paper entitled "Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective", accepted by IEEE Wireless Communications, 2025. (To be published) Grateful to Prof. Zehui Xiong, Prof. Zhu Han, Prof. Rahim Tafazolli, and Prof. Tony Q. S. Quek for their invaluable guidance and support, which made this work possible.
-[5/2025] **Algorithms aim to make real-time data processing possible anywhere on Earth**, research from Singapore University of Technology and Design, Xidian University, Hunan University, Nanyang
+* [5/2025] **Algorithms aim to make real-time data processing possible anywhere on Earth**, research from Singapore University of Technology and Design, Xidian University, Hunan University, Nanyang
 Technological University, and University of Houston, reported by Techxplore. Source: https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html ([link](https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html))
 * [3/2025]  **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133)). Grateful to Prof. Zhou Zhang, Prof. Saman Atapattu, Prof. Miao Pan, Prof. Ye Yan, Prof. Zehui Xiong, and Prof. Hongyan Li for their invaluable guidance and support, without which this work would not have been possible.
 * [12/2024] Co-authored paper entitled "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", IEEE Transactions on Vehicular Technology, 2025, accepted ([PDF download](https://ieeexplore.ieee.org/document/10797674)). Grateful to Prof. Zehui Xiong, Prof. Zhu Han, Prof. Chau Yuen, and Dr. Sumei Sun for their invaluable guidance and support, which made this work possible.
@@ -62,7 +62,7 @@ Publications
 ------
 2025
 * [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133))
-* [WC'25] **Binquan Guo**, Wanting Yang, Zehui Xiong, Zhou Zhang, Baosheng Li, Zhu Han, Rahim Tafazolli, and Tony Q. S. Quek, "Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective", accepted by IEEE Wireless Communications, 2025. (To be published)
+* [WC'25] Paper entitled "Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective", accepted by IEEE Wireless Communications, 2025. (To be published)
 * [COMSTD'25] **Binquan Guo**, Miao Du, Xiaoming He, Zhou Zhang, Baosheng Li, Zehui Xiong, "Semantic Communication in 6G Mega-Satellite Networks: System Design and Standardization", accepted by IEEE Communications Standards Magazine, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11052732
 )).
 
