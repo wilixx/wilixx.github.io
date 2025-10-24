@@ -62,11 +62,11 @@ Activities
 Publications
 ------
 2025
-* [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133))
-* [WC'25] **Binquan Guo**, Wanting Yang, Zehui Xiong, Zhou Zhang, Baosheng Li, Zhu Han, Rahim Tafazolli, Tony Q. S. Quek, "Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective", accepted by IEEE Wireless Communications, 2025. (To be published)
-* [TCOM'25] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Baosheng Li, Dusit Niyato, Chau Yuen, Zhu Han, "Resilience of Mega-Satellite Constellations: How Node Failures Impact Inter-Satellite Networking Over Time?", accepted by IEEE Transactions on Communications, 2025. (To be published)
-* [COMSTD'25] **Binquan Guo**, Miao Du, Xiaoming He, Zhou Zhang, Baosheng Li, Zehui Xiong, "Semantic Communication in 6G Mega-Satellite Networks: System Design and Standardization", accepted by IEEE Communications Standards Magazine, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11052732
-)).
+* [TrustCom'25] **Binquan Guo**,  Marie Siew, Binbin Chen, Tony Q. S. Quek, Zhu Han, "Accelerating Privacy-Preserving Federated Learning in Large-Scale LEO Satellite Systems ", accepted by IEEE TrustCom, 2025 ([Preprint download](https://arxiv.org/abs/2509.12222)). 
+* [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133)).
+* [TCOM'25] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Baosheng Li, Dusit Niyato, Chau Yuen, Zhu Han, "Resilience of Mega-Satellite Constellations: How Node Failures Impact Inter-Satellite Networking Over Time?", accepted by IEEE Transactions on Communications, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11164934)).
+* [WC'25] **Binquan Guo**, Wanting Yang, Zehui Xiong, Zhou Zhang, Baosheng Li, Zhu Han, Rahim Tafazolli, Tony Q. S. Quek, "Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective", accepted by IEEE Wireless Communications, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11206535)).
+* [COMSTD'25] **Binquan Guo**, Miao Du, Xiaoming He, Zhou Zhang, Baosheng Li, Zehui Xiong, "Semantic Communication in 6G Mega-Satellite Networks: System Design and Standardization", accepted by IEEE Communications Standards Magazine, 2025. ([PDF download](https://ieeexplore.ieee.org/document/11052732)).
 
 2024
 * [TVT'24] **Binquan Guo**, Zehui Xiong, Zhu Han, Chau Yuen, Sumei Sun, "Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2024. ([PDF download](https://ieeexplore.ieee.org/document/10797674)). 
