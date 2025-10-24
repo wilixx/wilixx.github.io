@@ -47,8 +47,8 @@ News
 
 Activities
 ======
-* Visiting Ph.D student in Singapore University of Technology and Design, 2024~.
-* Working on time-deterministic network slicing technologies, 2022~.
+* Visiting Ph.D student in Singapore University of Technology and Design, 2024.02~2025.08.
+* Working on time-deterministic satellite networking technologies, 2022~.
 * Teaching Assistantship: B38CJ- Sustainable Development, Xidian University, Fall, 2023. 
 * Teaching Assistantship:  Introduction Course for Freshman Students, Xidian University, Fall, 2022.
 * Working on data center networking and job scheduling technologies, 2021~2022.
@@ -89,7 +89,7 @@ Publications
 
 Experience
 ------
-* [Feb,2024~] Visiting Ph.D. student of Singapore University of Technology and design sponsored by CSC.
+* [Feb,2024~Aug,2025] Visiting Ph.D. student of Singapore University of Technology and design sponsored by CSC.
 * [Aug,2017-Jul,2020] Obtained Master's degree in Xidian University.
 * [Jun,2019-Sep,2019] Internship program in Huawei Research Center, Xi'an, China.
 * [Oct,2018-Apr,2019] Internship program in Intel Mobile Communications, Xi'an, China.
@@ -111,8 +111,8 @@ For more info
 
 > "Life is like a box of chocolates. You never know what you're gonna get." ----- Forrest Gump
 
-> 心怀感恩，永葆热忱。
+> 心怀感恩，永葆热忱。To be thanks & Giving.
 
-> 随缘不变，顺其自然。
+> 随缘不变，顺其自然。Let it be. 
 
 
