@@ -15,7 +15,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
-* [03/2026] Paper on "SemCom-Networking in LEO satellite networks", accepted by IEEE Trans., 2025. Co-authors: [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong), [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Qianqian Yang](https://ieeexplore.ieee.org/author/38666361200), Baosheng Li, [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900), [Mohsen Guizani](https://ieeexplore.ieee.org/author/37273043000), and [Prof. Zhu Han](https://ieeexplore.ieee.org/author/37278605300).
+* [03/2026] Paper entitled "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026. Co-authors: [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong), [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Qianqian Yang](https://ieeexplore.ieee.org/author/38666361200), Baosheng Li, [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900), [Mohsen Guizani](https://ieeexplore.ieee.org/author/37273043000), and [Prof. Zhu Han](https://ieeexplore.ieee.org/author/37278605300).
 * [01/2026] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. Junfeng Zhai and Prof Tao Shang from XDU, accepted by IEEE ICC 2026. 
 * [11/2025] Baosheng Li, Weifeng Gao, Xiumei Deng, Jin Xie, Zehui Xiong, Marie Siew, **Binquan Guo**, Shiwen Mao, and Zhu Han, "Decentralized Federated Learning in Mobile Computing Ecosystems with Time-Varying and Heterogeneous Networks", accepted by IEEE Transactions on Mobile Computing, 2025. [Congratulations to Mr. Baosheng Li]. ([PDF download](https://ieeexplore.ieee.org/document/11271539)).
 * [8/2025] Co-authored paper on "WPT in LEO satellite networks", submitted to IEEE Trans. for possible publication, 2025. Co-authors: [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Baoquan Ren](https://ieeexplore.ieee.org/author/37086209370), and [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900).
@@ -66,7 +66,7 @@ Activities
 Publications
 ------
 2026
-* [Trans'26] Binquan Guo, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han, "SemCom-Networking in LEO satellite networks", accepted by IEEE Trans., 2026.  
+* [TMC'26] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han, "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026.  
 * [ICC'26] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. J. Zhai and Prof T. Shang from XDU, accepted by IEEE ICC 2026. 
 
 2025
