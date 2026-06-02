@@ -15,7 +15,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
-* [Jun, 2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.
+* [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.
 * [03/2026] Paper entitled "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026. Co-authors: [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong), [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Qianqian Yang](https://ieeexplore.ieee.org/author/38666361200), Baosheng Li, [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900), [Mohsen Guizani](https://ieeexplore.ieee.org/author/37273043000), and [Prof. Zhu Han](https://ieeexplore.ieee.org/author/37278605300). ([PDF download](https://ieeexplore.ieee.org/document/11437528))
 * [01/2026] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. Junfeng Zhai and Prof Tao Shang from XDU, accepted by IEEE ICC 2026. 
 * [11/2025] Baosheng Li, Weifeng Gao, Xiumei Deng, Jin Xie, Zehui Xiong, Marie Siew, **Binquan Guo**, Shiwen Mao, and Zhu Han, "Decentralized Federated Learning in Mobile Computing Ecosystems with Time-Varying and Heterogeneous Networks", accepted by IEEE Transactions on Mobile Computing, 2025. [Congratulations to Mr. Baosheng Li]. ([PDF download](https://ieeexplore.ieee.org/document/11271539)).
@@ -67,11 +67,11 @@ Activities
 Publications
 ------
 2026
+* [PIMRC'26] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.
 * [TMC'26] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han, "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026.  ([PDF download](https://ieeexplore.ieee.org/document/11437528)) 
 * [ICC'26] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. J. Zhai and Prof T. Shang from XDU, accepted by IEEE ICC 2026. 
 
 2025
-* [PIMRC'26] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.
 * [TMC'25] Baosheng Li, Weifeng Gao, Xiumei Deng, Jin Xie, Zehui Xiong, Marie Siew, **Binquan Guo**, Shiwen Mao, and Zhu Han, "Decentralized Federated Learning in Mobile Computing Ecosystems with Time-Varying and Heterogeneous Networks", accepted by IEEE Transactions on Mobile Computing, 2025.([PDF download](https://ieeexplore.ieee.org/document/11271539)).
 * [TrustCom'25] **Binquan Guo**, Junteng Cao, Marie Siew, Binbin Chen, Tony Q. S. Quek, Zhu Han, "Accelerating Privacy-Preserving Federated Learning in Large-Scale LEO Satellite Systems ", accepted by IEEE TrustCom, 2025 ([Preprint download](https://arxiv.org/abs/2509.12222)). 
 * [TVT'25] **Binquan Guo**, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, Hongyan Li, "Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Vehicular Technology, 2025. ([PDF download](https://ieeexplore.ieee.org/document/10937133)).
