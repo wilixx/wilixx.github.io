@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**Binquan Guo** obtained his Ph.D. degree in telecommunication engineering from the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an, China, under the guidance of [Prof. Hongyan Li](https://web.xidian.edu.cn/hyli/), co-supervised by [Prof. Ye Yan](https://ieeexplore.ieee.org/author/37088651554) and [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200) (2020.9 ~ 2025.12). He received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He was also a Visiting Ph.D. student in University of Houston hosted by [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) at iConnect Lab  (2024.02 ~ 2025.08) and under the guidance of [Prof. Marie Siew](https://mariesiewhuilin.weebly.com) at SUTD CARE Lab  (2025.05 ~ ). He has worked in Xi'an Institute of Optics and Precision Mechanics, Xianyang Nuclear Industry 215 Hospital, SAP China Research Center, Intel Mobile Communications, and Huawei Research Center for internship programs during the year of 2016.02 ~ 2019.09. His research interests include satellite networking, green computing, semantic communication, graph theory, routing and scheduling algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ),  [IEEE Explore](https://ieeexplore.ieee.org/author/37089678912), [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research), [ORCID](https://orcid.org/0000-0002-0660-1830), and [Google Sites](https://sites.google.com/view/binquanguo/home). 
+**Binquan Guo** obtained his Ph.D. degree in telecommunication engineering from the State Key Laboratory of Integrated Service Networks, Xidian University, Xi’an, China, under the guidance of [Prof. Hongyan Li](https://web.xidian.edu.cn/hyli/), co-supervised by [Prof. Ye Yan](https://ieeexplore.ieee.org/author/37088651554) and [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200) (2020 ~ 2025). He received the B.S. degree and the master's degree in telecommunication engineering from Xidian University, Xi’an, China, in 2017 and 2020, respectively. He was also a Visiting Ph.D. student in University of Houston hosted by [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) (remotely) and Singapore University of Technology and Design under the guidance of [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) at iConnect Lab  (2024.02 ~ 2025.08) and under the guidance of [Prof. Marie Siew](https://mariesiewhuilin.weebly.com) at SUTD CARE Lab  (2025.05 ~ ). He has worked in Xi'an Institute of Optics and Precision Mechanics, Xianyang Nuclear Industry 215 Hospital, SAP China Research Center, Intel Mobile Communications, and Huawei Research Center during the year of 2016.02 ~ 2019.09. His research interests include satellite networking, green computing, semantic communication, graph theory, routing and scheduling algorithms. His research works can be found in [Google Scholar](https://scholar.google.com/citations?user=NA8egm4AAAAJ),  [IEEE Explore](https://ieeexplore.ieee.org/author/37089678912), [ResearchGate](https://www.researchgate.net/profile/Binquan-Guo/research), [ORCID](https://orcid.org/0000-0002-0660-1830), and [Google Sites](https://sites.google.com/view/binquanguo/home). 
 
 Life is a hard but precious journey. **If you are interested to collaborate with him or exchange ideas, please feel free to email him** (bqguo@stu.xidian.edu.cn) **or add his wechat** (ID: QuantifyingAll). He always enjoys connecting with and learning from different people. **Also, feel free to call him for a ~~bad~~goodminton game anytime** ^_^! 
 
@@ -16,6 +16,8 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 News
 ======
 <!-- * [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
+* [07/2026] J. Zhai, Z. Li, T. Shang, Zheng Chang, "Vision Mamba demodulation with efficient channel attention for LDPC-coded orbital angular momentum shift keying over turbulent free-space optical links", accepted by Optics Express 26.
+* [05/2026] Binquan Guo, Z. Zhang, J. Zhai, Z. Zhang, M. Siew, Z. Xiong, "Pattern-Aware Virtual Network Embedding Optimization for Cloud Data Centers", accepted by PIMRC 26.
 * [03/2026] Paper entitled "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026. Co-authors: [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong), [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Qianqian Yang](https://ieeexplore.ieee.org/author/38666361200), Baosheng Li, [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900), [Mohsen Guizani](https://ieeexplore.ieee.org/author/37273043000), and [Prof. Zhu Han](https://ieeexplore.ieee.org/author/37278605300). ([PDF download](https://ieeexplore.ieee.org/document/11437528))
 * [01/2026] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. J. Zhai and Prof T. Shang from XDU, accepted by IEEE ICC 2026. 
 * [11/2025] Baosheng Li, Weifeng Gao, Xiumei Deng, Jin Xie, Zehui Xiong, Marie Siew, **Binquan Guo**, Shiwen Mao, and Zhu Han, "Decentralized Federated Learning in Mobile Computing Ecosystems with Time-Varying and Heterogeneous Networks", accepted by IEEE Transactions on Mobile Computing, 2025. [Congratulations to Mr. Baosheng Li]. ([PDF download](https://ieeexplore.ieee.org/document/11271539)).
@@ -43,10 +45,10 @@ News
 * [8/2022] Paper entitled 'Optimal Job Scheduling and Bandwidth Augmentation in Hybrid Data Center Networks', accepted by IEEE Global Communications Conference, 2022 ([PDF download](https://ieeexplore.ieee.org/document/10001450), [slides](https://github.com/wilixx/ICCTS/blob/main/GC22-Slides-Optimal%20Job%20Scheduling%20and%20Bandwidth%20Augmentation%20in%20Hybrid%20Data%20Center%20Networks.pdf)).
 * [7/2020] Involved in 5G development as a PhD Candidate in Information and Telecommunication Engineering at Xidian University.
 * [6/2020] Obtained Master's degree in Xidian University.
-* [9/2019] Completed internship program in Huawei Research Center, 3 months.
-* [4/2019] Completed internship program in Intel Mobile Communications，6 months.
+* [9/2019] Completed software engineering work at Huawei Research Center, Xi'an, 3 months.
+* [4/2019] Completed software engineering work at Intel Mobile Communications, Xi'an, 6 months.
 * [3/2019] One paper was rejected by ICIP 2019.
-* [9/2018] Completed internship program in SAP Research Center，6 months.
+* [9/2018] Completed software engineering work at SAP Research Center, Xi'an, 6 months.
 * [9/2017] Obtained Bachelor's degree in Xidian University.
 
 
@@ -68,6 +70,8 @@ Publications
 ------
 2026
 <!-- * [PIMRC'26] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
+* [OptExp'26] J. Zhai, Z. Li, T. Shang, **Binquan Guo**, Z. Chang, "Vision Mamba demodulation with efficient channel attention for LDPC-coded orbital angular momentum shift keying over turbulent free-space optical links", accepted by Optics Express 26.
+* [PIMRC'26] **Binquan Guo**, Zhou Zhang, J. Zhai, Z. Zhang, Marie Siew, Zehui Xiong, "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26
 * [TMC'26] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han, "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026.  ([PDF download](https://ieeexplore.ieee.org/document/11437528)) 
 * [ICC'26] Co-authored paper entitled "OAM Shift Keying in LDPC-Coded Free-Space Optical Communication via Vision Mamba", lead by Mr. J. Zhai and Prof T. Shang from XDU, accepted by IEEE ICC 2026. 
 
@@ -103,9 +107,9 @@ Experience
 * [Sep,2020-Dec,2025] Obtained Ph.D.'s degree in Xidian University.
 * [Feb,2024~Aug,2025] Visiting Ph.D. student of Singapore University of Technology and design sponsored by CSC.
 * [Aug,2017-Jul,2020] Obtained Master's degree in Xidian University.
-* [Jun,2019-Sep,2019] Internship program in Huawei Research Center, Xi'an, China.
-* [Oct,2018-Apr,2019] Internship program in Intel Mobile Communications, Xi'an, China.
-* [Feb,2018-Sep,2018] Internship program in SAP (German) Research Center, Xi'an, China.
+* [Jun,2019-Sep,2019] Software Engineer, Huawei Research Center, Xi'an, China.
+* [Oct,2018-Apr,2019] Software Engineer, Intel Mobile Communications, Xi'an, China.
+* [Feb,2018-Sep,2018] Software Engineer, SAP (German) Research Center, Xi'an, China.
 * [Feb,2018-Apr,2018] Internship program in 215 Hospital for Radiography, Xianyang, China.
 * [Aug,2013-Jul,2017] Obtained Bachelor's degree in Xidian University.
 * [Feb,2016-Feb,2017] Internship program in Xi'an Institute of Optics and Precision Mechanics, Xi'an, China.
