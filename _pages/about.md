@@ -16,6 +16,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 News
 ======
 <!-- * [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
+* [08/2026] Q. Dang, X. Gao, B. Li, Q. Liu, and Binquan Guo, "CoMGS: A Multi-Objective Coevolutionary Algorithm for Transferable Adversarial Attacks ", accepted by IEEE Transactions on Evolutionary Computation, 2026.
 * [07/2026] J. Zhai, Z. Li, T. Shang, Binquan Guo, Z. Chang, "Vision Mamba demodulation with efficient channel attention for LDPC-coded orbital angular momentum shift keying over turbulent free-space optical links", accepted by Optics Express 26.
 * [05/2026] Binquan Guo, Zhou Zhang, J. Zhai, Z. Zhang, M. Siew, Z. Xiong, "Pattern-Aware Virtual Network Embedding Optimization for Cloud Data Centers", accepted by PIMRC 26.
 * [03/2026] Paper entitled "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026. Co-authors: [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong), [Prof. Zhou Zhang](https://ieeexplore.ieee.org/author/37598591200), [Qianqian Yang](https://ieeexplore.ieee.org/author/38666361200), Baosheng Li, [Prof. Dusit Niyato](https://ieeexplore.ieee.org/author/37296968900), [Mohsen Guizani](https://ieeexplore.ieee.org/author/37273043000), and [Prof. Zhu Han](https://ieeexplore.ieee.org/author/37278605300). ([PDF download](https://ieeexplore.ieee.org/document/11437528))
@@ -70,6 +71,7 @@ Publications
 ------
 2026
 <!-- * [PIMRC'26] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
+* [TEVC'26] Q. Dang, X. Gao, B. Li, Q. Liu, and Binquan Guo, "CoMGS: A Multi-Objective Coevolutionary Algorithm for Transferable Adversarial Attacks ", accepted by IEEE Transactions on Evolutionary Computation, 2026. 
 * [OptExp'26] J. Zhai, Z. Li, T. Shang, **Binquan Guo**, Z. Chang, "Vision Mamba demodulation with efficient channel attention for LDPC-coded orbital angular momentum shift keying over turbulent free-space optical links", accepted by Optics Express 26.
 * [PIMRC'26] **Binquan Guo**, Zhou Zhang, J. Zhai, Z. Zhang, Marie Siew, Zehui Xiong, "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26
 * [TMC'26] **Binquan Guo**, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han, "Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks", accepted by IEEE Transactions on Mobile Computing, 2026.  ([PDF download](https://ieeexplore.ieee.org/document/11437528)) 
