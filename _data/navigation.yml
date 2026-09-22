@@ -31,3 +31,7 @@ main:
     children:
       - title: "CARELab Green Cloud"
         url: /demos/carelab-green-cloud/
+      - title: "CARELab In-orbit Computing"
+        url: /demos/carelab-in-orbit-computing/
+      - title: "CARELab Widest-Inter Satellite Routing"
+        url: /demos/carelab-widest-routing/

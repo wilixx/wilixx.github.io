@@ -15,6 +15,8 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 {% include carelab-project-card.html %}
 
+{% include carelab-satellite-cards.html %}
+
 News
 ======
 <!-- * [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
