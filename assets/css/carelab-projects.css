@@ -240,3 +240,17 @@
     padding: 23px;
   }
 }
+
+/* A quiet companion to Project Demo; stays with it in the mobile menu. */
+.greedy-nav .best-wishes-nav-pair { display: flex; align-items: flex-start; }
+.greedy-nav .best-wishes-nav-pair > .carelab-project-nav > summary { margin-right: 5px; }
+.greedy-nav a.best-wishes-entry {
+  display: inline-flex; flex: 0 0 34px; align-items: center; justify-content: center;
+  width: 34px; min-height: 40px; margin: 0 7px 0 0; padding: 0;
+  color: #b9bfbb; border-radius: 5px; text-decoration: none;
+}
+.greedy-nav a.best-wishes-entry::before { content: none; }
+.greedy-nav a.best-wishes-entry:hover { color: #899b8d; background: #f5f7f5; }
+.greedy-nav a.best-wishes-entry:focus-visible { color: #657d6b; outline: 2px solid #8ca493; outline-offset: 2px; }
+.greedy-nav .hidden-links .best-wishes-nav-pair > .carelab-project-nav > summary { padding-right: 4px; }
+.greedy-nav .hidden-links a.best-wishes-entry { margin: 0 8px 0 0; min-height: 42px; }
