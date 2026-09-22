@@ -13,7 +13,25 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
+            {% if link.children %}
+              <li class="masthead__menu-item">
+                <details class="carelab-project-nav">
+                  <summary>{{ link.title }} <span class="carelab-project-nav__chevron" aria-hidden="true"></span></summary>
+                  <div class="carelab-project-nav__menu">
+                    {% for child in link.children %}
+                      {% if child.url contains 'http' %}
+                        {% assign child_domain = '' %}
+                      {% else %}
+                        {% assign child_domain = base_path %}
+                      {% endif %}
+                      <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
+                    {% endfor %}
+                  </div>
+                </details>
+              </li>
+            {% else %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

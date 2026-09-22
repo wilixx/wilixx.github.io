@@ -1,0 +1,10 @@
+CARELab Green Cloud — public showcase browser dependencies
+
+React 19.3.0 — MIT. License: licenses/react-LICENSE
+React DOM 19.3.0 — MIT. License: licenses/react-dom-LICENSE
+Three.js 0.180.0 — MIT. License: licenses/three-LICENSE
+Lucide React 0.468.0 — ISC. License: licenses/lucide-react-LICENSE
+
+These license texts accompany the browser bundle. No optimization library,
+optimization WebAssembly, private research engine, Flask backend, or video
+conversion binary is included in this public showcase.

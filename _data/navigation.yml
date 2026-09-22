@@ -26,3 +26,8 @@ main:
     
   # - title: "Notebooks"
   #   url: /notebooks/
+
+  - title: "Project Demo"
+    children:
+      - title: "CARELab Green Cloud"
+        url: /demos/carelab-green-cloud/

@@ -1,0 +1,242 @@
+/* Additive, scoped styles for the CARELab demo entry and Project Demo submenu. */
+.carelab-project {
+  margin: 2rem 0 2.4rem;
+  font-family: inherit;
+}
+.carelab-project__eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem 1rem;
+  margin-bottom: .7rem;
+  color: #355c5c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.carelab-project__eyebrow span {
+  color: #77868a;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .06em;
+}
+.carelab-project__card {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  overflow: hidden;
+  border: 1px solid #d7e7e3;
+  border-radius: 16px;
+  background: #f7fbfa;
+  box-shadow: 0 8px 26px rgba(19, 58, 55, .07);
+}
+.carelab-project .carelab-project__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 17px 13px 13px;
+  background: radial-gradient(ellipse at 40% 20%, #123e42 0, #071c27 68%);
+  text-decoration: none;
+}
+.carelab-project .carelab-project__preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(142, 238, 219, .2);
+  border-radius: 7px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .22);
+}
+.carelab-project__preview-label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 15px;
+  color: #b5e6df;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .025em;
+}
+.carelab-project__preview-label > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(126, 224, 197, .35);
+  border-radius: 50%;
+  color: #8fe2c2;
+  font-size: 8px;
+}
+.carelab-project__content {
+  min-width: 0;
+  padding: 24px 23px;
+}
+.carelab-project__identity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.carelab-project__identity > img {
+  flex: 0 0 40px;
+  margin: 0;
+}
+.carelab-project .carelab-project__identity h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #12383c;
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+.carelab-project__identity h2 span {
+  display: block;
+  color: #18725f;
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+.carelab-project p.carelab-project__tagline {
+  margin: 0 0 11px;
+  color: #234847;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  text-indent: 0;
+}
+.carelab-project p.carelab-project__description {
+  margin: 0 0 20px;
+  color: #586c70;
+  font-size: 14px;
+  line-height: 1.7;
+  text-indent: 0;
+}
+.carelab-project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+.carelab-project .carelab-project__launch {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px 14px;
+  border: 1px solid #166654;
+  border-radius: 7px;
+  background: #166654;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.carelab-project .carelab-project__launch:hover {
+  background: #104e41;
+  text-decoration: none;
+}
+.carelab-project .carelab-project__paper {
+  color: #416d65;
+  font-size: 12px;
+  line-height: 1.5;
+  text-underline-offset: 3px;
+}
+.carelab-project a:focus-visible,
+.greedy-nav .carelab-project-nav summary:focus-visible,
+.greedy-nav .carelab-project-nav a:focus-visible {
+  outline: 3px solid #29a98e;
+  outline-offset: 4px;
+}
+.greedy-nav .carelab-project-nav {
+  position: relative;
+}
+.greedy-nav .carelab-project-nav > summary {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 1rem;
+  padding: .5rem 0;
+  color: inherit;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 400;
+}
+.greedy-nav .carelab-project-nav > summary::-webkit-details-marker {
+  display: none;
+}
+.carelab-project-nav__chevron {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-top: -4px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+.carelab-project-nav[open] .carelab-project-nav__chevron {
+  margin-top: 4px;
+  transform: rotate(225deg);
+}
+.greedy-nav .carelab-project-nav__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 30;
+  min-width: 246px;
+  padding: 6px;
+  border: 1px solid #d7e7e3;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(18, 56, 60, .13);
+}
+.greedy-nav .carelab-project-nav__menu > a {
+  display: block;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 5px;
+  color: #24594d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: normal;
+}
+.greedy-nav .carelab-project-nav__menu > a::before {
+  content: none;
+}
+.greedy-nav .carelab-project-nav__menu > a:hover {
+  background: #edf7f2;
+  color: #154538;
+}
+.greedy-nav .hidden-links .carelab-project-nav > summary {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+.greedy-nav .hidden-links .carelab-project-nav__menu {
+  position: static;
+  min-width: 0;
+  margin: 0 8px 8px;
+  padding: 0;
+  border: 0;
+  border-left: 2px solid #c9e5db;
+  border-radius: 0;
+  box-shadow: none;
+}
+.greedy-nav .hidden-links .carelab-project-nav__menu > a {
+  max-width: 230px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+@media (max-width: 960px) {
+  .carelab-project__card {
+    grid-template-columns: 1fr;
+  }
+  .carelab-project .carelab-project__preview {
+    padding: 20px;
+  }
+  .carelab-project__content {
+    padding: 23px;
+  }
+}

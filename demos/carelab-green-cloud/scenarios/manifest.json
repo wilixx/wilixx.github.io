@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "recorded-simulation",
+  "scenarios": [
+    {
+      "id": "complementary",
+      "name": {
+        "en": "Complementary workloads",
+        "zh": "互补业务"
+      },
+      "description": {
+        "en": "The same 100 servers. Different ways to fit CPU, memory, GPU and bandwidth needs.",
+        "zh": "相同的 100 台服务器，观察多维资源需求如何通过不同搭配释放容量。"
+      },
+      "file": "complementary.json",
+      "bytes": 499399,
+      "sha256": "712df8aad8bd1edca450dc7ef59031f984c6092bf239ebff3104b566cb6f65e4",
+      "servers": 100,
+      "historyCount": 1000,
+      "arrivalCount": 600,
+      "threshold": 0.8,
+      "accepted": {
+        "pattern": 400,
+        "random": 355,
+        "k8s": 359,
+        "bestfit": 339
+      }
+    },
+    {
+      "id": "mixed-size",
+      "name": {
+        "en": "Small + large VMs",
+        "zh": "大小 VM 混合"
+      },
+      "description": {
+        "en": "A wider range of VM sizes tests how reusable combinations behave beyond a uniform mix.",
+        "zh": "大小不同的 VM 同时到达，观察可复用组合在更丰富业务结构中的表现。"
+      },
+      "file": "mixed-size.json",
+      "bytes": 546837,
+      "sha256": "f086781ac04cdbce0e9cfbd4d00be60e2240839b6700a63cfcd6472e2a43cb9b",
+      "servers": 100,
+      "historyCount": 1000,
+      "arrivalCount": 650,
+      "threshold": 0.75,
+      "accepted": {
+        "pattern": 454,
+        "random": 433,
+        "k8s": 457,
+        "bestfit": 416
+      }
+    },
+    {
+      "id": "cpu-shift",
+      "name": {
+        "en": "When demand shifts",
+        "zh": "当业务分布变化"
+      },
+      "description": {
+        "en": "CPU-heavy arrivals differ from history. Explore where matching rules need to adapt.",
+        "zh": "在线到达更偏 CPU，与历史结构不同；查看匹配规则需要适应的边界。"
+      },
+      "file": "cpu-shift.json",
+      "bytes": 472707,
+      "sha256": "394f2445602b67ee54f3a5d4dba5b812a0f704967f6dc38721fd2bab97706a30",
+      "servers": 100,
+      "historyCount": 1000,
+      "arrivalCount": 600,
+      "threshold": 0.8,
+      "accepted": {
+        "pattern": 253,
+        "random": 274,
+        "k8s": 280,
+        "bestfit": 258
+      }
+    }
+  ]
+}
