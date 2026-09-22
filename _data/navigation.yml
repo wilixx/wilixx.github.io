@@ -35,3 +35,5 @@ main:
         url: /demos/carelab-in-orbit-computing/
       - title: "CARELab Widest-Inter Satellite Routing"
         url: /demos/carelab-widest-routing/
+      - title: "CARELab Satellite Resilience Analysis"
+        url: /demos/carelab-satellite-resilience/
