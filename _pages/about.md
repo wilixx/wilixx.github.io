@@ -16,6 +16,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 {% include carelab-project-card.html %}
 
 {% include carelab-satellite-cards.html %}
+{% include carelab-resilience-card.html %}
 
 News
 ======
