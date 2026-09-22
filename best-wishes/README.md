@@ -19,3 +19,4 @@ fallback when WebGL is unavailable.
 
 The surrounding academic homepage is unchanged except for a small leaf link
 next to Project Demo, opening this standalone page in a new tab.
+

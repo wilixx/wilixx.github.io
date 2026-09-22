@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142523">
+  <meta name="description" content="A quiet landscape for a wish, a thought, and a small moment of calm.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Best Wishes — A quiet moment</title>
+  <link rel="icon" href="./leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body data-mode="mountain">
+  <a class="skip-link" href="#panel">Skip to experience</a>
+  <header class="topbar">
+    <button class="brand" data-open="mountain"><span class="brand-mark" aria-hidden="true">✧</span><span>Best Wishes</span></button>
+    <div class="tools"><button id="sound" aria-pressed="false">Sound off</button><button id="motion" aria-pressed="true">Motion on</button><button id="language" lang="zh-CN">中文</button></div>
+  </header>
+  <main id="world-stage">
+    <div class="landscape" aria-hidden="true"></div>
+    <div id="scene-mount"></div>
+    <div id="scene-labels"></div>
+    <div id="bagua-widget" hidden></div>
+    <button id="lucky-cat-widget" aria-label="A small gift for you" title="A small gift for you"><span>Take a little joy</span></button>
+    <div class="world-tools"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="rotate-world" aria-pressed="false" aria-label="Auto rotate">↻</button><button id="reset-world" aria-label="Reset view">⌖</button></div>
+    <div class="scene-note"><span class="status-dot"></span><span id="navigation-hint">Drag to explore · Scroll to zoom</span></div>
+    <section id="panel" tabindex="-1" aria-labelledby="panel-title"></section>
+    <nav id="journeys" aria-label="Experiences"></nav>
+  </main>
+  <footer><span id="footer-note">A little space to pause.</span><button id="about">About & privacy</button></footer>
+  <dialog id="gift-dialog" aria-labelledby="gift-title"><button class="close" data-close="gift-dialog" aria-label="Close">×</button><p class="eyebrow" id="gift-eyebrow">SOMETHING TO KEEP</p><h2 id="gift-title">A small wish for you</h2><canvas id="gift-canvas" role="img" aria-label="Your keepsake"></canvas><p id="gift-caption"></p><div class="button-row"><button id="another-gift">Another</button><button id="save-gift" class="primary">Save image</button></div></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><button class="close" data-close="about-dialog" aria-label="Close">×</button><h2 id="about-title">About this little place</h2><div id="about-copy"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">Please enable JavaScript to explore. / 请开启 JavaScript 后体验。</p></noscript>
+</body>
+</html>
