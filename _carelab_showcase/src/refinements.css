@@ -1,0 +1,23 @@
+.resource-row .bar-track i{display:block}
+.server-grid .stranded{background:#1d2a2b;border-color:#685136}
+.server-grid .stranded span{color:#bdd5de}
+.server-grid small{color:#87a5b4}
+.server-grid .used{background:#12382e}
+.pattern-card .radar{margin-top:8px}
+body{font-family:'DM Sans','Segoe UI','Microsoft YaHei',sans-serif}
+h1,h2,h3,h4,.brand b,.method-card strong,.value-cards strong,.number-badge strong{font-family:'Manrope','Segoe UI','Microsoft YaHei',sans-serif}
+.modal-backdrop:focus-visible{outline:none}
+.presentation-mode .workspace{display:block}
+.presentation-mode .sidebar{display:none}
+.presentation-mode .main{max-width:1800px;padding-top:18px;padding-bottom:10px}
+.presentation-mode .page-heading .eyebrow,.presentation-mode .page-heading p{display:none}
+.presentation-mode .page-heading{margin-bottom:16px}
+.presentation-mode .page-heading h1{font-size:27px}
+.presentation-mode .scene-host{height:calc(100dvh - 390px);min-height:280px}
+.presentation-mode .insight-row,.presentation-mode .main-footer,.presentation-mode .arena-bottom{display:none}
+.presentation-mode .top-slogan{display:none}
+.presentation-nav{display:flex;align-items:center;gap:6px;margin-left:auto;margin-right:15px}
+.presentation-nav button{display:flex;gap:7px;align-items:center;font-size:12px;background:transparent;border-color:transparent;padding:8px 10px;color:#83a1b5}
+.presentation-nav button.active{color:#79e3c2;background:#17403255}
+@media(max-width:1000px){.presentation-nav{gap:1px;margin-right:5px}.presentation-nav button{padding:7px}.presentation-nav button span{display:none}}
+@media(max-width:640px){.presentation-nav{gap:0;margin:0 0 0 auto}.presentation-nav button{padding:5px}.presentation-nav button svg{width:14px;height:14px}.presentation-mode .header-actions{margin-left:0}.presentation-mode .brand small{display:none}.presentation-mode .brand b{font-size:13px}.presentation-mode .brand-mark{display:none}}

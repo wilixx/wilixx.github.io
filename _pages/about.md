@@ -13,6 +13,8 @@ redirect_from:
 Life is a hard but precious journey. **If you are interested to collaborate with him or exchange ideas, please feel free to email him** (bqguo@stu.xidian.edu.cn) **or add his wechat** (ID: QuantifyingAll). He always enjoys connecting with and learning from different people. **Also, feel free to call him for a ~~bad~~goodminton game anytime** ^_^! 
 
 
+{% include carelab-project-card.html %}
+
 News
 ======
 <!-- * [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->

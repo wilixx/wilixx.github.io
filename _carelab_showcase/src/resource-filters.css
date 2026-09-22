@@ -1,0 +1,7 @@
+.live-chart-heading .resource-filters{display:flex;align-items:center;gap:4px 9px;flex-wrap:wrap;min-width:0}
+.live-chart-heading .resource-filter{display:inline-flex;align-items:center;gap:4px;margin:0;padding:2px 0;font-size:inherit;line-height:1.2;letter-spacing:0;white-space:nowrap;cursor:pointer;user-select:none;color:#b4c9d8}
+.live-chart-heading .resource-filter input[type=checkbox]{width:11px;height:11px;min-width:11px;margin:0;padding:0;border-radius:2px;accent-color:var(--resource-color);cursor:pointer}
+.live-chart-heading .resource-filter span{color:var(--resource-color);transition:opacity .15s}
+.live-chart-heading .resource-filter.is-hidden span{opacity:.45}
+.live-chart-heading .resource-filter:hover span{opacity:1}
+.live-chart-heading .resource-filter:focus-within{border-radius:3px;outline:1px solid #7ccdc0;outline-offset:3px}
