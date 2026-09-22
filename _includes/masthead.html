@@ -24,7 +24,7 @@
                       {% else %}
                         {% assign child_domain = base_path %}
                       {% endif %}
-                      <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
+                      <a href="{{ child_domain }}{{ child.url }}"{% if link.title == "Project Demo" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ child.title }}</a>
                     {% endfor %}
                   </div>
                 </details>
