@@ -29,6 +29,8 @@ main:
 
   - title: "Project Demo"
     children:
+      - title: "CARELab Satellite SemCom"
+        url: /demos/carelab-satellite-semcom/
       - title: "CARELab Green Cloud"
         url: /demos/carelab-green-cloud/
       - title: "CARELab In-orbit Computing"

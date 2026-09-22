@@ -13,6 +13,8 @@ redirect_from:
 Life is a hard but precious journey. **If you are interested to collaborate with him or exchange ideas, please feel free to email him** (bqguo@stu.xidian.edu.cn) **or add his wechat** (ID: QuantifyingAll). He always enjoys connecting with and learning from different people. **Also, feel free to call him for a ~~bad~~goodminton game anytime** ^_^! 
 
 
+{% include carelab-semcom-card.html %}
+
 {% include carelab-project-card.html %}
 
 {% include carelab-satellite-cards.html %}
