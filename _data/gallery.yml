@@ -1,4 +1,5 @@
 # Add future entries using the same fields; the page sorts entries by date.
+# An empty date places undated earlier work last; display_date is shown as plain text.
 entries:
   - id: china-communications-2026
     date: "2026-08-28"
@@ -17,3 +18,53 @@ entries:
         caption: "Appointment certificate · 2026–2028"
         width: 1246
         height: 1066
+  - id: xidian-tencent-scholarships
+    date: "2025"
+    display_date: "2024 & 2025"
+    date_is_label: true
+    category: "Recognition"
+    title: "Xidian–Tencent Scholarships"
+    summary: "Received the Xidian–Tencent Scholarship in both 2024 and 2025."
+    photo_layout: "certificate"
+    photos:
+      - path: "/images/gallery-xidian-tencent-scholarships-2024-2025.jpg"
+        alt: "Two Xidian University Tencent Scholarship certificates, recognizing the 2024 and 2025 awards."
+        caption: "Scholarship certificates · 2024 and 2025"
+        width: 1279
+        height: 1706
+  - id: color-vision-legacy-work
+    date: ""
+    display_date: "Earlier work"
+    date_is_label: true
+    category: "Research archive"
+    title: "Legacy Work on Color Vision Deficiency"
+    summary: "Selected visual materials from earlier research on human color vision: numerical test patterns and exploratory analyses of color-pair differences."
+    photo_layout: "research"
+    photos:
+      - path: "/images/gallery-color-vision-pattern-01.jpg"
+        alt: "A square array of colored circles containing numerals, from earlier color vision research."
+        caption: "Color vision pattern · 01"
+        width: 800
+        height: 800
+      - path: "/images/gallery-color-vision-pattern-02.jpg"
+        alt: "A second numerical test pattern using different colors for the circles and numerals."
+        caption: "Color vision pattern · 02"
+        width: 800
+        height: 800
+      - path: "/images/gallery-color-vision-pattern-03.jpg"
+        alt: "A third numerical test pattern with varied colors across an array of circles and numerals."
+        caption: "Color vision pattern · 03"
+        width: 800
+        height: 800
+      - path: "/images/gallery-color-vision-comparison.jpg"
+        alt: "An exploratory chart comparing three series labeled Protanope, Deuteranope, and Tritanope."
+        caption: "Exploratory comparison"
+        layout: "wide"
+        width: 1366
+        height: 670
+      - path: "/images/gallery-color-vision-color-pairs.jpg"
+        alt: "A chart showing the proportion of color pairs against alpha, with series for deuteranopia, protanopia, and tritanopia."
+        caption: "Color-pair analysis"
+        layout: "wide"
+        width: 1366
+        height: 670

@@ -13,14 +13,14 @@ author_profile: true
   {% for entry in gallery_entries %}
   <article class="gallery-entry" aria-labelledby="gallery-{{ entry.id }}">
     <div class="gallery-entry__body">
-      <p class="gallery-entry__meta">{{ entry.category }} <span aria-hidden="true">·</span> <time datetime="{{ entry.date }}">{{ entry.display_date }}</time></p>
+      <p class="gallery-entry__meta">{{ entry.category }} <span aria-hidden="true">·</span> {% if entry.date_is_label %}{{ entry.display_date }}{% else %}<time datetime="{{ entry.date }}">{{ entry.display_date }}</time>{% endif %}</p>
       <h2 id="gallery-{{ entry.id }}">{{ entry.title }}</h2>
       <p class="gallery-entry__summary">{{ entry.summary }}</p>
     </div>
-    <div class="gallery-entry__photos" aria-label="Related photographs">
+    <div class="gallery-entry__photos{% if entry.photo_layout %} gallery-entry__photos--{{ entry.photo_layout }}{% endif %}" aria-label="Related images">
       {% for photo in entry.photos %}
-      <figure class="gallery-photo">
-        <a class="gallery-photo__link" href="{{ base_path }}{{ photo.path }}" target="_blank" rel="noopener noreferrer" aria-label="{{ photo.caption | escape }} — open full photograph in a new tab">
+      <figure class="gallery-photo{% if photo.layout %} gallery-photo--{{ photo.layout }}{% endif %}">
+        <a class="gallery-photo__link" href="{{ base_path }}{{ photo.path }}" target="_blank" rel="noopener noreferrer" aria-label="{{ photo.caption | escape }} — open full image in a new tab">
           <img src="{{ base_path }}{{ photo.path }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
         </a>
         <figcaption>{{ photo.caption }}</figcaption>
