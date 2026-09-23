@@ -1,0 +1,113 @@
+/* Gallery styles are scoped so the surrounding academic theme stays intact. */
+.gallery-intro {
+  margin: -.35em 0 2em;
+  color: #687277;
+  font-size: .9em;
+  line-height: 1.7;
+}
+.gallery-list {
+  display: grid;
+  gap: 28px;
+  margin: 0 0 2.5em;
+}
+.gallery-entry {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce3df;
+  border-radius: 9px;
+  background: #fff;
+}
+.gallery-entry__body {
+  padding: 28px 30px 24px;
+}
+.gallery-entry .gallery-entry__meta {
+  margin: 0 0 12px;
+  color: #647973;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+.gallery-entry__meta span {
+  padding: 0 5px;
+  color: #a3aeac;
+}
+.gallery-entry h2 {
+  margin: 0 0 13px;
+  padding: 0;
+  border: 0;
+  color: #364449;
+  font-size: clamp(21px, 2.15vw, 26px);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.015em;
+}
+.gallery-entry .gallery-entry__summary {
+  max-width: 720px;
+  margin: 0;
+  color: #5d686e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.gallery-entry__photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+  padding: 0 22px 24px;
+}
+.gallery-photo {
+  display: block;
+  min-width: 0;
+  margin: 0;
+}
+.gallery-photo__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 5 / 4;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e9e6;
+  border-radius: 5px;
+  background: #f7f8f5;
+  transition: border-color .15s ease;
+}
+.gallery-photo__link:hover {
+  border-color: #9cafa5;
+}
+.gallery-photo__link:focus-visible {
+  outline: 2px solid #62847c;
+  outline-offset: 3px;
+}
+.gallery-photo__link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+.gallery-photo figcaption {
+  margin: 10px 0 0;
+  color: #687277;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .gallery-intro { margin-bottom: 1.6em; }
+  .gallery-entry__body { padding: 23px 21px 21px; }
+  .gallery-entry__photos {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 0 15px 21px;
+  }
+  .gallery-entry h2 { font-size: 22px; }
+  .gallery-photo__link { padding: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-photo__link { transition: none; }
+}
