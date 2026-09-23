@@ -27,6 +27,9 @@ main:
   # - title: "Notebooks"
   #   url: /notebooks/
 
+  - title: "Research"
+    url: /research/
+
   - title: "Project Demo"
     children:
       - title: "CARELab Satellite SemCom"
