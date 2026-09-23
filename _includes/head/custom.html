@@ -38,3 +38,11 @@
 <!-- end custom head snippets -->
 
 <link rel="stylesheet" href="{{ base_path }}/assets/css/carelab-projects.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academic-contact.css">
+<script src="{{ base_path }}/assets/js/academic-contact.js" defer></script>
+{% if page.url == "/gallery/" %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/gallery.css">
+{% endif %}
+{% if page.url == "/talks/" or page.collection == "talks" %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/talks.css">
+{% endif %}
