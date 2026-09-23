@@ -46,3 +46,8 @@
 {% if page.url == "/talks/" or page.collection == "talks" %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/talks.css">
 {% endif %}
+
+{% if page.url == "/" %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/visitor-stats.css">
+<script src="{{ base_path }}/assets/js/visitor-stats.js" defer></script>
+{% endif %}

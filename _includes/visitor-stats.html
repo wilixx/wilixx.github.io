@@ -1,0 +1,31 @@
+{% assign visitor_analytics = site.data.visitor_analytics %}
+{% assign visitor_stats_url = visitor_analytics.share_url | default: "" | strip %}
+{% assign visitor_stats_embed_url = visitor_analytics.embed_url | default: visitor_stats_url | strip %}
+{% assign visitor_stats_started_on = visitor_analytics.started_on | default: "" | strip %}
+{% assign visitor_stats_scheme = visitor_stats_url | slice: 0, 8 %}
+{% assign visitor_stats_ready = false %}
+{% if visitor_analytics.enabled == true and visitor_stats_url != "" and visitor_stats_scheme == "https://" %}
+  {% assign visitor_stats_ready = true %}
+{% endif %}
+{% if visitor_stats_ready %}
+<section class="visitor-stats" aria-labelledby="visitor-stats-title" data-visitor-stats="configured">
+  <div class="visitor-stats__heading">
+    <h2 id="visitor-stats-title">Site visits</h2>
+    <a class="visitor-stats__open" href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Open statistics <span aria-hidden="true">↗</span><span class="visitor-stats__sr-only"> (opens in a new tab)</span></a>
+  </div>
+  <p class="visitor-stats__description">Views include repeat visits; visitors are estimates. Free analytics retains the last six months.</p>
+  <div class="visitor-stats__frame-wrap">
+    <iframe class="visitor-stats__frame" src="{{ visitor_stats_embed_url | escape }}" title="Site visits: public read-only analytics dashboard" width="100%" height="740" loading="lazy" referrerpolicy="no-referrer"></iframe>
+  </div>
+  <p class="visitor-stats__fallback" data-visitor-stats-status>If the dashboard does not appear, use <a href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Open statistics<span class="visitor-stats__sr-only"> (opens in a new tab)</span></a>.</p>
+  <p class="visitor-stats__note">Locations are approximate. {% if visitor_stats_started_on != "" %}<span data-visitor-stats-start="{{ visitor_stats_started_on | escape }}" hidden>Recorded since <time></time>.</span>{% endif %}</p>
+</section>
+{% elsif site.visitor_analytics_preview == true %}
+<section class="visitor-stats visitor-stats--preview" aria-labelledby="visitor-stats-title" data-visitor-stats="preview" hidden>
+  <div class="visitor-stats__heading">
+    <h2 id="visitor-stats-title">Site visits</h2>
+    <span class="visitor-stats__state">Not connected</span>
+  </div>
+  <p class="visitor-stats__description">Analytics connection is pending. No visitor data is shown.</p>
+</section>
+{% endif %}

@@ -1,0 +1,8 @@
+# Public configuration only. Never put an API key, password, or admin token here.
+# Enable after the analytics site and its public dashboard have been configured.
+enabled: true
+website_id: '05782958-feaf-40c1-9d0f-9d19e9bcf43d'
+script_url: 'https://cloud.umami.is/script.js'
+share_url: 'https://cloud.umami.is/share/C3lQDFm68ygOW7B6'
+embed_url: 'https://cloud.umami.is/analytics/eu/share/C3lQDFm68ygOW7B6'
+started_on: '2026-09-23'
