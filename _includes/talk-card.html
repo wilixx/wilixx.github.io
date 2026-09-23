@@ -1,0 +1,19 @@
+<article class="talk-card{% if post.featured %} talk-card--featured{% endif %}" aria-labelledby="talk-{{ post.date | date: '%Y-%m-%d' }}">
+  {% if post.card_image %}
+  <a class="talk-card__image" href="{{ base_path }}{{ post.card_image }}" target="_blank" rel="noopener noreferrer" aria-label="View the full poster for {{ post.card_title | escape }} (opens in a new tab)">
+    <img src="{{ base_path }}{{ post.card_image }}" alt="{{ post.card_image_alt | escape }}" width="{{ post.image_width }}" height="{{ post.image_height }}" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+  <div class="talk-card__body">
+    <p class="talk-card__meta">{{ post.event }} <span aria-hidden="true">·</span> {{ post.display_date }}</p>
+    <h2 id="talk-{{ post.date | date: '%Y-%m-%d' }}"><a href="{{ base_path }}{{ post.url }}">{{ post.card_title | default: post.title }}</a></h2>
+    <p class="talk-card__location">{{ post.venue }}{% unless post.venue contains post.location %} · {{ post.location }}{% endunless %}</p>
+    <p class="talk-card__summary">{{ post.card_summary }}</p>
+    <div class="talk-card__links">
+      {% if post.paper_url %}<a href="{{ post.paper_url }}" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>{% else %}<a href="{{ base_path }}{{ post.url }}">Talk notes <span aria-hidden="true">→</span></a>{% endif %}
+      {% if post.details_url %}<a class="talk-card__secondary" href="{{ post.details_url }}" target="_blank" rel="noopener noreferrer">Event announcement <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+    {% unless post.featured %}{% if post.gallery %}{% include talk-gallery.html photos=post.gallery %}{% endif %}{% endunless %}
+  </div>
+  {% if post.featured and post.gallery %}{% include talk-gallery.html photos=post.gallery %}{% endif %}
+</article>

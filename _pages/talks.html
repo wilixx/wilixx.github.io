@@ -5,12 +5,18 @@ permalink: /talks/
 author_profile: true
 ---
 
+{% include base_path %}
+<p class="talks-intro">Selected presentations and seminars, with a few moments from the conversations around them.</p>
+
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+<p><a href="{{ base_path }}/talkmap.html">View the talk map</a></p>
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<div class="talks-list">
+  {% assign ordered_talks = site.talks | sort: 'date' | reverse %}
+  {% for post in ordered_talks %}
+    {% unless post.hide_from_talks %}
+      {% include talk-card.html %}
+    {% endunless %}
+  {% endfor %}
+</div>

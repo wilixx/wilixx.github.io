@@ -15,9 +15,19 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">{{ author.name }} <button class="academic-contact-trigger" type="button" aria-label="Connect on WeChat" aria-haspopup="dialog" aria-controls="academic-contact-dialog" title="Academic conversations" hidden><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M19.5 10.5c0 4-3.4 7-7.5 7-1.1 0-2.2-.2-3.1-.6L5 18l1-3.4a6.5 6.5 0 0 1-1.5-4.1c0-4 3.4-7 7.5-7s7.5 3 7.5 7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="9" cy="10.5" r=".9" fill="currentColor"/><circle cx="15" cy="10.5" r=".9" fill="currentColor"/></svg></button></h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
+
+  <dialog class="academic-contact-dialog" id="academic-contact-dialog" aria-labelledby="academic-contact-title" aria-describedby="academic-contact-description">
+    <button class="academic-contact-close" type="button" aria-label="Close WeChat dialog" autofocus>×</button>
+    <p class="academic-contact-eyebrow">ACADEMIC CONVERSATIONS</p>
+    <h2 id="academic-contact-title">Let's connect.</h2>
+    <p id="academic-contact-description">Scan the code to add me on WeChat.</p>
+    <img class="academic-contact-qr" src="{{ base_path }}/images/wechat-academic.png" alt="Binquan Guo's WeChat contact QR code" width="410" height="410" loading="lazy">
+    <p class="academic-contact-note">A short note with your name and research interests is appreciated.</p>
+    <a class="academic-contact-save" href="{{ base_path }}/images/wechat-academic.png" download="binquan-guo-wechat.png">Save QR code</a>
+  </dialog>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>

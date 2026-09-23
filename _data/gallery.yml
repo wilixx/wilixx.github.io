@@ -1,0 +1,19 @@
+# Add future entries using the same fields; the page sorts entries by date.
+entries:
+  - id: china-communications-2026
+    date: "2026-08-28"
+    display_date: "August 2026"
+    category: "Academic service"
+    title: "China Communications Youth Editorial Board"
+    summary: "Appointed to the Youth Editorial Board of China Communications for the 2026–2028 term. Looking forward to contributing to the journal and learning from colleagues."
+    photos:
+      - path: "/images/china-communications-appointment-cover.jpg"
+        alt: "The blue cover of a China Communications appointment certificate."
+        caption: "Appointment folder"
+        width: 1238
+        height: 988
+      - path: "/images/china-communications-appointment-certificate.jpg"
+        alt: "China Communications Youth Editorial Board appointment certificate for the term from August 28, 2026, to August 27, 2028."
+        caption: "Appointment certificate · 2026–2028"
+        width: 1246
+        height: 1066

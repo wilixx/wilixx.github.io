@@ -39,3 +39,6 @@ main:
         url: /demos/carelab-widest-routing/
       - title: "CARELab Satellite Resilience Analysis"
         url: /demos/carelab-satellite-resilience/
+
+  - title: "Gallery"
+    url: /gallery/

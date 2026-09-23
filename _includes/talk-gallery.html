@@ -1,0 +1,10 @@
+<div class="talk-gallery{% if include.photos.size == 2 %} talk-gallery--pair{% endif %}" aria-label="Event photographs">
+  {% for photo in include.photos %}
+  <figure>
+    <a href="{{ base_path }}{{ photo.path }}" target="_blank" rel="noopener noreferrer" aria-label="{{ photo.caption | escape }} — open full photograph in a new tab">
+      <img src="{{ base_path }}{{ photo.path }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async"{% if photo.position %} style="object-position: {{ photo.position }}"{% endif %}>
+    </a>
+    <figcaption>{{ photo.caption }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>

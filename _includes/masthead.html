@@ -4,7 +4,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button aria-label="Toggle navigation"><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
@@ -15,7 +15,6 @@
             {% endif %}
             {% if link.children %}
               <li class="masthead__menu-item">
-                {% if link.title == "Project Demo" %}<div class="best-wishes-nav-pair">{% endif %}
                 <details class="carelab-project-nav">
                   <summary>{{ link.title }} <span class="carelab-project-nav__chevron" aria-hidden="true"></span></summary>
                   <div class="carelab-project-nav__menu">
@@ -29,12 +28,15 @@
                     {% endfor %}
                   </div>
                 </details>
-                {% if link.title == "Project Demo" %}
+              </li>
+            {% elsif link.title == "Gallery" %}
+              <li class="masthead__menu-item">
+                <div class="best-wishes-nav-pair">
+                  <a class="academic-gallery-entry" href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
                   <a class="best-wishes-entry" href="{{ base_path }}/best-wishes/" target="_blank" rel="noopener noreferrer" title="Best Wishes" aria-label="Best Wishes (opens in a new tab)">
                     <svg width="17" height="17" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M26 5C10 2 4 11 8 20c9 5 19-1 18-15Z"/><path fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" d="m5 27 16-16m-8 8v-7m0 7 7 1"/></svg>
                   </a>
                 </div>
-                {% endif %}
               </li>
             {% else %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
