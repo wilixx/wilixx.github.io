@@ -9,23 +9,28 @@
 {% endif %}
 {% if visitor_stats_ready %}
 <section class="visitor-stats" aria-labelledby="visitor-stats-title" data-visitor-stats="configured">
-  <div class="visitor-stats__heading">
-    <h2 id="visitor-stats-title">Site visits</h2>
-    <a class="visitor-stats__open" href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Open statistics <span aria-hidden="true">↗</span><span class="visitor-stats__sr-only"> (opens in a new tab)</span></a>
-  </div>
-  <p class="visitor-stats__description">Views include repeat visits; visitors are estimates. Free analytics retains the last six months.</p>
-  <div class="visitor-stats__frame-wrap">
-    <iframe class="visitor-stats__frame" src="{{ visitor_stats_embed_url | escape }}" title="Site visits: public read-only analytics dashboard" width="100%" height="740" loading="lazy" referrerpolicy="no-referrer"></iframe>
-  </div>
-  <p class="visitor-stats__fallback" data-visitor-stats-status>If the dashboard does not appear, use <a href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Open statistics<span class="visitor-stats__sr-only"> (opens in a new tab)</span></a>.</p>
-  <p class="visitor-stats__note">Locations are approximate. {% if visitor_stats_started_on != "" %}<span data-visitor-stats-start="{{ visitor_stats_started_on | escape }}" hidden>Recorded since <time></time>.</span>{% endif %}</p>
+  <details class="visitor-stats__details">
+    <summary class="visitor-stats__summary">
+      <svg class="visitor-stats__globe" width="13" height="13" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7.5"/><ellipse cx="10" cy="10" rx="3.4" ry="7.5"/><path d="M2.5 10h15"/></svg>
+      <span id="visitor-stats-title">Site visits</span>
+      <svg class="visitor-stats__chevron" width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true" focusable="false"><path d="m3 4.5 3 3 3-3"/></svg>
+    </summary>
+    <div class="visitor-stats__panel">
+      <div class="visitor-stats__frame-wrap" data-visitor-stats-frame data-src="{{ visitor_stats_embed_url | escape }}" data-frame-width="1100" data-frame-height="1100" hidden></div>
+      <div class="visitor-stats__actions">
+        <button class="visitor-stats__back" type="button" data-visitor-stats-reset title="Show all pages for the last 24 hours" hidden>← Back to overview</button>
+        <button type="button" data-visitor-stats-close hidden>Collapse ↑</button>
+      </div>
+      <p class="visitor-stats__fallback" data-visitor-stats-status><span data-visitor-stats-message>Overview resets page filters and the date to the last 24 hours. </span><a href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Full-size view ↗<span class="visitor-stats__sr-only"> (opens in a new tab)</span></a></p>
+      <p class="visitor-stats__note">Views include repeat visits; visitors are estimates. Free analytics retains six months. Locations are approximate. {% if visitor_stats_started_on != "" %}<span data-visitor-stats-start="{{ visitor_stats_started_on | escape }}" hidden>Recorded since <time></time>.</span>{% endif %}</p>
+    </div>
+  </details>
+  <a class="visitor-stats__open" href="{{ visitor_stats_url | escape }}" target="_blank" rel="noopener noreferrer">Open statistics <span aria-hidden="true">↗</span><span class="visitor-stats__sr-only"> (opens in a new tab)</span></a>
 </section>
 {% elsif site.visitor_analytics_preview == true %}
 <section class="visitor-stats visitor-stats--preview" aria-labelledby="visitor-stats-title" data-visitor-stats="preview" hidden>
-  <div class="visitor-stats__heading">
-    <h2 id="visitor-stats-title">Site visits</h2>
-    <span class="visitor-stats__state">Not connected</span>
-  </div>
-  <p class="visitor-stats__description">Analytics connection is pending. No visitor data is shown.</p>
+  <span id="visitor-stats-title">Site visits</span>
+  <span class="visitor-stats__state">Not connected</span>
+  <p class="visitor-stats__note">Analytics connection is pending. No visitor data is shown.</p>
 </section>
 {% endif %}
