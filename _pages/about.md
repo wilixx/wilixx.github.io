@@ -141,3 +141,5 @@ For more info
 > 随缘不变，顺其自然。Let it be. 
 
 
+
+{% include visitor-stats.html %}
