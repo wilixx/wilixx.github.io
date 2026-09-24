@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="cryptography-title cryptography-desc">
+  <title id="cryptography-title">Learning and cryptographic systems</title>
+  <desc id="cryptography-desc">A simple lock connects two small networks, illustrating academic inquiry into cryptographic systems and networks without implying any security performance.</desc>
+  <rect width="480" height="260" fill="#fff"/>
+  <g fill="none" stroke="#647b89" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M76 62 58 146 112 208 140 124 76 62M58 146 140 124M140 124 184 148"/>
+    <path d="M296 148 360 50 418 96 390 194 334 217 296 148M360 50 390 194M418 96 296 148"/>
+    <path d="M76 62 112 208M334 217 418 96" stroke="#e7edf0"/>
+    <path d="M211 104V81a29 29 0 0 1 58 0v23" stroke="#405968" stroke-width="4"/>
+    <rect x="184" y="104" width="112" height="90" rx="13" fill="#fff" stroke="#405968" stroke-width="4"/>
+    <circle cx="240" cy="140" r="7" stroke="#708b78"/>
+    <path d="M240 147v16" stroke="#708b78"/>
+  </g>
+  <g fill="#fff" stroke="#647b89" stroke-width="3.5">
+    <circle cx="76" cy="62" r="10"/>
+    <circle cx="58" cy="146" r="10"/>
+    <circle cx="112" cy="208" r="10" stroke="#708b78"/>
+    <circle cx="140" cy="124" r="9"/>
+    <circle cx="360" cy="50" r="10"/>
+    <circle cx="418" cy="96" r="10" stroke="#c5976c"/>
+    <circle cx="390" cy="194" r="10"/>
+    <circle cx="334" cy="217" r="9" stroke="#708b78"/>
+  </g>
+</svg>

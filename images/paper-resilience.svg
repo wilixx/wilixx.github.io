@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="resilience-title resilience-desc">
+  <title id="resilience-title">A failed network node and an alternative route</title>
+  <desc id="resilience-desc">A crossed-out node interrupts an upper route. A green path through lower neighboring nodes illustrates rerouting around the failure. Faint links show the surrounding network; no recovery rate or time is implied.</desc>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <g fill="none" stroke="#cbd6dc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m31 105 61-57 75 0 58 40 65 17M31 105l63 48 108 0 88-48M92 48l2 105 73-105 35 105 23-65M94 153l131-65"/></g>
+  <path d="m92 48 75 0 58 40" fill="none" stroke="#c5976c" stroke-width="3" stroke-dasharray="5 7"/>
+  <path d="m31 105 63 48h108l88-48" fill="none" stroke="#708b78" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#647b89" stroke-width="3"><circle cx="31" cy="105" r="9"/><circle cx="92" cy="48" r="8"/><circle cx="225" cy="88" r="8"/><circle cx="290" cy="105" r="9"/></g>
+  <g fill="#708b78" stroke="#fff" stroke-width="3"><circle cx="94" cy="153" r="9"/><circle cx="202" cy="153" r="9"/></g>
+  <circle cx="167" cy="48" r="15" fill="#fff" stroke="#c5976c" stroke-width="3"/>
+  <path d="m161 42 12 12m0-12-12 12" stroke="#c5976c" stroke-width="3" stroke-linecap="round"/>
+  <path d="m145 148 8 5-8 5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

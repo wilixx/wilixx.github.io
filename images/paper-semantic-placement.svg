@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="semantic-placement-title semantic-placement-desc">
+  <title id="semantic-placement-title">Semantic encoding and decoding near network endpoints</title>
+  <desc id="semantic-placement-desc">A multi-hop satellite route has an encoder near the sending end and a decoder near the receiving end. Parallel incoming and outgoing strokes surround a single semantic route. The arrangement illustrates the fixed-hop placement question studied in the paper.</desc>
+  <defs><g id="placement-satellite" fill="#fff" stroke="#647b89" stroke-width="3" stroke-linejoin="round"><rect x="-6" y="-7" width="12" height="14" rx="2"/><path d="M-6-5h-12V5h12M6-5h12V5H6"/></g></defs>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <path d="M37 149Q160 108 283 149" fill="none" stroke="#e7edf0" stroke-width="2"/>
+  <g fill="none" stroke="#8a9ca5" stroke-width="2.5" stroke-linecap="round"><path d="m35 138 32-56m-24 58 32-55m202 53-32-56m24 58-32-55"/></g>
+  <path d="M76 70h168" fill="none" stroke="#708b78" stroke-width="5" stroke-linecap="round"/>
+  <path d="m157 65 8 5-8 5" fill="none" stroke="#708b78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#placement-satellite" x="76" y="70"/><use href="#placement-satellite" x="132" y="70"/><use href="#placement-satellite" x="188" y="70"/><use href="#placement-satellite" x="244" y="70"/>
+  <g fill="#fff" stroke="#647b89" stroke-width="3" stroke-linejoin="round"><rect x="22" y="139" width="29" height="21" rx="3"/><path d="M36.5 160v9m-10 0h20"/><rect x="269" y="139" width="29" height="21" rx="3"/><path d="M283.5 160v9m-10 0h20"/></g>
+  <rect x="64" y="93" width="24" height="24" rx="6" fill="#708b78"/><rect x="232" y="93" width="24" height="24" rx="6" fill="#c5976c"/>
+  <g fill="#fff" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="600"><text x="76" y="110">E</text><text x="244" y="110">D</text></g>
+  <g fill="#d8e2e7"><circle cx="114" cy="141" r="3"/><circle cx="160" cy="131" r="3"/><circle cx="206" cy="141" r="3"/></g>
+</svg>

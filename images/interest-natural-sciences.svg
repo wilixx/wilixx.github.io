@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="natural-sciences-title natural-sciences-desc">
+  <title id="natural-sciences-title">Reading and inquiry across the natural sciences</title>
+  <desc id="natural-sciences-desc">A leaf, a simple molecular diagram and a question mark above an open book illustrate exploration of the natural sciences through reading and inquiry.</desc>
+  <rect width="480" height="260" fill="#fff"/>
+  <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M130 124c-23-13-32-36-22-68 37 4 61 29 46 56-6 11-14 15-24 12Z" stroke="#708b78"/>
+    <path d="M115 72c9 22 21 40 39 60M125 93l15-4M136 112l-2-17" stroke="#708b78"/>
+    <path d="m330 64 43 18 9 43-38 19-31-34 17-46ZM330 64l14 80M373 82l-60 28" stroke="#647b89"/>
+    <path d="M225 70c0-22 33-28 40-9 8 23-24 22-24 42" stroke="#405968" stroke-width="4"/>
+    <path d="M240 169c-28-18-69-25-122-17v64c53-8 94-1 122 17 28-18 69-25 122-17v-64c-53-8-94-1-122 17Z" stroke="#647b89"/>
+    <path d="M240 169v64" stroke="#405968"/>
+    <path d="M136 171c31-3 60 1 86 12M136 189c31-3 60 1 86 12M258 183c26-11 55-15 86-12M258 201c26-11 55-15 86-12" stroke="#e7edf0"/>
+  </g>
+  <g fill="#fff" stroke="#647b89" stroke-width="3.5">
+    <circle cx="330" cy="64" r="8"/>
+    <circle cx="373" cy="82" r="8" stroke="#708b78"/>
+    <circle cx="382" cy="125" r="8"/>
+    <circle cx="344" cy="144" r="8"/>
+    <circle cx="313" cy="110" r="8"/>
+  </g>
+  <circle cx="241" cy="119" r="3.5" fill="#c5976c"/>
+</svg>
