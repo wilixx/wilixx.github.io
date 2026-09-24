@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="widest-routing-title widest-routing-desc">
+  <title id="widest-routing-title">Maximum-capacity routing with a delay bound</title>
+  <desc id="widest-routing-desc">Paths of different link widths connect the same endpoints. A thicker green route indicates the selected high-capacity path; a small clock indicates the end-to-end delay constraint. Widths are illustrative rather than measured capacities.</desc>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <g fill="none" stroke="#b4c3cb" stroke-linecap="round" stroke-linejoin="round"><path d="m29 102 59-56h137l66 56" stroke-width="3"/><path d="M29 102h262" stroke-width="2"/><path d="m88 46 68 56 70 55M225 46l-69 56-68 55" stroke-width="2"/></g>
+  <path d="m29 102 59 55h138l65-55" fill="none" stroke="#708b78" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#647b89" stroke-width="3"><circle cx="29" cy="102" r="10"/><circle cx="291" cy="102" r="10"/><circle cx="88" cy="46" r="7"/><circle cx="225" cy="46" r="7"/><circle cx="156" cy="102" r="7"/></g>
+  <g fill="#708b78" stroke="#fff" stroke-width="3"><circle cx="88" cy="157" r="9"/><circle cx="226" cy="157" r="9"/></g>
+  <path d="m153 151 10 6-10 6" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="280" cy="31" r="13" fill="#fff" stroke="#c5976c" stroke-width="2.5"/><path d="M280 23v9l6 3" fill="none" stroke="#c5976c" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

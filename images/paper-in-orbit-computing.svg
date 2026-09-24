@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="computing-title computing-desc">
+  <title id="computing-title">Joint selection of an in-orbit computing node and a route</title>
+  <desc id="computing-desc">A selected route connects two ground terminals through satellites and a highlighted processor in orbit. A pale alternate route indicates that the computing node and communication path are chosen together.</desc>
+  <defs><g id="computing-satellite" fill="#fff" stroke="#647b89" stroke-width="3" stroke-linejoin="round"><rect x="-6" y="-7" width="12" height="14" rx="2"/><path d="M-6-5h-12V5h12M6-5h12V5H6"/></g></defs>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <path d="m36 149 121-36 127 36M82 78l75 35 81-35" fill="none" stroke="#d7e1e6" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="m36 149 46-71 78-34 78 34 46 71" fill="none" stroke="#708b78" stroke-width="4.5" stroke-linejoin="round"/>
+  <use href="#computing-satellite" x="82" y="78"/><use href="#computing-satellite" x="238" y="78"/><use href="#computing-satellite" x="157" y="113"/>
+  <g fill="#fff" stroke="#647b89" stroke-width="3" stroke-linejoin="round"><rect x="22" y="141" width="28" height="22" rx="3"/><path d="M36 163v8m-10 0h20"/><rect x="270" y="141" width="28" height="22" rx="3"/><path d="M284 163v8m-10 0h20"/></g>
+  <g stroke="#c5976c" stroke-width="3" stroke-linecap="round"><path d="M148 20v9m12-9v9m12-9v9m-24 30v9m12-9v9m12-9v9m-36-36h9m-9 12h9m30-12h9m-9 12h9"/><rect x="144" y="28" width="32" height="32" rx="5" fill="#fff"/><rect x="153" y="37" width="14" height="14" rx="2" fill="#f5ede5" stroke-width="2"/></g>
+  <path d="m191 55 9 4-8 5" fill="none" stroke="#708b78" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

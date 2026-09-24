@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="complexity-title complexity-desc">
+  <title id="complexity-title">Computational search spaces</title>
+  <desc id="complexity-desc">A branching search tree with one candidate path highlighted in green, illustrating exploration of computational complexity and path selection without suggesting a solution to P versus NP.</desc>
+  <rect width="480" height="260" fill="#fff"/>
+  <g fill="none" stroke="#647b89" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 130 160 70M60 130 160 190M160 70 280 40M160 70 280 100M160 190 280 160M160 190 280 220"/>
+    <path d="M280 40 420 28M280 40 420 56M280 100 420 86M280 100 420 114M280 160 420 146M280 160 420 174M280 220 420 204M280 220 420 232" stroke="#e7edf0"/>
+    <path d="M60 130 160 70 280 100 420 86" stroke="#708b78" stroke-width="4"/>
+  </g>
+  <g fill="#fff" stroke="#647b89" stroke-width="3.5">
+    <circle cx="60" cy="130" r="10" stroke="#405968"/>
+    <circle cx="160" cy="70" r="9" stroke="#708b78"/>
+    <circle cx="160" cy="190" r="9"/>
+    <circle cx="280" cy="40" r="8"/>
+    <circle cx="280" cy="100" r="8" stroke="#708b78"/>
+    <circle cx="280" cy="160" r="8"/>
+    <circle cx="280" cy="220" r="8"/>
+    <circle cx="420" cy="28" r="6"/>
+    <circle cx="420" cy="56" r="6"/>
+    <circle cx="420" cy="86" r="8" stroke="#708b78"/>
+    <circle cx="420" cy="114" r="6"/>
+    <circle cx="420" cy="146" r="6"/>
+    <circle cx="420" cy="174" r="6"/>
+    <circle cx="420" cy="204" r="6"/>
+    <circle cx="420" cy="232" r="6"/>
+  </g>
+  <circle cx="420" cy="86" r="2.5" fill="#c5976c"/>
+</svg>

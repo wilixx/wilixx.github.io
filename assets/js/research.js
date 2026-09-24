@@ -10,12 +10,12 @@
   const readingPosition = () => {
     if (window.scrollY < 80) return null;
     const headerBottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
-    const blocks = document.querySelectorAll('.intro, .section-heading, .work-row, .interest, .background-grid > div, .earlier-work, #contact');
+    const blocks = document.querySelectorAll('.intro, .section-heading, .work-row, .interest, .highlights-table tr');
     const block = Array.from(blocks).find(item => {
       const bounds = item.getBoundingClientRect();
       return bounds.bottom > headerBottom + 12 && bounds.top < window.innerHeight;
     });
-    return block ? { block, top: block.getBoundingClientRect().top } : null;
+    return block ? { block, rowIndex: block.tagName === 'TR' ? block.rowIndex : null, top: block.getBoundingClientRect().top } : null;
   };
 
   const showLanguage = (language, updateAddress) => {
@@ -38,7 +38,9 @@
     }
     if (position) {
       window.requestAnimationFrame(() => {
-        window.scrollBy(0, position.block.getBoundingClientRect().top - position.top);
+        const anchor = position.rowIndex === null ? position.block
+          : document.querySelector('.highlights-table:not([hidden])').rows[position.rowIndex];
+        window.scrollBy(0, anchor.getBoundingClientRect().top - position.top);
       });
     }
   };

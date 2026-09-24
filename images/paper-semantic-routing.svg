@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="semantic-routing-title semantic-routing-desc">
+  <title id="semantic-routing-title">Four semantic encoding and decoding modes along satellite routes</title>
+  <desc id="semantic-routing-desc">Four rows illustrate placing an encoder and a decoder at either an end user or a satellite. Green marks encoding and ochre marks decoding. This is a conceptual schematic, not a performance comparison.</desc>
+  <defs>
+    <g id="semantic-satellite" fill="#fff" stroke="#647b89" stroke-width="2.5" stroke-linejoin="round">
+      <rect x="-5" y="-6" width="10" height="12" rx="2"/><path d="M-5-4h-10v8h10M5-4h10v8H5"/>
+    </g>
+    <g id="semantic-terminal" fill="#fff" stroke="#647b89" stroke-width="2.5"><rect x="-7" y="-10" width="14" height="20" rx="3"/><path d="M-3 6h6"/></g>
+  </defs>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <g stroke="#e7edf0" stroke-width="1.5"><path d="M25 66h270M25 106h270M25 146h270"/></g>
+  <g fill="none" stroke="#8a9ca5" stroke-width="3" stroke-linecap="round"><path d="M40 46h240M40 86h240M40 126h240M40 166h240"/></g>
+  <g>
+    <use href="#semantic-terminal" x="40" y="46"/><use href="#semantic-satellite" x="122" y="46"/><use href="#semantic-satellite" x="198" y="46"/><use href="#semantic-terminal" x="280" y="46"/>
+    <use href="#semantic-terminal" x="40" y="86"/><use href="#semantic-satellite" x="122" y="86"/><use href="#semantic-satellite" x="198" y="86"/><use href="#semantic-terminal" x="280" y="86"/>
+    <use href="#semantic-terminal" x="40" y="126"/><use href="#semantic-satellite" x="122" y="126"/><use href="#semantic-satellite" x="198" y="126"/><use href="#semantic-terminal" x="280" y="126"/>
+    <use href="#semantic-terminal" x="40" y="166"/><use href="#semantic-satellite" x="122" y="166"/><use href="#semantic-satellite" x="198" y="166"/><use href="#semantic-terminal" x="280" y="166"/>
+  </g>
+  <g fill="#708b78"><circle cx="40" cy="46" r="12"/><circle cx="40" cy="86" r="12"/><circle cx="122" cy="126" r="12"/><circle cx="122" cy="166" r="12"/></g>
+  <g fill="#c5976c"><circle cx="280" cy="46" r="12"/><circle cx="198" cy="86" r="12"/><circle cx="280" cy="126" r="12"/><circle cx="198" cy="166" r="12"/></g>
+  <g fill="#fff" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="600">
+    <text x="40" y="51">E</text><text x="40" y="91">E</text><text x="122" y="131">E</text><text x="122" y="171">E</text>
+    <text x="280" y="51">D</text><text x="198" y="91">D</text><text x="280" y="131">D</text><text x="198" y="171">D</text>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="green-computing-title green-computing-desc">
+  <title id="green-computing-title">Resource consolidation and workflow scheduling</title>
+  <desc id="green-computing-desc">Tasks in a branching workflow are organized into a compact server stack, while adjacent servers remain idle. A leaf marks the research interest in reducing resource waste; the schematic makes no energy-saving claim.</desc>
+  <path fill="#fff" d="M0 0h480v260H0z"/>
+  <g fill="none" stroke="#b8c7d0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M57 123h31l32-44h44m-76 44 32 46h44m-44-90 33 44m-33 46 33-46h29"/></g>
+  <g fill="#fff" stroke="#647b89" stroke-width="3"><rect x="30" y="110" width="27" height="26" rx="5"/><rect x="106" y="66" width="28" height="26" rx="5"/><rect x="106" y="156" width="28" height="26" rx="5"/><rect x="153" y="110" width="28" height="26" rx="5"/></g>
+  <g fill="#dfe9e2"><path d="M37 117h13v12H37zM113 73h14v12h-14zM113 163h14v12h-14zM160 117h14v12h-14z"/></g>
+  <path d="M202 123h35m-9-8 9 8-9 8" fill="none" stroke="#708b78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#647b89" stroke-width="3.5"><rect x="261" y="69" width="64" height="112" rx="7" fill="#fff"/><path d="M261 107h64m-64 37h64"/></g>
+  <g fill="#708b78"><rect x="273" y="80" width="31" height="14" rx="3"/><rect x="273" y="118" width="31" height="14" rx="3"/><rect x="273" y="155" width="31" height="14" rx="3"/></g>
+  <g fill="#c5976c"><circle cx="312" cy="87" r="3"/><circle cx="312" cy="125" r="3"/><circle cx="312" cy="162" r="3"/></g>
+  <g fill="#f8fafb" stroke="#d7e1e6" stroke-width="3"><rect x="343" y="95" width="41" height="86" rx="6"/><path d="M343 124h41m-41 28h41"/><rect x="400" y="95" width="41" height="86" rx="6"/><path d="M400 124h41m-41 28h41"/></g>
+  <path d="M353 64c-1-20 15-33 39-34-1 25-16 39-39 34Z" fill="#edf3ed" stroke="#708b78" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m350 73 25-26" stroke="#708b78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M252 193h193" stroke="#e7edf0" stroke-width="3" stroke-linecap="round"/>
+</svg>
