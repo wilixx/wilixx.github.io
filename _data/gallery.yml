@@ -27,11 +27,16 @@ entries:
     summary: "Received the Xidian–Tencent Scholarship in both 2024 and 2025."
     photo_layout: "certificate"
     photos:
-      - path: "/images/gallery-xidian-tencent-scholarships-2024-2025.jpg"
-        alt: "Two Xidian University Tencent Scholarship certificates, recognizing the 2024 and 2025 awards."
-        caption: "Scholarship certificates · 2024 and 2025"
+      - path: "/images/gallery-xidian-tencent-scholarship-2025.svg"
+        alt: "The 2025 Xidian University Tencent Scholarship certificate, issued in March 2026."
+        caption: "Scholarship certificate · 2025"
         width: 1279
-        height: 1706
+        height: 710
+      - path: "/images/gallery-xidian-tencent-scholarship-2024.svg"
+        alt: "The 2024 Xidian University Tencent Scholarship certificate, issued in April 2025."
+        caption: "Scholarship certificate · 2024"
+        width: 1279
+        height: 996
   - id: color-vision-legacy-work
     date: ""
     display_date: "Earlier work"
