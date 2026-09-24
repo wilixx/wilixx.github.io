@@ -6,6 +6,19 @@
   const sections = document.querySelector('.section-nav');
   const description = document.querySelector('meta[name="description"]');
   const languageSwitch = document.querySelector('.language-switch');
+  const main = document.querySelector('#main');
+
+  // Copy only the user's selected visible text, without page layout markup.
+  document.addEventListener('copy', event => {
+    const selection = window.getSelection();
+    if (!event.clipboardData || !selection || selection.isCollapsed ||
+        !main.contains(selection.anchorNode) || !main.contains(selection.focusNode)) return;
+    const text = selection.toString();
+    if (!text) return;
+    event.clipboardData.clearData();
+    event.clipboardData.setData('text/plain', text);
+    event.preventDefault();
+  });
 
   const readingPosition = () => {
     if (window.scrollY < 80) return null;
