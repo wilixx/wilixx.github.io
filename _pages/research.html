@@ -9,7 +9,7 @@ permalink: /research/
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Research by Binquan Guo on satellite networking, efficient computing and practical algorithms.">
-  <meta name="theme-color" content="#fafbf8">
+  <meta name="theme-color" content="#ffffff">
   <title>Research | Binquan Guo</title>
   <link rel="canonical" href="{{ '/research/' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
@@ -32,192 +32,111 @@ permalink: /research/
     </div>
   </header>
 
+
   <main id="main" class="page-shell">
     <section class="intro" aria-labelledby="research-title">
-      <p class="eyebrow"><span data-lang="en">Networks · Computing · Algorithms</span><span data-lang="zh" hidden>网络 · 计算 · 算法</span></p>
       <h1 id="research-title"><span data-lang="en">Research</span><span data-lang="zh" hidden>科学研究</span></h1>
-      <p class="intro-background" data-lang="en">I received my Ph.D. from Xidian University in December 2025, following joint doctoral training with the Tianjin Artificial Intelligence Innovation Center.</p>
-      <p class="intro-background" data-lang="zh" hidden>2025 年 12 月获西安电子科技大学博士学位，博士期间与天津人工智能创新中心联合培养。</p>
-      <div class="intro-columns">
-        <p class="intro-lead" data-lang="en">I study how to make large, changing networks work efficiently, with a particular focus on low Earth orbit satellite systems.</p>
-        <p class="intro-lead" data-lang="zh" hidden>我的研究关注大规模、持续变化的网络如何高效运行，主要面向低轨卫星互联网。</p>
-        <div class="intro-perspective">
-          <p data-lang="en">I am interested in methods that remain useful as systems change. I value clear assumptions, reproducible results and practical implementation.</p>
-          <p data-lang="zh" hidden>关注实际问题中具有长期价值的方法，重视清楚的假设、可复现的结果，以及方法在实际系统中的应用。</p>
-        </div>
-      </div>
+      <p class="research-fields"><span data-lang="en">Networking, Green Computing, AI, Graph Theory</span><span data-lang="zh" hidden>网络、绿色计算、人工智能、图论</span></p>
+      <p data-lang="en">My main focus is <strong>mega-LEO satellite networking</strong>: designing <strong>simple, effective algorithms</strong> for the evolving needs of users and network operators in the 6G and AI era. I aim for methods that could be evaluated and adapted for constellations such as Starlink and Qianfan, with the longer-term goal of supporting useful, widely accessible services. My broader interests include graph theory, the P versus NP question, green computing for AI, and applications of AI to cryptography, biology and medicine.</p><p data-lang="zh" hidden>我的主要研究方向是<strong>巨型低轨卫星互联网组网</strong>，面向 6G 与人工智能时代用户和网络运营方的新需求，设计<strong>简单、有效的网络算法</strong>。希望方法便于在 Starlink、千帆等实际星座中实现，逐步服务于广泛可用的日常应用。同时关注图论、P 与 NP 问题、面向人工智能的绿色计算，以及人工智能在密码学、生物与医学中的应用。</p><p data-lang="en">I use <strong>mathematical optimization, graph theory and experiments</strong> to identify useful structure, develop algorithms and test new ideas. I hope to contribute rigorous research that is simple in design, effective in practice and useful beyond the laboratory.</p><p data-lang="zh" hidden>研究中结合<strong>数学优化、图论与实验</strong>，从具体问题中发现结构与规律，形成并检验新的方法。希望研究设计简明、论证扎实，能够从实验走向实际应用。</p><p class="collaboration-note" data-lang="en">I welcome <a href="mailto:bqguo@stu.xidian.edu.cn">self-motivated students and collaborators</a> who enjoy patient, careful work on concrete questions, as well as conversations with industry teams about practical problems.</p><p class="collaboration-note" data-lang="zh" hidden>欢迎有内在动力、愿意耐心钻研的同学与同行<a href="mailto:bqguo@stu.xidian.edu.cn">交流合作</a>，从具体问题做起；也欢迎产业界带着实际需求共同探讨。</p>
       <nav class="section-nav" aria-label="Research sections">
         <a href="#selected-work"><span data-lang="en">Selected work</span><span data-lang="zh" hidden>代表性工作</span></a>
         <a href="#interests"><span data-lang="en">Research interests</span><span data-lang="zh" hidden>研究兴趣</span></a>
-        <a href="#background"><span data-lang="en">Background</span><span data-lang="zh" hidden>研究经历</span></a>
-        <a href="#contact"><span data-lang="en">Get in touch</span><span data-lang="zh" hidden>交流与合作</span></a>
+        <a href="#highlights"><span data-lang="en">Professional highlights</span><span data-lang="zh" hidden>专业经历</span></a>
       </nav>
     </section>
 
     <section id="selected-work" class="research-section" aria-labelledby="work-title">
       <div class="section-heading">
-        <p class="section-number" aria-hidden="true">01</p>
-        <div>
-          <h2 id="work-title"><span data-lang="en">Selected work</span><span data-lang="zh" hidden>代表性工作</span></h2>
-          <p class="section-caption" data-lang="en">Five contributions to networking in large LEO constellations. Years below follow first online publication.</p>
-          <p class="section-caption" data-lang="zh" hidden>围绕大规模低轨星座网络的五项代表性工作。年份按首次在线发表标注。</p>
-        </div>
+        <h2 id="work-title"><span data-lang="en">Selected work</span><span data-lang="zh" hidden>代表性工作</span></h2>
+        <p class="section-caption"><span data-lang="en">Networking algorithms for mega-LEO satellite constellations</span><span data-lang="zh" hidden>面向巨型低轨卫星星座的组网算法</span></p>
       </div>
       <ol class="works-list">
         <li class="work-row">
-          <span class="work-number" aria-hidden="true">01</span>
+          <img class="paper-figure" src="{{ '/images/paper-semantic-routing.svg' | relative_url }}" width="160" height="100" alt="" loading="lazy" decoding="async">
           <article class="work-content">
+            <h3 lang="en">Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks <a class="ieee-link" href="https://ieeexplore.ieee.org/document/11437528" target="_blank" rel="noopener noreferrer">[IEEE]</a></h3>
             <p class="work-meta" lang="en"><span>IEEE Transactions on Mobile Computing</span><span class="work-year">2026</span></p>
-            <h3 lang="en">Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks</h3>
-            <p class="work-contribution" data-lang="en">An exact graph-based routing method for four combinations of user-side and satellite-side semantic encoding and decoding. It finds optimal paths for the formulated model in polynomial time and examines bandwidth–delay trade-offs and the sources of semantic gains.</p>
-            <p class="work-contribution" data-lang="zh" hidden>面向终端与卫星承担语义编解码的四种组合，设计精确的图路由算法；在所建模型下以多项式时间求得最优路径，分析带宽与时延的权衡，以及语义增益的来源。</p>
-            <div class="work-links">
-              <a href="https://ieeexplore.ieee.org/document/11437528" target="_blank" rel="noopener noreferrer">IEEE <span aria-hidden="true">↗</span></a>
-              <a href="https://ieeexplore.ieee.org/ielam/7755/11644029/11437528-aam.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Accepted manuscript · PDF</span><span data-lang="zh" hidden>录用稿 · PDF</span> <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="paper-details"><summary><span data-lang="en">Authors &amp; publication details</span><span data-lang="zh" hidden>作者与出版信息</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TMC.2026.3675010" target="_blank" rel="noopener noreferrer">10.1109/TMC.2026.3675010</a></p></div></details>
+            <p class="work-contribution" data-lang="en">Four satellite semantic-communication modes and the design of routing algorithms.</p><p class="work-contribution" data-lang="zh" hidden>研究四种卫星语义通信模式及其路由算法。</p>
+            <div class="work-extra"><details class="paper-details"><summary><span data-lang="en">Authors &amp; details</span><span data-lang="zh" hidden>作者与详情</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhou Zhang, Qianqian Yang, Baosheng Li, Dusit Niyato, Mohsen Guizani, and Zhu Han.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TMC.2026.3675010" target="_blank" rel="noopener noreferrer">10.1109/TMC.2026.3675010</a></p></div></details></div>
           </article>
         </li>
         <li class="work-row">
-          <span class="work-number" aria-hidden="true">02</span>
+          <img class="paper-figure" src="{{ '/images/paper-semantic-placement.svg' | relative_url }}" width="160" height="100" alt="" loading="lazy" decoding="async">
           <article class="work-content">
+            <h3 lang="en">Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective <a class="ieee-link" href="https://ieeexplore.ieee.org/document/11206535" target="_blank" rel="noopener noreferrer">[IEEE]</a></h3>
             <p class="work-meta" lang="en"><span>IEEE Wireless Communications</span><span class="work-year">2025</span></p>
-            <h3 lang="en">Enhancing Mega-Satellite Networks with Generative Semantic Communication: A Networking Perspective</h3>
-            <p class="work-contribution" data-lang="en">A temporal-graph framework for deploying semantic models and routing through them. With the hop count fixed, encoding nearer the source and decoding nearer the destination can reduce aggregate link bandwidth; detours can instead increase bandwidth use and delay.</p>
-            <p class="work-contribution" data-lang="zh" hidden>以时变图统筹语义模型部署与路由。在跳数固定等模型条件下，将编码器靠近源端、解码器靠近目的端可降低沿途链路的带宽总占用；不当绕路也可能增加带宽与时延。</p>
-            <div class="work-links">
-              <a href="https://ieeexplore.ieee.org/document/11206535" target="_blank" rel="noopener noreferrer">IEEE <span aria-hidden="true">↗</span></a>
-              <a href="https://arxiv.org/pdf/2508.07573" target="_blank" rel="noopener noreferrer"><span data-lang="en">Preprint · PDF</span><span data-lang="zh" hidden>预印本 · PDF</span> <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="paper-details"><summary><span data-lang="en">Authors &amp; publication details</span><span data-lang="zh" hidden>作者与出版信息</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Wanting Yang, Zehui Xiong, Zhou Zhang, Baosheng Li, Zhu Han, Rahim Tafazolli, and Tony Q. S. Quek.</p><p><span data-lang="en">First published online in 2025; assigned to a 2026 issue.</span><span data-lang="zh" hidden>2025 年首次在线发表，编入 2026 年卷期。</span></p><p class="doi">DOI: <a href="https://doi.org/10.1109/MWC.2025.3596938" target="_blank" rel="noopener noreferrer">10.1109/MWC.2025.3596938</a></p></div></details>
+            <p class="work-contribution" data-lang="en">Generative semantic communication for satellite networks and a placement principle for multi-hop bandwidth savings.</p><p class="work-contribution" data-lang="zh" hidden>研究卫星生成式语义通信与多跳语义通信中的编解码部署规律。</p>
+            <div class="work-extra"><details class="paper-details"><summary><span data-lang="en">Authors &amp; details</span><span data-lang="zh" hidden>作者与详情</span></summary><div class="paper-details-body"><p data-lang="en">Within the studied model and for a fixed hop count, placing the encoder near the source and decoder near the destination reduces aggregate bandwidth use. Routing detours can offset this benefit.</p><p data-lang="zh" hidden>在所研究模型及跳数固定等条件下，编码靠近源端、解码靠近目的端可减少沿途带宽占用；路由绕行可能抵消这一收益。</p><p><strong>Binquan Guo</strong>, Wanting Yang, Zehui Xiong, Zhou Zhang, Baosheng Li, Zhu Han, Rahim Tafazolli, and Tony Q. S. Quek.</p><p><span data-lang="en">First published online in 2025; assigned to a 2026 issue.</span><span data-lang="zh" hidden>2025 年首次在线发表，编入 2026 年卷期。</span></p><p class="doi">DOI: <a href="https://doi.org/10.1109/MWC.2025.3596938" target="_blank" rel="noopener noreferrer">10.1109/MWC.2025.3596938</a></p></div></details></div>
           </article>
         </li>
         <li class="work-row">
-          <span class="work-number" aria-hidden="true">03</span>
+          <img class="paper-figure" src="{{ '/images/paper-resilience.svg' | relative_url }}" width="160" height="100" alt="" loading="lazy" decoding="async">
           <article class="work-content">
+            <h3 lang="en">Resilience of Mega-Satellite Constellations: How Node Failures Impact Inter-Satellite Networking Over Time? <a class="ieee-link" href="https://ieeexplore.ieee.org/document/11164934" target="_blank" rel="noopener noreferrer">[IEEE]</a></h3>
             <p class="work-meta" lang="en"><span>IEEE Transactions on Communications</span><span class="work-year">2025</span></p>
-            <h3 lang="en">Resilience of Mega-Satellite Constellations: How Node Failures Impact Inter-Satellite Networking Over Time?</h3>
-            <p class="work-contribution" data-lang="en">A service-aware temporal betweenness metric measures how node failures affect connectivity over time. Simulations show that topology changes can partly restore service, while rerouting is important for faster recovery.</p>
-            <p class="work-contribution" data-lang="zh" hidden>提出面向业务的时变介数指标，分析节点故障对连接与业务的持续影响。仿真表明拓扑变化可部分恢复服务，及时重路由有助于加快恢复。</p>
-            <div class="work-links">
-              <a href="https://ieeexplore.ieee.org/document/11164934" target="_blank" rel="noopener noreferrer">IEEE <span aria-hidden="true">↗</span></a>
-              <a href="https://arxiv.org/pdf/2509.06766" target="_blank" rel="noopener noreferrer"><span data-lang="en">Preprint · PDF</span><span data-lang="zh" hidden>预印本 · PDF</span> <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="paper-details"><summary><span data-lang="en">Authors &amp; publication details</span><span data-lang="zh" hidden>作者与出版信息</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhou Zhang, Baosheng Li, Dusit Niyato, Chau Yuen, and Zhu Han.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TCOMM.2025.3610221" target="_blank" rel="noopener noreferrer">10.1109/TCOMM.2025.3610221</a></p></div></details>
+            <p class="work-contribution" data-lang="en">The resilience of satellite networking under node failures and changing topology.</p><p class="work-contribution" data-lang="zh" hidden>研究节点损毁与拓扑变化下的卫星网络韧性。</p>
+            <div class="work-extra"><details class="paper-details"><summary><span data-lang="en">Authors &amp; details</span><span data-lang="zh" hidden>作者与详情</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhou Zhang, Baosheng Li, Dusit Niyato, Chau Yuen, and Zhu Han.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TCOMM.2025.3610221" target="_blank" rel="noopener noreferrer">10.1109/TCOMM.2025.3610221</a></p></div></details></div>
           </article>
         </li>
         <li class="work-row">
-          <span class="work-number" aria-hidden="true">04</span>
+          <img class="paper-figure" src="{{ '/images/paper-in-orbit-computing.svg' | relative_url }}" width="160" height="100" alt="" loading="lazy" decoding="async">
           <article class="work-content">
+            <h3 lang="en">Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks <a class="ieee-link" href="https://ieeexplore.ieee.org/document/10937133" target="_blank" rel="noopener noreferrer">[IEEE]</a></h3>
             <p class="work-meta" lang="en"><span>IEEE Transactions on Vehicular Technology</span><span class="work-year">2025</span></p>
-            <h3 lang="en">Enabling Real-time Computing and Transmission Services in Large-Scale LEO Satellite Networks</h3>
-            <p class="work-contribution" data-lang="en">Joint selection of a computing satellite and communication route for real-time services. The method exploits the structure of the formulated problem to find optimal solutions efficiently under computing and bandwidth constraints.</p>
-            <p class="work-contribution" data-lang="zh" hidden>针对实时业务联合选择计算卫星与通信路径，利用模型的结构，在计算和带宽约束下高效求解最优方案。</p>
-            <div class="work-links">
-              <a href="https://ieeexplore.ieee.org/document/10937133" target="_blank" rel="noopener noreferrer">IEEE <span aria-hidden="true">↗</span></a>
-              <a href="https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174319478.89630825/v1" target="_blank" rel="noopener noreferrer"><span data-lang="en">Preprint · PDF</span><span data-lang="zh" hidden>预印本 · PDF</span> <span aria-hidden="true">↗</span></a>
-              <a href="https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html" target="_blank" rel="noopener noreferrer"><span data-lang="en">Research news · Tech Xplore</span><span data-lang="zh" hidden>研究报道 · Tech Xplore</span> <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="paper-details"><summary><span data-lang="en">Authors &amp; publication details</span><span data-lang="zh" hidden>作者与出版信息</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, and Hongyan Li.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TVT.2025.3550806" target="_blank" rel="noopener noreferrer">10.1109/TVT.2025.3550806</a></p></div></details>
+            <p class="work-contribution" data-lang="en">Networking algorithms for real-time in-orbit computing and transmission.</p><p class="work-contribution" data-lang="zh" hidden>研究面向实时星上计算与传输的组网算法。</p>
+            <div class="work-extra"><details class="paper-details"><summary><span data-lang="en">Authors &amp; details</span><span data-lang="zh" hidden>作者与详情</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zhou Zhang, Saman Atapattu, Miao Pan, Ye Yan, Zehui Xiong, and Hongyan Li.</p><p class="doi">DOI: <a href="https://doi.org/10.1109/TVT.2025.3550806" target="_blank" rel="noopener noreferrer">10.1109/TVT.2025.3550806</a></p></div></details> <a class="news-link" href="https://techxplore.com/news/2025-05-algorithms-aim-real-earth.html" target="_blank" rel="noopener noreferrer">[<span data-lang="en">Tech Xplore</span><span data-lang="zh" hidden>研究报道 · Tech Xplore</span>]</a></div>
           </article>
         </li>
         <li class="work-row">
-          <span class="work-number" aria-hidden="true">05</span>
+          <img class="paper-figure" src="{{ '/images/paper-widest-routing.svg' | relative_url }}" width="160" height="100" alt="" loading="lazy" decoding="async">
           <article class="work-content">
+            <h3 lang="en">Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks <a class="ieee-link" href="https://ieeexplore.ieee.org/document/10797674" target="_blank" rel="noopener noreferrer">[IEEE]</a></h3>
             <p class="work-meta" lang="en"><span>IEEE Transactions on Vehicular Technology</span><span class="work-year">2024</span></p>
-            <h3 lang="en">Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale LEO Satellite Networks</h3>
-            <p class="work-contribution" data-lang="en">An efficient graph-based method for selecting a maximum-capacity path subject to an end-to-end delay bound, combining capacity bounds, graph filtering and bisection.</p>
-            <p class="work-contribution" data-lang="zh" hidden>在端到端时延限制下寻找容量最大的路径，将容量边界估计、图筛选与二分搜索结合，降低求解开销。</p>
-            <div class="work-links">
-              <a href="https://ieeexplore.ieee.org/document/10797674" target="_blank" rel="noopener noreferrer">IEEE <span aria-hidden="true">↗</span></a>
-              <a href="https://ieeexplore.ieee.org/ielam/25/10969493/10797674-aam.pdf" target="_blank" rel="noopener noreferrer"><span data-lang="en">Accepted manuscript · PDF</span><span data-lang="zh" hidden>录用稿 · PDF</span> <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="paper-details"><summary><span data-lang="en">Authors &amp; publication details</span><span data-lang="zh" hidden>作者与出版信息</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhu Han, Chau Yuen, and Sumei Sun.</p><p><span data-lang="en">First published online in 2024; assigned to a 2025 issue.</span><span data-lang="zh" hidden>2024 年首次在线发表，编入 2025 年卷期。</span></p><p class="doi">DOI: <a href="https://doi.org/10.1109/TVT.2024.3516779" target="_blank" rel="noopener noreferrer">10.1109/TVT.2024.3516779</a></p></div></details>
+            <p class="work-contribution" data-lang="en">Faster widest-path selection under delay constraints in mega-LEO constellations.</p><p class="work-contribution" data-lang="zh" hidden>研究巨型低轨星座中时延约束下最宽路径的加速求解。</p>
+            <div class="work-extra"><details class="paper-details"><summary><span data-lang="en">Authors &amp; details</span><span data-lang="zh" hidden>作者与详情</span></summary><div class="paper-details-body"><p><strong>Binquan Guo</strong>, Zehui Xiong, Zhu Han, Chau Yuen, and Sumei Sun.</p><p><span data-lang="en">First published online in 2024; assigned to a 2025 issue.</span><span data-lang="zh" hidden>2024 年首次在线发表，编入 2025 年卷期。</span></p><p class="doi">DOI: <a href="https://doi.org/10.1109/TVT.2024.3516779" target="_blank" rel="noopener noreferrer">10.1109/TVT.2024.3516779</a></p></div></details></div>
           </article>
         </li>
       </ol>
-      <p class="publication-note"><span data-lang="en">For the wider publication list, visit </span><span data-lang="zh" hidden>更多论文见</span><a href="https://scholar.google.com/citations?user=NA8egm4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><span data-lang="en">.</span><span data-lang="zh" hidden>。</span></p>
+      <p class="publication-note"><span data-lang="en">More publications:</span><span data-lang="zh" hidden>更多论文：</span> <a href="https://scholar.google.com/citations?user=NA8egm4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
     </section>
 
     <section id="interests" class="research-section" aria-labelledby="interests-title">
-      <div class="section-heading">
-        <p class="section-number" aria-hidden="true">02</p>
-        <h2 id="interests-title"><span data-lang="en">Research interests</span><span data-lang="zh" hidden>研究兴趣</span></h2>
-      </div>
-      <div class="interests-list">
-        <article class="interest interest-primary">
-          <div class="interest-heading">
-            <h3><span data-lang="en">Mega-constellation networking</span><span data-lang="zh" hidden>大规模低轨卫星互联网</span></h3>
-            <span class="interest-label"><span data-lang="en">Main focus</span><span data-lang="zh" hidden>主要方向</span></span>
-          </div>
-          <p data-lang="en">Routing, resilience, semantic communication and joint computing–communication services in large LEO constellations.</p>
-          <p data-lang="zh" hidden>研究大规模低轨星座中的路由、网络韧性、语义通信，以及计算与通信服务的协同。</p>
+      <div class="section-heading"><h2 id="interests-title"><span data-lang="en">Research interests</span><span data-lang="zh" hidden>研究兴趣</span></h2></div>
+      <div class="interests-list">        <article class="interest">
+          <img class="interest-figure" src="{{ '/images/interest-satellite-networking.svg' | relative_url }}" width="240" height="130" alt="" loading="lazy" decoding="async">
+          <div class="interest-copy"><h3><span data-lang="en">Networking for Mega-LEO constellations</span><span data-lang="zh" hidden>巨型低轨卫星星座组网</span></h3><p data-lang="en">I study networking algorithm design for large, moving constellations: routing, resilience, semantic communication and in-orbit computing. The aim is to meet service requirements with manageable implementation costs. Related work has appeared in IEEE TMC, Wireless Communications, TCOM and TVT, and at several conferences.</p><p data-lang="zh" hidden>围绕大规模动态星座设计组网算法，涵盖路由、韧性、语义通信与星上计算，关注业务需求与实现成本之间的平衡。相关研究发表于 IEEE TMC、Wireless Communications、TCOM、TVT 及多个学术会议。</p></div>
         </article>
         <article class="interest">
-          <h3><span data-lang="en">Green computing for AI</span><span data-lang="zh" hidden>面向人工智能的绿色计算</span></h3>
-          <p data-lang="en">Resource packing in data centers, workflow scheduling and the scheduling of multi-step language-model inference, with an interest in reducing wasted resources.</p>
-          <p data-lang="zh" hidden>关注数据中心资源装箱、工作流调度和多步骤大模型推理调度，探索减少资源浪费的方法。</p>
+          <img class="interest-figure" src="{{ '/images/interest-green-computing.svg' | relative_url }}" width="240" height="130" alt="" loading="lazy" decoding="async">
+          <div class="interest-copy"><h3><span data-lang="en">Green computing for AI</span><span data-lang="zh" hidden>面向人工智能的绿色计算</span></h3><p data-lang="en">Resource packing in data centers, workflow scheduling and multi-step language-model inference. I am interested in using fewer computing resources to meet a given service requirement, and in understanding the trade-offs between energy, latency and utilization.</p><p data-lang="zh" hidden>关注数据中心资源装箱、工作流调度与多步骤大模型推理调度，研究如何以更少的计算资源满足业务需求，以及能耗、时延和资源利用率之间的权衡。</p></div>
         </article>
         <article class="interest">
-          <div class="interest-heading">
-            <h3><span data-lang="en">Scheduling and optimization</span><span data-lang="zh" hidden>调度与优化</span></h3>
-            <span class="interest-label"><span data-lang="en">Exploratory</span><span data-lang="zh" hidden>探索兴趣</span></span>
-          </div>
-          <p data-lang="en">Exact and approximate methods for NP-hard scheduling problems, and how AI and mathematical optimization can help find useful solutions.</p>
-          <p data-lang="zh" hidden>关注 NP 难调度问题的精确与近似求解，探索人工智能与数学优化如何帮助获得实用的解。</p>
+          <img class="interest-figure" src="{{ '/images/interest-complexity.svg' | relative_url }}" width="240" height="130" alt="" loading="lazy" decoding="async">
+          <div class="interest-copy"><h3><span data-lang="en">Whether P=NP</span><span data-lang="zh" hidden>P 是否等于 NP</span></h3><p data-lang="en">An exploratory interest in computational complexity, grounded in specific graph and NP-hard scheduling problems. I study exact and approximate methods, and how AI and mathematical optimization may help reveal useful problem structure.</p><p data-lang="zh" hidden>对计算复杂性的探索兴趣，从具体图问题与 NP 难调度问题出发，研究精确与近似方法，并探索人工智能和数学优化如何帮助发现可利用的问题结构。</p></div>
         </article>
         <article class="interest">
-          <div class="interest-heading">
-            <h3><span data-lang="en">AI for cryptography</span><span data-lang="zh" hidden>人工智能与密码学</span></h3>
-            <span class="interest-label"><span data-lang="en">Exploratory</span><span data-lang="zh" hidden>探索兴趣</span></span>
-          </div>
-          <p data-lang="en">Exploring how learning-based methods can inform the analysis and design of cryptographic systems.</p>
-          <p data-lang="zh" hidden>关注学习方法如何帮助分析密码系统，并为密码算法设计提供新的思路。</p>
+          <img class="interest-figure" src="{{ '/images/interest-cryptography.svg' | relative_url }}" width="240" height="130" alt="" loading="lazy" decoding="async">
+          <div class="interest-copy"><h3><span data-lang="en">AI for cryptography</span><span data-lang="zh" hidden>人工智能与密码学</span></h3><p data-lang="en">Exploring how learning-based methods can support the analysis and design of cryptographic systems, with attention to mathematical guarantees and reproducible evaluation.</p><p data-lang="zh" hidden>探索学习方法如何辅助密码系统的分析与设计，重视数学保证和可复现的评估。</p></div>
         </article>
         <article class="interest">
-          <div class="interest-heading">
-            <h3><span data-lang="en">AI for biology and medicine</span><span data-lang="zh" hidden>面向生物与医学的人工智能</span></h3>
-            <span class="interest-label"><span data-lang="en">Exploratory</span><span data-lang="zh" hidden>探索兴趣</span></span>
-          </div>
-          <p data-lang="en">Earlier work on color vision motivates an interest in useful AI methods for biological and medical questions.</p>
-          <p data-lang="zh" hidden>早期围绕色觉问题的研究，使我持续关注人工智能在生物和医学问题中的实际价值。</p>
-        </article>
-      </div>
+          <img class="interest-figure" src="{{ '/images/interest-natural-sciences.svg' | relative_url }}" width="240" height="130" alt="" loading="lazy" decoding="async">
+          <div class="interest-copy"><h3><span data-lang="en">Natural and life sciences</span><span data-lang="zh" hidden>自然科学与生命科学</span></h3><p data-lang="en">Curiosity also leads me to questions in the natural and life sciences. I enjoy learning across fields and exploring how new observations can inform useful models and methods.</p><p data-lang="zh" hidden>出于好奇心，持续关注自然科学与生命科学中的问题，从不同领域的新发现中学习，探索有用的模型与方法。</p></div>
+        </article></div>
     </section>
-
-    <section id="background" class="research-section" aria-labelledby="background-title">
-      <div class="section-heading">
-        <p class="section-number" aria-hidden="true">03</p>
-        <h2 id="background-title"><span data-lang="en">Background</span><span data-lang="zh" hidden>研究经历</span></h2>
-      </div>
-      <div class="background-grid">
-        <div>
-          <h3><span data-lang="en">Education</span><span data-lang="zh" hidden>教育经历</span></h3>
-          <p data-lang="en">I received my bachelor’s and master’s degrees from Xidian University in 2017 and 2020. During my doctoral studies, I visited the Singapore University of Technology and Design and collaborated remotely with the University of Houston.</p>
-          <p data-lang="zh" hidden>2017 年和 2020 年分别于西安电子科技大学获得学士和硕士学位。博士期间曾在新加坡科技设计大学访学，并与休斯敦大学开展远程合作。</p>
-        </div>
-        <div>
-          <h3><span data-lang="en">Research exchange</span><span data-lang="zh" hidden>学术交流</span></h3>
-          <p data-lang="en">I have collaborated with colleagues at the Singapore University of Technology and Design, Nanyang Technological University, Queen’s University Belfast, the University of Surrey and the University of Houston, on questions across networking, communications and computing.</p>
-          <p data-lang="zh" hidden>曾与新加坡科技设计大学、南洋理工大学、贝尔法斯特女王大学、萨里大学及休斯敦大学的研究者合作，围绕网络、通信与计算中的问题展开研究。</p>
-        </div>
-      </div>
-      <div class="earlier-work">
-        <h3><span data-lang="en">Earlier work on color vision</span><span data-lang="zh" hidden>早期色觉研究</span></h3>
-        <p data-lang="en">I am a co-inventor of a color-vision test chart synthesis method granted in China in 2023 (<a href="https://patents.google.com/patent/CN111429547B/en" target="_blank" rel="noopener noreferrer">CN111429547B</a>).</p>
-        <p data-lang="zh" hidden>参与发明的《一种基于假同色搜索的异常色觉测试图合成方法》于 2023 年获中国专利授权（<a href="https://patents.google.com/patent/CN111429547B/zh" target="_blank" rel="noopener noreferrer">CN111429547B</a>）。</p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section" aria-labelledby="contact-title">
-      <h2 id="contact-title"><span data-lang="en">Research conversations</span><span data-lang="zh" hidden>学术交流与合作</span></h2>
-      <div class="contact-columns">
-        <p data-lang="en">Students and researchers interested in these topics are welcome to discuss a concrete question or explore a small research project together.</p>
-        <p data-lang="zh" hidden>欢迎对这些方向感兴趣的同学和研究者交流，从具体问题或小型科研课题开始，共同尝试和验证。</p>
-        <p data-lang="en">I also welcome conversations with industry teams about networking and computing problems, practical constraints and opportunities for collaborative research.</p>
-        <p data-lang="zh" hidden>也欢迎产业界围绕网络与计算中的真实问题、工程约束和研究合作展开讨论。</p>
-      </div>
-      <a class="contact-email" href="mailto:bqguo@stu.xidian.edu.cn">bqguo@stu.xidian.edu.cn <span aria-hidden="true">↗</span></a>
+    <section id="highlights" class="research-section" aria-labelledby="highlights-title">
+      <div class="section-heading"><h2 id="highlights-title"><span data-lang="en">Professional Highlights at a Glance</span><span data-lang="zh" hidden>专业经历一览</span></h2></div>
+      <table class="highlights-table" data-lang="en"><caption>Selected research and service records through 2026.</caption><tbody><tr><th scope="row">Publications</th><td>Published or accepted more than 20 IEEE journal and conference papers, including 15 first-author and 2 corresponding-author papers. Venues include IEEE TMC, TCOM, TVT, Wireless Communications, Network and Wireless Communications Letters, as well as ICC, GLOBECOM and PIMRC.</td></tr>
+<tr><th scope="row">Research projects</th><td>Contributed to five nationally funded projects on data-center networking, temporal graphs and satellite networks. Served as PI of a deterministic resource-slicing project and co-PI of a non-stationary traffic-modeling project, supported by university research funds.</td></tr>
+<tr><th scope="row">Teaching &amp; mentoring</th><td>Teaching assistant for three undergraduate courses. Assisted in supervising graduate-student research leading to papers in IEEE Transactions on Wireless Communications (two papers), IEEE Transactions on Vehicular Technology, IEEE ICC and Optics Express, among other publications.</td></tr>
+<tr><th scope="row">Professional service</th><td>Completed more than 65 journal reviews, including for IEEE Communications Magazine, Internet of Things Journal, Network and several IEEE Transactions journals. Technical program committee service for IEEE ICC, GLOBECOM and VTC; session chair at IEEE MetaCom 2024. Youth Editorial Board member, China Communications (2026–2028).</td></tr>
+<tr><th scope="row">Standards contributions</th><td>Contributed to two CCSA association standards on data-center network energy-efficiency measurement and hybrid wired/wireless networking: T/CCSA 370-2022 and T/CCSA 369-2022.</td></tr>
+<tr><th scope="row">Research exchange</th><td>Collaborated with researchers at institutions including the Singapore University of Technology and Design, Nanyang Technological University, Queen’s University Belfast, the University of Surrey and the University of Houston. Presented work at IEEE ICC, GLOBECOM, PIMRC, MetaCom, MASS and ICCC.</td></tr></tbody></table>
+<table class="highlights-table" data-lang="zh" hidden><caption>截至 2026 年的部分研究与学术服务记录。</caption><tbody><tr><th scope="row">论文工作</th><td>已发表或录用 IEEE 期刊与会议论文 20 余篇，其中第一作者 15 篇、通讯作者 2 篇。</td></tr>
+<tr><th scope="row">项目研究</th><td>参与 5 项国家科研项目，并分别担任 2 项校级研究项目的 PI 与 co-PI，研究涉及数据中心、时变图与卫星网络。</td></tr>
+<tr><th scope="row">教学与学生研究</th><td>参与 3 门本科课程助教工作；协助指导研究生开展研究，相关成果发表于 IEEE TWC、TVT、ICC、Optics Express 等期刊与会议。</td></tr>
+<tr><th scope="row">学术服务</th><td>完成 65 余次期刊审稿，参与多个 IEEE 会议的程序委员会工作，并担任分会主席；任 China Communications 青年编委（2026–2028）。</td></tr>
+<tr><th scope="row">标准相关工作</th><td>参与 2 项 CCSA 团体标准相关工作，涉及数据中心网络能效测量及有线无线混合组网。</td></tr>
+<tr><th scope="row">合作与交流</th><td>与新加坡科技设计大学、南洋理工大学等高校的研究者合作交流，并在多个 IEEE 会议报告研究工作。</td></tr></tbody></table>
     </section>
   </main>
   <footer class="page-footer"><div><span>Binquan Guo</span><a href="{{ '/' | relative_url }}"><span aria-hidden="true">← </span><span data-lang="en">Back to homepage</span><span data-lang="zh" hidden>返回主页</span></a></div></footer>
