@@ -31,6 +31,7 @@ strong { font-weight: 600; }
 .research-name { display: inline-flex; align-items: center; min-width: 0; }
 .research-name .academic-contact-trigger { flex: none; }
 .email-address { overflow-wrap: anywhere; user-select: text; }
+.contact-address, .email-address { color: #44647a; }
 .journal-metrics { color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 3px; }
 .metrics-note { margin-top: 6px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .name-marker { display: none; }
