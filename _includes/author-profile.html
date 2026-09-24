@@ -15,16 +15,11 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }} <button class="academic-contact-trigger" type="button" aria-label="Connect on WeChat" aria-haspopup="dialog" aria-controls="academic-contact-dialog" title="WeChat" hidden><i class="fab fa-weixin" aria-hidden="true"></i></button></h3>
+    <h3 class="author__name">{{ author.name }} {% include academic-contact-trigger.html %}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
-  <dialog class="academic-contact-dialog" id="academic-contact-dialog" aria-labelledby="academic-contact-title">
-    <button class="academic-contact-close" type="button" aria-label="Close WeChat dialog" autofocus>×</button>
-    <h2 id="academic-contact-title"><i class="fab fa-weixin" aria-hidden="true"></i> WeChat</h2>
-    <img class="academic-contact-qr" src="{{ base_path }}/images/wechat-academic.png" alt="Binquan Guo's WeChat contact QR code" width="410" height="410" loading="lazy">
-    <a class="academic-contact-save" href="{{ base_path }}/images/wechat-academic.png" download="binquan-guo-wechat.png">Save QR code</a>
-  </dialog>
+  {% include academic-contact.html %}
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
