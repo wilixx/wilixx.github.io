@@ -68,3 +68,41 @@ entries:
         layout: "wide"
         width: 1366
         height: 670
+  - id: northern-shaanxi
+    date: ""
+    display_date: "Landscapes & local history"
+    date_is_label: true
+    category: "Beyond research"
+    title: "Northern Shaanxi"
+    summary: "A few views of northern Shaanxi: the Yellow River, cave dwellings, local history and quiet countryside."
+    photos:
+      - path: "/images/gallery-northern-shaanxi-yellow-river.jpg"
+        alt: "A broad bend in the Yellow River around a ridge of dry hills."
+        caption: "A bend in the Yellow River"
+        width: 1080
+        height: 810
+      - path: "/images/gallery-northern-shaanxi-meeting-room.jpg"
+        alt: "A doorway into a historic meeting room, with wooden lattice windows and a long table inside."
+        caption: "A historic meeting room"
+        width: 1440
+        height: 1080
+      - path: "/images/gallery-northern-shaanxi-courtyard.jpg"
+        alt: "Arched cave dwellings opening onto a sunlit courtyard beneath a hillside."
+        caption: "Cave dwellings and courtyard"
+        width: 1440
+        height: 1080
+      - path: "/images/gallery-northern-shaanxi-history-wall.jpg"
+        alt: "A large wall display with painted text and illustrations about local history."
+        caption: "A local history display"
+        width: 1440
+        height: 1080
+      - path: "/images/gallery-northern-shaanxi-wall-detail.jpg"
+        alt: "A close view of rows of names and red lettering on a history display wall."
+        caption: "Details of the wall inscriptions"
+        width: 1279
+        height: 1706
+      - path: "/images/gallery-northern-shaanxi-countryside.jpg"
+        alt: "An animal grazing beneath trees beside a path and a dry hillside."
+        caption: "A quiet countryside view"
+        width: 1440
+        height: 1080
