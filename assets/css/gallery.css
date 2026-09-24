@@ -98,11 +98,10 @@
   text-align: left;
 }
 .gallery-entry__photos--certificate {
-  grid-template-columns: minmax(0, 360px);
-  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .gallery-entry__photos--certificate .gallery-photo__link {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
 }
 .gallery-entry__photos--research {
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -130,7 +129,7 @@
   }
   .gallery-entry h2 { font-size: 22px; }
   .gallery-photo__link { padding: 6px; }
-  .gallery-entry__photos--certificate { grid-template-columns: minmax(0, 360px); }
+  .gallery-entry__photos--certificate { grid-template-columns: minmax(0, 1fr); }
   .gallery-entry__photos--research .gallery-photo,
   .gallery-entry__photos--research .gallery-photo--wide { grid-column: auto; }
 }
