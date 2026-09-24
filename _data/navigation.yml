@@ -42,6 +42,8 @@ main:
         url: /demos/carelab-widest-routing/
       - title: "CARELab Satellite Resilience Analysis"
         url: /demos/carelab-satellite-resilience/
+      - title: "CARELab Green LLM DAG"
+        url: /demos/llm-carbon-studio/
 
   - title: "Gallery"
     url: /gallery/
