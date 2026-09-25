@@ -44,6 +44,8 @@ strong { font-weight: 600; }
 h1 { font-size: 30px; line-height: 1.2; font-weight: 500; }
 .research-fields { margin-top: 7px; color: var(--muted); }
 .intro > p:not(.research-fields) { margin-top: 14px; }
+.long-term-note { color: #fafafa; user-select: text; cursor: text; }
+.long-term-note::selection { color: #203b32; background: #d8eadf; }
 .collaboration-note, .collaboration-note a { color: #a33838; }
 .collaboration-note a { text-decoration: underline; }
 .section-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; font-size: 14px; }

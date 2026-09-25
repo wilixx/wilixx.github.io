@@ -116,7 +116,6 @@
   // cover mobile taps and Enter; touch-action in CSS prevents double-tap zoom.
   nav.querySelectorAll('[data-preview-entry]').forEach(entry => {
     entry.addEventListener('click', event => {
-      event.preventDefault();
       const now = performance.now();
       const threshold = event.pointerType === 'touch' ? 650 : 500;
       const opensPreview = previousActivation?.entry === entry &&
@@ -124,8 +123,10 @@
       previousActivation = opensPreview ? null : { entry, at: now };
       if (opensPreview) {
         hideNotice();
-        window.location.assign(entry.href);
+        // Let the anchor's native target="_blank" action open the preview.
+        // Keeping this synchronous with the click also works for double taps.
       } else {
+        event.preventDefault();
         showNotice(entry);
       }
     });
