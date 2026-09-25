@@ -9,6 +9,8 @@
   const notice = document.getElementById('carelab-preview-notice');
   let noticeTimer;
   let noticeClearTimer;
+  let noticeAnchor = null;
+  let noticeFrame = 0;
   let previousActivation = null;
 
   const syncToggle = () => {
@@ -27,17 +29,67 @@
     window.clearTimeout(noticeTimer);
     window.clearTimeout(noticeClearTimer);
     if (!notice) return;
+    noticeAnchor = null;
     notice.classList.remove('is-visible');
     noticeClearTimer = window.setTimeout(() => { notice.textContent = ''; }, 240);
   };
-  const showNotice = () => {
+  const positionNotice = () => {
+    if (!notice || !noticeAnchor) return;
+    const anchor = noticeAnchor.getBoundingClientRect();
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const margin = 10;
+    const gap = 9;
+    if (!anchor.width || !anchor.height || anchor.bottom <= 0 || anchor.top >= height) {
+      hideNotice();
+      return;
+    }
+    const noticeWidth = notice.offsetWidth;
+    const noticeHeight = notice.offsetHeight;
+    let left = anchor.right + gap;
+    let top = anchor.top + (anchor.height - noticeHeight) / 2;
+    let placement = 'right';
+    if (left + noticeWidth > width - margin) {
+      left = anchor.left + (anchor.width - noticeWidth) / 2;
+      top = anchor.bottom + gap;
+      placement = 'below';
+      if (top + noticeHeight > height - margin) {
+        top = anchor.top - noticeHeight - gap;
+        placement = 'above';
+      }
+    }
+    notice.style.left = `${Math.max(margin, Math.min(left, width - noticeWidth - margin))}px`;
+    notice.style.top = `${Math.max(margin, Math.min(top, height - noticeHeight - margin))}px`;
+    notice.dataset.placement = placement;
+  };
+  const scheduleNoticePosition = () => {
+    if (!noticeAnchor || noticeFrame) return;
+    noticeFrame = window.requestAnimationFrame(() => {
+      noticeFrame = 0;
+      positionNotice();
+    });
+  };
+  const showNotice = entry => {
     if (!notice) return;
     window.clearTimeout(noticeTimer);
     window.clearTimeout(noticeClearTimer);
-    notice.textContent = 'Under construction';
+    noticeAnchor = entry;
+    notice.textContent = 'Will be available soon';
+    positionNotice();
+    if (!noticeAnchor) return;
     notice.classList.add('is-visible');
     noticeTimer = window.setTimeout(hideNotice, 1500);
   };
+
+  // Keep the notice next to its link, outside any clipped dropdown container.
+  if (notice) document.body.appendChild(notice);
+  document.addEventListener('scroll', scheduleNoticePosition, true);
+  window.addEventListener('resize', scheduleNoticePosition);
+  window.visualViewport?.addEventListener('resize', scheduleNoticePosition);
+  window.visualViewport?.addEventListener('scroll', scheduleNoticePosition);
+  nav.querySelectorAll('.carelab-project-nav').forEach(menu => {
+    menu.addEventListener('toggle', () => { if (!menu.open) hideNotice(); });
+  });
 
   // The legacy greedy-navigation script continues to own the toggle/X button.
   // Observe its state so outside dismissal and accessibility stay in sync.
@@ -54,7 +106,10 @@
     if (!overflow?.contains(event.target) && !toggle?.contains(event.target)) {
       closeOverflow(false);
     }
-    if (!event.target.closest?.('[data-preview-entry]')) previousActivation = null;
+    if (!event.target.closest?.('[data-preview-entry]')) {
+      previousActivation = null;
+      hideNotice();
+    }
   }, true);
 
   // Only the marked preview entry uses two quick activations. Click events also
@@ -71,7 +126,7 @@
         hideNotice();
         window.location.assign(entry.href);
       } else {
-        showNotice();
+        showNotice(entry);
       }
     });
     // The second click already opens the preview; suppress any native follow-up.

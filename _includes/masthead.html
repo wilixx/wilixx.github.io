@@ -24,7 +24,7 @@
                       {% else %}
                         {% assign child_domain = base_path %}
                       {% endif %}
-                      <a href="{{ child_domain }}{{ child.url }}"{% if child.preview %} class="carelab-project-nav__preview" data-preview-entry aria-describedby="carelab-preview-instructions"{% endif %}{% if link.title == "Project Demo" and child.preview != true %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ child.title }}</a>
+                      <a href="{{ child_domain }}{{ child.url }}"{% if child.preview %} class="carelab-project-nav__preview" data-preview-entry aria-describedby="carelab-preview-instructions carelab-preview-notice"{% endif %}{% if link.title == "Project Demo" and child.preview != true %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ child.title }}</a>
                     {% endfor %}
                   </div>
                 </details>
@@ -50,4 +50,4 @@
 </div>
 <span id="carelab-preview-instructions" class="carelab-nav-sr-only">Preview: activate twice in quick succession to open.</span>
 <div id="carelab-preview-notice" class="carelab-preview-notice" role="status" aria-live="polite" aria-atomic="true"></div>
-<script src="{{ base_path }}/assets/js/project-menu.js?v=20260925-1" defer></script>
+<script src="{{ base_path }}/assets/js/project-menu.js?v=20260925-2" defer></script>
