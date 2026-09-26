@@ -1,7 +1,8 @@
-# Add future entries using the same fields; the page sorts entries by date.
-# An empty date places undated earlier work last; display_date is shown as plain text.
+# Add future entries using the same fields; display_order controls the page order.
+# Dates are optional and describe the entry; they are not used for sorting.
 entries:
   - id: china-communications-2026
+    display_order: 10
     date: "2026-08-28"
     display_date: "August 2026"
     category: "Academic service"
@@ -18,7 +19,23 @@ entries:
         caption: "Appointment certificate · 2026–2028"
         width: 1246
         height: 1066
+  - id: ieee-senior-member
+    display_order: 20
+    title: "Elevation to IEEE Senior Member"
+    summary: "With thanks to everyone who has offered continued guidance and support."
+    photos:
+      - path: "/images/gallery-ieee-senior-member-comsoc.png"
+        alt: "IEEE Communications Society membership certificate recognizing Binquan Guo as a Senior Member."
+        caption: "IEEE Communications Society"
+        width: 2310
+        height: 1626
+      - path: "/images/gallery-ieee-senior-member-young-professionals.png"
+        alt: "IEEE Young Professionals membership certificate recognizing Binquan Guo as a Senior Member."
+        caption: "IEEE Young Professionals"
+        width: 2304
+        height: 1626
   - id: xidian-tencent-scholarships
+    display_order: 30
     date: "2025"
     display_date: "2024 & 2025"
     date_is_label: true
@@ -38,6 +55,7 @@ entries:
         width: 1279
         height: 996
   - id: color-vision-legacy-work
+    display_order: 50
     date: ""
     display_date: "Earlier work"
     date_is_label: true
@@ -74,6 +92,7 @@ entries:
         width: 1366
         height: 670
   - id: northern-shaanxi
+    display_order: 40
     date: ""
     display_date: "Landscapes & local history"
     date_is_label: true
