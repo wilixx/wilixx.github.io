@@ -1,3 +1,5 @@
+.author__content .author__bio { margin-bottom: 4px; }
+.author__content .author__membership { margin: 0 0 14px; color: #65716c; font-size: 0.75em; line-height: 1.45; }
 .academic-contact-trigger { box-sizing: border-box; display: inline-flex; flex: 0 0 auto; vertical-align: middle; align-items: center; justify-content: center; width: 28px; height: 28px; margin: -5px 0 -3px 1px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: #839289; cursor: pointer; }
 .academic-contact-trigger .academic-contact-icon { display: block; width: 17px; height: 17px; flex: none; }
 .academic-contact-trigger--subtle { width: 26px; height: 28px; margin: -7px 0 0; color: #8b968f; }

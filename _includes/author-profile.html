@@ -17,6 +17,7 @@
   <div class="author__content">
     <h3 class="author__name">{{ author.name }} {% include academic-contact-trigger.html %}</h3>
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.membership %}<p class="author__membership"><em>{{ author.membership }}</em></p>{% endif %}
   </div>
 
   {% include academic-contact.html %}
