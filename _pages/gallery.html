@@ -9,11 +9,13 @@ author_profile: true
 <p class="gallery-intro">Academic service and research moments.</p>
 
 <div class="gallery-list">
-  {% assign gallery_entries = site.data.gallery.entries | sort: 'date' | reverse %}
+  {% assign gallery_entries = site.data.gallery.entries | sort: 'display_order' %}
   {% for entry in gallery_entries %}
   <article class="gallery-entry" aria-labelledby="gallery-{{ entry.id }}">
     <div class="gallery-entry__body">
+      {% if entry.category or entry.display_date %}
       <p class="gallery-entry__meta">{{ entry.category }} <span aria-hidden="true">·</span> {% if entry.date_is_label %}{{ entry.display_date }}{% else %}<time datetime="{{ entry.date }}">{{ entry.display_date }}</time>{% endif %}</p>
+      {% endif %}
       <h2 id="gallery-{{ entry.id }}">{{ entry.title }}</h2>
       <p class="gallery-entry__summary">{{ entry.summary }}</p>
     </div>
