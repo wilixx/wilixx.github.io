@@ -4,23 +4,23 @@
   if (!panel) return;
   const buttons = Array.from(panel.querySelectorAll('button[data-copy-target]'));
   const status = panel.querySelector('#bio-copy-status');
-  const allowedIds = new Set(['bio-short', 'bio-journal', 'bio-magazine', 'bio-grants']);
+  const allowedIds = new Set(['bio-short', 'bio-journal', 'bio-magazine', 'bio-grants', 'bio-edas', 'bio-reviewer']);
   const captions = new Map();
   const resetTimers = new Map();
   const messages = {
     en: {
       copying: 'Copying…', copied: 'Copied', manual: 'Select & copy',
-      statusCopying: 'Copying LaTeX…', statusCopied: 'LaTeX copied.',
-      statusSelected: 'Automatic copying was unavailable. The LaTeX is selected; use your device’s Copy command or Ctrl/Cmd+C.',
-      statusManual: 'Automatic copying was unavailable. Select the LaTeX and use your device’s Copy command or Ctrl/Cmd+C.',
-      statusMissing: 'This LaTeX text is unavailable.'
+      statusCopying: 'Copying text…', statusCopied: 'Text copied.',
+      statusSelected: 'Automatic copying was unavailable. The text is selected; use your device’s Copy command or Ctrl/Cmd+C.',
+      statusManual: 'Automatic copying was unavailable. Select the text and use your device’s Copy command or Ctrl/Cmd+C.',
+      statusMissing: 'This text is unavailable.'
     },
     zh: {
       copying: '复制中…', copied: '已复制', manual: '手动复制',
-      statusCopying: '正在复制 LaTeX…', statusCopied: '已复制 LaTeX。',
-      statusSelected: '浏览器未完成自动复制。LaTeX 已选中，请使用设备的“复制”命令或 Ctrl/Cmd+C。',
-      statusManual: '浏览器未完成自动复制，请选中 LaTeX 后使用设备的“复制”命令或 Ctrl/Cmd+C。',
-      statusMissing: '暂时无法取得这段 LaTeX 文本。'
+      statusCopying: '正在复制文本…', statusCopied: '已复制文本。',
+      statusSelected: '浏览器未完成自动复制。文本已选中，请使用设备的“复制”命令或 Ctrl/Cmd+C。',
+      statusManual: '浏览器未完成自动复制，请选中文本后使用设备的“复制”命令或 Ctrl/Cmd+C。',
+      statusMissing: '暂时无法取得这段文本。'
     }
   };
   let busy = false;
@@ -71,7 +71,7 @@
         announce('statusMissing');
         return;
       }
-      // Preserve every LaTeX backslash, brace and line break from the source.
+      // Preserve the source exactly, including LaTeX syntax and line breaks.
       const text = source.textContent;
       if (!text.trim()) { announce('statusMissing'); return; }
       busy = true;
