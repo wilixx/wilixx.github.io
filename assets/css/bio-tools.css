@@ -1,0 +1,29 @@
+.bio-resources { margin-top: 18px; padding: 9px 0 0; border-top: 1px solid #e2e6e9; color: #343b43; }
+.bio-resources > summary { box-sizing: border-box; min-height: 44px; padding: 11px 0; color: #626b74; font: 14px/1.5 Arial,Helvetica,"PingFang SC","Microsoft YaHei",sans-serif; cursor: pointer; }
+.bio-resources > summary:hover { color: #285e8c; }
+.bio-resources > summary:focus-visible, .bio-resources [data-copy-target]:focus-visible, .bio-resources a:focus-visible, .bio-resources code:focus-visible { outline: 2px solid #285e8c; outline-offset: 3px; border-radius: 2px; }
+.bio-resources .bio-resource { padding: 14px 0; border-top: 1px solid #e2e6e9; min-width: 0; }
+.bio-resources .bio-resource-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; }
+.bio-resources h3 { margin: 0; color: #343b43; font-size: 15px; line-height: 1.5; font-weight: 600; }
+.bio-resources p { margin: 6px 0; font-size: 14px; line-height: 1.6; }
+.bio-resources pre { box-sizing: border-box; max-width: 100%; margin: 10px 0 0; padding: 13px 14px; border: 1px solid #e2e6e9; border-radius: 4px; background: #f7f8fa; color: #343b43; font: 13px/1.65 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace; white-space: pre-wrap; overflow-wrap: anywhere; word-break: normal; tab-size: 2; }
+.bio-resources pre code { display: block; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; white-space: inherit; overflow-wrap: inherit; user-select: text; }
+.bio-resources button[data-copy-target] { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin: 0; padding: 8px 12px; border: 1px solid #ced7df; border-radius: 4px; background: #fff; color: #285e8c; font: 13px/1.5 Arial,Helvetica,"PingFang SC","Microsoft YaHei",sans-serif; cursor: pointer; }
+.bio-resources button[data-copy-target][hidden] { display: none; }
+.bio-resources button[data-copy-target]:hover { background: #f2f5f8; }
+.bio-resources button[data-copy-state="copied"] { color: #3d654a; border-color: #93aa9b; background: #f4f8f4; }
+.bio-resources button[data-copy-state="manual"] { color: #755330; border-color: #c6b498; background: #faf8f3; }
+.bio-resources button[data-copy-target][aria-disabled="true"] { cursor: progress; opacity: .75; }
+.bio-resources #bio-copy-status { min-height: 1.6em; margin: 5px 0 9px; color: #52685b; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.bio-resources #bio-copy-status:empty { visibility: hidden; }
+.bio-resources .bio-downloads { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 18px; margin: 8px 0 12px; font-size: 14px; }
+.bio-resources .bio-downloads a { display: inline-flex; align-items: center; min-height: 44px; overflow-wrap: anywhere; }
+@media (max-width: 440px) {
+  .bio-resources pre { padding: 11px 10px; font-size: 13px; }
+  .bio-resources .bio-resource-header { gap: 4px 12px; }
+  .bio-resources .bio-downloads { align-items: flex-start; gap: 2px 14px; }
+}
+@media print {
+  .bio-resources button[data-copy-target], .bio-resources #bio-copy-status { display: none; }
+  .bio-resources pre { background: transparent; }
+}

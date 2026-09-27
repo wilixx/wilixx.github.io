@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="time-discretization-title time-discretization-desc">
+  <title id="time-discretization-title">Temporal graphs for continuous satellite services</title>
+  <desc id="time-discretization-desc">Three graph snapshots show a changing network, with a green route continuing across them. Unequal intervals along the time axis illustrate time discretization adapted to service duration. This is a conceptual illustration, not a measured result.</desc>
+  <path fill="#fff" d="M0 0h320v200H0z"/>
+  <g fill="#f7f9fa" stroke="#d7e1e6" stroke-width="2">
+    <rect x="18" y="26" width="78" height="100" rx="7"/>
+    <rect x="121" y="26" width="78" height="100" rx="7"/>
+    <rect x="224" y="26" width="78" height="100" rx="7"/>
+  </g>
+  <g fill="none" stroke="#b4c3cb" stroke-width="2.5" stroke-linejoin="round">
+    <path d="m33 101 24-55 24 55H33m0 0 48-37"/>
+    <path d="m136 101 24-55 24 55h-48m24-55 24 18"/>
+    <path d="m239 101 24-55 24 55h-48m0 0 48-37"/>
+  </g>
+  <path d="m33 101 24-55 24 18 55 37 24-55 24 55 55-37 24-18 24 55" fill="none" stroke="#708b78" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#647b89" stroke-width="2.5">
+    <circle cx="33" cy="101" r="6"/><circle cx="57" cy="46" r="6"/><circle cx="81" cy="64" r="6"/><circle cx="81" cy="101" r="6"/>
+    <circle cx="136" cy="101" r="6"/><circle cx="160" cy="46" r="6"/><circle cx="184" cy="64" r="6"/><circle cx="184" cy="101" r="6"/>
+    <circle cx="239" cy="101" r="6"/><circle cx="239" cy="64" r="6"/><circle cx="263" cy="46" r="6"/><circle cx="287" cy="101" r="6"/>
+  </g>
+  <g fill="none" stroke="#708b78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m104 77 7 7-9 1m107-6 9-1-4 8"/>
+  </g>
+  <path d="M23 158h276m-8-5 8 5-8 5" fill="none" stroke="#647b89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#c5976c" stroke-width="3"><path d="M30 148v20m88-20v20m64-20v20m96-20v20"/></g>
+  <path d="M32 145h84m4 0h60m4 0h92" fill="none" stroke="#e8d8c8" stroke-width="6"/>
+  <text x="291" y="185" fill="#647b89" font-family="Arial, sans-serif" font-size="16" font-style="italic">t</text>
+</svg>

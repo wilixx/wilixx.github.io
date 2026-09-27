@@ -112,6 +112,9 @@
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
+      {% if author.ieee %}
+        <li><a href="{{ author.ieee }}"><i class="fas fa-fw fa-book" aria-hidden="true"></i> IEEE Xplore</a></li>
+      {% endif %}
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
       {% endif %}
