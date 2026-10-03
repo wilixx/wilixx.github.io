@@ -1,0 +1,150 @@
+@article{guo2025enabling,
+  author = {Guo, Binquan and Zhang, Zhou and Atapattu, Saman and Pan, Miao and Yan, Ye and Xiong, Zehui and Li, Hongyan},
+  title = {Enabling Real-Time Computing and Transmission Services in Large-Scale {LEO} Satellite Networks},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {2025},
+  month = aug,
+  volume = {74},
+  number = {8},
+  pages = {12813--12828},
+  doi = {10.1109/TVT.2025.3550806}
+}
+
+@article{guo2025resilience,
+  author = {Guo, Binquan and Xiong, Zehui and Zhang, Zhou and Li, Baosheng and Niyato, Dusit and Yuen, Chau and Han, Zhu},
+  title = {Resilience of Mega-Satellite Constellations: How Node Failures Impact Inter-Satellite Networking Over Time?},
+  journal = {IEEE Transactions on Communications},
+  year = {2025},
+  month = dec,
+  volume = {73},
+  number = {12},
+  pages = {15705--15721},
+  doi = {10.1109/TCOMM.2025.3610221}
+}
+
+@article{guo2024lightweight,
+  author = {Guo, Binquan and Xiong, Zehui and Han, Zhu and Yuen, Chau and Sun, Sumei},
+  title = {Lightweight Maximum-Capacity Path Selection for Delay-Sensitive Applications in Large-Scale {LEO} Satellite Networks},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {2025},
+  month = apr,
+  volume = {74},
+  number = {4},
+  pages = {6573--6585},
+  doi = {10.1109/TVT.2024.3516779}
+}
+
+@article{guo2026lightweight,
+  author = {Guo, Binquan and Xiong, Zehui and Zhang, Zhou and Yang, Qianqian and Li, Baosheng and Niyato, Dusit and Guizani, Mohsen and Han, Zhu},
+  title = {Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale {LEO} Satellite Networks},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2026},
+  month = sep,
+  volume = {25},
+  number = {9},
+  pages = {13880--13897},
+  doi = {10.1109/TMC.2026.3675010}
+}
+
+@article{guo2025enhancing,
+  author = {Guo, Binquan and Yang, Wanting and Xiong, Zehui and Zhang, Zhou and Li, Baosheng and Han, Zhu and Tafazolli, Rahim and Quek, Tony Q. S.},
+  title = {Enhancing Mega-Satellite Networks With Generative Semantic Communication: A Networking Perspective},
+  journal = {IEEE Wireless Communications},
+  year = {2026},
+  month = apr,
+  volume = {33},
+  number = {2},
+  pages = {226--234},
+  doi = {10.1109/MWC.2025.3596938}
+}
+
+@article{guo2024enhanced,
+  author = {Guo, Binquan and Chang, Zheng and Han, Zhu and Xiong, Zehui},
+  title = {Enhanced Time Discretization for Temporal Graph-Based Continuous Service Provisioning in Large-Scale Satellite Networks},
+  journal = {IEEE Wireless Communications Letters},
+  year = {2024},
+  month = sep,
+  volume = {13},
+  number = {9},
+  pages = {2625--2629},
+  doi = {10.1109/LWC.2024.3434990}
+}
+
+@article{guo2024network,
+  author = {Guo, Binquan and Chang, Zheng and Han, Zhu and Yang, Wanting and Xiong, Zehui},
+  title = {Network Slicing Strategy for Real-Time Applications in Large-Scale Satellite Networks With Heterogeneous Transceivers},
+  journal = {IEEE Wireless Communications Letters},
+  year = {2024},
+  month = aug,
+  volume = {13},
+  number = {8},
+  pages = {2195--2199},
+  doi = {10.1109/LWC.2024.3406369}
+}
+
+@article{guo2024time,
+  author = {Hu, Yun and Guo, Binquan and Yang, Chungang and Han, Zhu},
+  title = {Time-Deterministic Networking for Satellite-Based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions},
+  journal = {IEEE Network},
+  year = {2024},
+  month = jul,
+  volume = {38},
+  number = {4},
+  pages = {111--118},
+  doi = {10.1109/MNET.2024.3380073}
+}
+
+@inproceedings{guo2023online,
+  author = {Guo, Binquan and Li, Hongyan and Zhang, Zhou and Yan, Ye},
+  title = {Online Network Slicing for Real Time Applications in Large-scale Satellite Networks},
+  booktitle = {ICC 2023 - IEEE International Conference on Communications},
+  year = {2023},
+  month = {May--Jun.},
+  pages = {5564--5569},
+  doi = {10.1109/ICC45041.2023.10279431},
+  address = {Rome, Italy}
+}
+
+@inproceedings{guo2024multi,
+  author = {Guo, Binquan and Xiong, Zehui and Niyato, Dusit and Mao, Shiwen and Han, Zhu},
+  title = {Multi-Path Transmission of Real-Time Remote Sensing Data via Heterogeneous {LEO} Inter-Satellite-Links},
+  booktitle = {2024 IEEE 21st International Conference on Mobile Ad-Hoc and Smart Systems (MASS)},
+  year = {2024},
+  month = sep,
+  pages = {75--81},
+  doi = {10.1109/MASS62177.2024.00021},
+  address = {Seoul, Korea, Republic of}
+}
+
+@inproceedings{guo2024semantic,
+  author = {Guo, Binquan and Xiong, Zehui and Wang, Bo and Quek, Tony Q. S. and Han, Zhu},
+  title = {Semantic Communication-Aware End-to-End Routing in Large-Scale {LEO} Satellite Networks},
+  booktitle = {2024 IEEE International Conference on Metaverse Computing, Networking, and Applications (MetaCom)},
+  year = {2024},
+  month = aug,
+  pages = {137--142},
+  doi = {10.1109/MetaCom62920.2024.00033},
+  address = {Hong Kong, China}
+}
+
+@inproceedings{10681883,
+  author = {Ding, Wei and Guo, Binquan and Xiong, Zehui},
+  title = {Virtualized Computing and Communication Service Provision in Large-Scale Software Defined Satellite Networks},
+  booktitle = {2024 IEEE/CIC International Conference on Communications in China (ICCC)},
+  year = {2024},
+  month = aug,
+  pages = {1157--1162},
+  doi = {10.1109/ICCC62479.2024.10681883},
+  address = {Hangzhou, China}
+}
+
+@inproceedings{peng2024spatio,
+  author = {Peng, Liang and Yan, Jie and Guo, Binquan and Wang, Xiaoxiang},
+  title = {Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in {LEO} Satellite Networks},
+  booktitle = {2024 IEEE Wireless Communications and Networking Conference (WCNC)},
+  year = {2024},
+  month = apr,
+  pages = {1--6},
+  doi = {10.1109/WCNC57260.2024.10570573},
+  address = {Dubai, United Arab Emirates}
+}
