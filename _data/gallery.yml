@@ -24,16 +24,16 @@ entries:
     title: "Elevation to IEEE Senior Member"
     summary: "With thanks to everyone who has offered continued guidance and support."
     photos:
-      - path: "/images/gallery-ieee-senior-member-comsoc.png"
+      - path: "/images/gallery-ieee-senior-member-comsoc.jpg"
         alt: "IEEE Communications Society membership certificate recognizing Binquan Guo as a Senior Member."
         caption: "IEEE Communications Society"
-        width: 2310
-        height: 1626
-      - path: "/images/gallery-ieee-senior-member-young-professionals.png"
+        width: 1440
+        height: 1014
+      - path: "/images/gallery-ieee-senior-member-young-professionals.jpg"
         alt: "IEEE Young Professionals membership certificate recognizing Binquan Guo as a Senior Member."
         caption: "IEEE Young Professionals"
-        width: 2304
-        height: 1626
+        width: 1814
+        height: 1280
   - id: xidian-tencent-scholarships
     display_order: 30
     date: "2025"
