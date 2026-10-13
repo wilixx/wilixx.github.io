@@ -44,7 +44,6 @@ News
 * [8/2024] Presented one co-authored paper in IEEE ICCC 2024, in Hangzhou, China. 
 * [3/2024] Paper entitled 'Time-deterministic Networking for Satellite-based Internet-of-Things Services: Architecture, Key Technologies, and Future Directions', accepted by IEEE Network 2024 ([PDF download](https://ieeexplore.ieee.org/document/10477426)).
 * [12/2023] Co-authored paper entitled 'Spatio-Temporal Multi-View Based Short-Term Traffic Forecasting for Incomplete Time Series in LEO Satellite Networks', accepted by IEEE Wireless Communications and Networking Conference, 2024 ([PDF download](https://ieeexplore.ieee.org/document/10570573)).
-* [7/2023] Awarded a scholarship under the Fund of China Scholarship Council, hosted by  [Prof. Pan Miao](http://www2.egr.uh.edu/~mpan2/) in University of Houston (remotely), and [Prof. Zehui Xiong](https://sites.google.com/view/zehuixiong) in Singapore University of Technology and Design. 
 * [6/2023] Presented two accepted papers in IEEE ICC 2023, in Rome, Italy. 
 * [5/2023] Patent entitled 'A Color Vision Test Chart Synthesis Method Based on pseudoisochromatic Color Searching', authorized by the State Intellectual Property Office of China  ([Detailed info](http://epub.cnipa.gov.cn/cred/CN111429547B?8kt2YOWWXQBD=1686801432039)) .
 * [3/2023] Project entitled 'Research on Deterministic Resource Slicing and Scheduling Method for Time-varying Networks' is approved by the postgraduate innovation fundation , 2023~2024.
@@ -114,7 +113,7 @@ Publications
 Experience
 ------
 * [Sep,2020-Dec,2025] Obtained Ph.D.'s degree in Xidian University.
-* [Feb,2024~Aug,2025] Visiting Ph.D. student of Singapore University of Technology and design sponsored by CSC.
+* [Feb,2024~Aug,2025] Visiting Ph.D. student at Singapore University of Technology and Design.
 * [Aug,2017-Jul,2020] Obtained Master's degree in Xidian University.
 * [Jun,2019-Sep,2019] Software Engineer, Huawei Research Center, Xi'an, China.
 * [Oct,2018-Apr,2019] Software Engineer, Intel Mobile Communications, Xi'an, China.
