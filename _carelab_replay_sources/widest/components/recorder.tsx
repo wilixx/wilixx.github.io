@@ -24,7 +24,6 @@ import {
 import type { RecordingResult } from '../lib/recording';
 import type { Language } from '../lib/i18n';
 type Phase = 'idle' | 'choosing' | 'recording' | 'paused' | 'saving';
-type Local = { token: string; folder: string; can_open: boolean };
 export default function Recorder({ language }: { language: Language }) {
   const zh = language === 'zh';
   const txt = (a: string, b: string) => (zh ? a : b);
@@ -39,8 +38,7 @@ export default function Recorder({ language }: { language: Language }) {
   >(null);
   const [notice, setNotice] = useState(''),
     [saved, setSaved] = useState('');
-  const [directory, setDirectory] = useState<any>(null),
-    [local, setLocal] = useState<Local | null>(null);
+  const [directory, setDirectory] = useState<any>(null);
   const [quality, setQuality] = useState('1080'),
     [canChoose, setCanChoose] = useState(false);
   const session = useRef<CaptureSession | null>(null),
@@ -105,17 +103,6 @@ export default function Recorder({ language }: { language: Language }) {
           throw e;
         }
         setSaved(directory.name);
-      } else if (local) {
-        const response = await fetch('/api/recordings/save', {
-          method: 'POST',
-          headers: {
-            'Content-Type': r.blob.type,
-            'X-CARELab-Token': local.token,
-          },
-          body: r.blob,
-        });
-        if (!response.ok) throw Error('save');
-        setSaved(local.folder);
       } else download(r);
     } catch {
       setNotice('save');
@@ -203,18 +190,6 @@ export default function Recorder({ language }: { language: Language }) {
         setNotice('directory');
     }
   }
-  async function openFolder() {
-    if (!local || directory) return;
-    try {
-      const r = await fetch('/api/recordings/open', {
-        method: 'POST',
-        headers: { 'X-CARELab-Token': local.token },
-      });
-      if (!r.ok) throw Error('open');
-    } catch {
-      setNotice('folder');
-    }
-  }
   const message: Record<string, string> = {
     permission: txt(
       '未获得屏幕共享权限。请重试并选择当前标签页；若内置浏览器不支持，请在桌面 Chrome 或 Edge 中打开此网址。',
@@ -231,10 +206,6 @@ export default function Recorder({ language }: { language: Language }) {
     directory: txt(
       '此浏览器未允许选择目录，将使用浏览器下载。',
       'Folder selection was not allowed. Browser downloads remain available.',
-    ),
-    folder: txt(
-      '未能打开目录，请在文件管理器中打开下面显示的保存位置。',
-      'Could not open the folder. Open the saved location below in your file manager.',
     ),
     limit: txt(
       '已达到单次 10 分钟或 200 MB 上限，录制自动结束。',
@@ -270,8 +241,8 @@ export default function Recorder({ language }: { language: Language }) {
           </div>
           <p>
             {txt(
-              '选择当前标签页即可录下地球、参数与路由对比。录制画面，不采集麦克风。',
-              'Choose this tab to capture the globe, controls and route comparison. Video only; no microphone.',
+              '请选择当前标签页。',
+              'Select this tab to record.',
             )}
           </p>
           <div className="record-settings">
@@ -304,14 +275,6 @@ export default function Recorder({ language }: { language: Language }) {
               {txt(
                 '当前环境不支持网页录屏，请在桌面 Chrome 或 Edge 中打开此网址。',
                 'Recording is unavailable here. Open this URL in desktop Chrome or Edge.',
-              )}
-            </p>
-          )}
-          {mime && !mime.startsWith('video/mp4') && (
-            <p className="record-alert">
-              {txt(
-                '此浏览器只能录制 WebM。为方便微信播放，建议改用支持 MP4 录制的桌面 Chrome 或 Edge；本地包也附有转换工具。',
-                'This browser records WebM only. For WeChat playback, use desktop Chrome or Edge with MP4 recording support. The local package also includes a conversion helper.',
               )}
             </p>
           )}
@@ -359,30 +322,21 @@ export default function Recorder({ language }: { language: Language }) {
           </div>
           <p className="record-footnote">
             {txt(
-              '单段最多 10 分钟或约 200 MB，达到上限自动结束保存。',
-              'Each clip ends automatically at 10 minutes or about 200 MB.',
+              '上限：10 分钟 / 200 MB',
+              'Limit: 10 min / 200 MB',
             )}
           </p>
           <div className="record-destination">
             <span>{txt('保存位置', 'Save location')}</span>
             <strong>
-              {directory?.name ||
-                (local
-                  ? local.folder
-                  : txt('浏览器下载目录', 'Browser downloads'))}
+              {directory?.name || txt('浏览器下载目录', 'Browser downloads')}
             </strong>
           </div>
           <div className="record-folder-actions">
-            {canChoose && !local && (
+            {canChoose && (
               <button disabled={locked} onClick={chooseDirectory}>
                 <FolderOpen size={14} />
                 {txt('选择保存目录', 'Choose folder')}
-              </button>
-            )}
-            {local?.can_open && !directory && (
-              <button onClick={openFolder}>
-                <FolderOpen size={14} />
-                {txt('打开保存目录', 'Open saved folder')}
               </button>
             )}
             {directory && (
@@ -391,14 +345,6 @@ export default function Recorder({ language }: { language: Language }) {
               </button>
             )}
           </div>
-          {!local && (
-            <p className="record-footnote">
-              {txt(
-                '在线版保存后，可在浏览器下载列表中点击“在文件夹中显示”。本地 Python 版支持直接打开保存目录。',
-                'After downloading, use “Show in folder” in your browser’s downloads. The local Python version can open its saved folder directly.',
-              )}
-            </p>
-          )}
           {notice && (
             <p role="status" className="record-alert">
               {message[notice]}

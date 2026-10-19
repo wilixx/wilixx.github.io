@@ -2,6 +2,10 @@
 
 This presentation-only React application is hosted at https://wilixx.github.io/demos/carelab-satellite-semcom/ . It preserves the original platform presentation while replaying recorded scenes. Source and distributable are public; private routing solvers and the recording generator are intentionally absent.
 
+## Interaction
+
+The initial scene is paused. The upper-left **One-click demo** action restores satellite-codec mode, overlays SemCom-CSP and BitCom, selects the comparison tab, and restarts at frame 1 at 1× speed. The action becomes **Restart demo** after use. Mode selection, pause/resume, speed, route selection and exports remain available. Repeated explanatory callouts and the information dialog were removed from the interface; the dataset interpretation remains documented below and in exported frame metadata.
+
 ## Replay data and interpretation
 
 Four modes, 16 frames each, 30 seconds between recorded frames. Source: the CelesTrak Starlink OMM snapshot bundled with the research demonstration (epoch in each recording). Positions were recorded through SGP4. Inter-satellite links, capacities, semantic capabilities, and traffic are demonstration assumptions, not Starlink operational topology. The dataset records 1,000 selected satellites and two ground endpoints, with 60% configured semantic capability.

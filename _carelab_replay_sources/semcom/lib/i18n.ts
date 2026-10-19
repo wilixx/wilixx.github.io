@@ -4,37 +4,32 @@ export const paperUrl = 'https://doi.org/10.1109/TMC.2026.3675010';
 export const paperTitle =
   'Lightweight Semantic Communication-Compliant Shortest Path Selection in Large-Scale LEO Satellite Networks';
 export const english: Record<string, string> = {
-  "预录回放：图形、路径与指标来自同一录制帧；公开版本不执行路由或编解码算法。": "Recorded replay: the globe, routes and metrics share the same captured frame. No routing or codec algorithms run in this public edition.",
+  '一键演示': 'One-click demo',
+  '重新演示': 'Restart demo',
+  '正在载入…': 'Loading…',
+  '恢复默认场景': 'Reset scenario',
+  '点击一行查看该算法的卫星路径。': 'Select a row to view its satellite route.',
   "回放数据暂时无法加载，请点击重新播放重试。": "Replay data could not be loaded. Select Restart replay to try again.",
   "此浏览器不支持回放数据解压，请使用最新版 Chrome、Edge、Firefox 或 Safari。": "This browser cannot decompress replay data. Please use a current version of Chrome, Edge, Firefox or Safari.",
-  "公开回放 · Recorded replay": "Public edition · Recorded replay",
   "正在载入回放…": "Loading replay…",
   "重新播放": "Restart replay",
-  "预录场景参数 · 只读。切换地球上方四种模式以查看对应录制结果。": "Recorded parameters · Read-only. Select one of the four modes above the globe to view its captured results.",
   "回到默认录制场景": "Reset recorded scenario",
   "相关论文": "Related publications",
-  "回放速度": "replay speed",
+  "回放速度": "speed",
   "回到开头": "Back to start",
   "预录轨道场景": "Recorded orbital scenario",
   "录制帧": "Frame",
   "录制时计算周期": "Recorded compute cycle",
-  "公开回放：每帧间隔 30 秒，1× 每 2 秒播放一帧。轨道、路径与指标均为预录仿真，非实时遥测。": "Recorded replay: 30 seconds between captured frames; 1× plays one frame every 2 seconds. Orbits, routes and metrics are simulated recordings, not live telemetry.",
-  "暂停回放": "Pause replay",
-  "继续回放": "Resume replay",
-  "正在回放": "Playing replay",
+  "暂停回放": "Pause",
+  "继续回放": "Resume",
+  "正在回放": "Playing",
   "拖动旋转 · 点击查看卫星 ": "Drag to rotate · Click to inspect satellites ",
   "录制时算法执行时间": "Recorded algorithm runtime",
-  "预录算法表现与逐链路指标": "Recorded performance, link by link",
+  "算法表现与逐链路指标": "Algorithm performance",
   "查看录制帧汇总": "View frame summary",
   "编解码说明": "Codec overview",
   "录制帧汇总": "Frame summary",
-  "公开版本仅播放预录语义传输流程，不执行编码、解码或路径求解。核心算法与模型不包含在此公开仓库中。": "This public edition replays captured semantic communication scenarios. It does not encode, decode or solve routes. Core algorithms and models are excluded from the public repository.",
-  "当前模式的全部录制帧汇总：沿时间轴变化的预录结果，非本次浏览器中新运行的独立实验。": "Summary of all recorded frames in this mode: captured results along the timeline, not new independent experiments run in your browser.",
-  "公开轨道 · 预录仿真回放 · 非实时 Starlink 遥测": "Public orbital data · Recorded simulation replay · Not live Starlink telemetry",
-  "此处为录制时的终端能力，切换四种模式可查看其他场景。": "Terminal capabilities at capture time. Select another SemCom mode to view a different scenario.",
-  "只读的录制节点能力：0 表示不支持或暂无空闲槽位。": "Recorded node capabilities, read-only. Zero indicates unsupported or no available slots.",
-  "公开轨道来自 CelesTrak，地图来自 Natural Earth。容量、语义能力与链路均为实验假设，不代表 Starlink 内部网络。": "Public orbits are from CelesTrak and map data from Natural Earth. Capacity, semantic capabilities and links are experimental assumptions, not Starlink internal network data.",
-  "算法执行时间为录制时的测量值；此页面只加载数据和绘图，不能用于测量当前设备的算法性能。": "Algorithm runtimes were measured during capture. This page only loads and renders recordings; it does not benchmark your device.",
+  "0 表示不支持或暂无空闲槽位。": "Zero indicates unsupported or no available slots.",
   "此录制帧中该算法无可行路径，可切换算法或继续播放。": "This method has no feasible route in the recorded frame. Select another method or continue playback.",
   "录制运行 ms": "Recorded runtime ms",
   "预录演示 · 同屏比较语义通信带宽节省与传播时延成本": "Recorded showcase · Compare bandwidth savings and propagation delay at a glance",
@@ -45,8 +40,6 @@ export const english: Record<string, string> = {
   个人主页: 'Personal website',
   邮箱与微信: 'Email & WeChat',
   微信: 'WeChat',
-  '学术交流与产业合作，请注明机构与来意。':
-    'For research and industry collaboration, please include your affiliation and purpose.',
 
   '主路径已就绪，正在补齐比较结果…':
     'Primary routes ready; completing comparisons…',
@@ -59,8 +52,8 @@ export const english: Record<string, string> = {
   '勾选叠加路径，点击名称聚焦路径':
     'Check routes to overlay; select a name for metrics.',
   显示路径: 'Show route',
-  '实线：语义方法 · 虚线：BitCom；重合路径错开显示':
-    'Solid: semantic methods \u00b7 Dashed: BitCom. Overlapping routes use parallel lanes.',
+  '实线：语义方法 · 虚线：BitCom':
+    'Solid: semantic methods · Dashed: BitCom',
   '源 / 目的与 ENC / DEC 标记对应当前指标方案':
     'Source / destination and ENC / DEC markers follow the selected method.',
   点击空白处关闭: 'Click empty space to dismiss',
@@ -107,8 +100,8 @@ export const english: Record<string, string> = {
   '传播时延 ms': 'Propagation, ms',
   未运行: 'Not run',
   限时可行解: 'Time-limited feasible',
-  '链路标注：占用 / 总容量 Mbps · 传播时延 ms；悬停查看，完整明细见下表':
-    'Links: occupied / capacity Mbps · propagation ms. Hover for details; full list below.',
+  '链路：占用 / 总容量 Mbps · 传播时延 ms':
+    'Links: occupied / capacity Mbps · propagation ms',
   批量实验已停止: 'Batch trials stopped.',
   选择算法: 'Select algorithm',
   卫星语义通信动态仿真: 'Dynamic satellite SemCom simulation',

@@ -19,13 +19,6 @@ import {
   TableCell,
 } from '@/components/ui/table';
 import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog';
-import {
   Satellite,
   Play,
   Pause,
@@ -35,11 +28,9 @@ import {
   Settings2,
   Network as NetworkIcon,
   ChevronRight,
-  Info,
   Expand,
 } from 'lucide-react';
 import Globe from './globe';
-import SingaporeClock from './singapore-clock';
 import ScreenRecorder from './screen-recorder';
 import { Checkbox } from '@/components/ui/checkbox';
 import { pathColors } from '@/lib/path-style';
@@ -77,8 +68,9 @@ function Pick({
   options: { value: string; label: string }[];
   label: string;
 }) {
+  if (disabled) return <div className="picker picker-value" aria-label={label}>{options.find((o) => o.value === value)?.label ?? value}</div>;
   return (
-    <Select disabled={disabled} value={value} onValueChange={(v) => v !== null && onChange(v)}>
+    <Select value={value} onValueChange={(v) => v !== null && onChange(v)}>
       <SelectTrigger aria-label={label} className="picker">
         <SelectValue>
           {options.find((o) => o.value === value)?.label ?? value}
@@ -156,7 +148,8 @@ export default function Page() {
   const [reload, setReload] = useState(0);
   const [replay, setReplay] = useState<ReplayData | null>(null);
   const [frameIndex, setFrameIndex] = useState(0);
-  const [running, setRunning] = useState(true);
+  const [running, setRunning] = useState(false);
+  const [demoStarted, setDemoStarted] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [busy, setBusy] = useState(true);
   const [failure, setFailure] = useState('');
@@ -172,7 +165,6 @@ export default function Page() {
   const frame = replay?.frames[frameIndex];
   const net: Network | null = frame?.net ?? null;
   const results: Result[] = frame?.results ?? [];
-  const frameInfo = { buildMs: frame?.buildMs ?? 0, frameMs: frame?.frameMs ?? 0 };
   const frameCount = frameIndex + 1;
   const catalogCount = c.count;
   const playing = running;
@@ -181,7 +173,6 @@ export default function Page() {
   const batchBusy = false;
   const overrides: Record<string, any> = {};
   const trials = replay?.frames.map((item, i) => ({ trial: i + 1, time: item.net.time, results: item.results })) ?? [];
-  const message = tr('预录回放：图形、路径与指标来自同一录制帧；公开版本不执行路由或编解码算法。');
   const result = results.find((r) => r.name === active);
   const best = results.find((r) => r.name === 'SemCom-CSP');
   const raw = results.find((r) => r.name === 'BitCom (CGR)');
@@ -209,7 +200,7 @@ export default function Page() {
         }
         cache.current.set(mode, incoming);
       }
-      if (live) { setReplay(incoming); setFrameIndex(0); setRunning(true); }
+      if (live) { setReplay(incoming); setFrameIndex(0); }
     };
     load().catch((error) => {
       if (live && error.name !== 'AbortError') setFailure(error.message === 'unsupported-browser' ? '此浏览器不支持回放数据解压，请使用最新版 Chrome、Edge、Firefox 或 Safari。' : '回放数据暂时无法加载，请点击重新播放重试。');
@@ -253,6 +244,19 @@ export default function Page() {
     if (!replay) { setReload((v) => v + 1); return; }
     setFrameIndex(0); setSelected(null); setRunning(true);
   }
+  function startDemo() {
+    setDemoStarted(true);
+    setMode(3);
+    setActive('SemCom-CSP');
+    setVisibleMethods(['SemCom-CSP', 'BitCom (CGR)']);
+    setShowLinks(false);
+    setTab('compare');
+    setSpeed(1);
+    setFrameIndex(0);
+    setSelected(null);
+    setRunning(true);
+    if (!replay && mode === 3) setReload((v) => v + 1);
+  }
   function change(p: Partial<Config>) {
     if (p.us !== undefined && p.ud !== undefined) {
       const next = modes.findIndex(([, , us, ud]) => us === p.us && ud === p.ud);
@@ -286,7 +290,6 @@ export default function Page() {
           {tr('卫星网络 ')}
           <i>/</i> {tr(' 语义通信实验室')}
         </nav>
-        <span className="badge">{tr('公开回放 · Recorded replay')}</span>
         <div className="language-control">
           <span>{tr('语言')}</span>
           <Pick
@@ -305,55 +308,27 @@ export default function Page() {
           <Expand size={16} />
           {tr(fullScreen ? '退出全屏' : '全屏演示')}
         </button>
-        <Dialog>
-          <DialogTrigger
-            className="icon-button"
-            aria-label={tr('说明与数据来源')}
-          >
-            <Info size={17} />
-          </DialogTrigger>
-          <DialogContent className="docs">
-            <DialogHeader>
-              <DialogTitle>{tr('研究基础与演示边界')}</DialogTitle>
-            </DialogHeader>
-            <p>{tr('公开版本仅播放预录语义传输流程，不执行编码、解码或路径求解。核心算法与模型不包含在此公开仓库中。')}</p>
-            <p>{tr('公开轨道来自 CelesTrak，地图来自 Natural Earth。容量、语义能力与链路均为实验假设，不代表 Starlink 内部网络。')}</p>
-            <p>{tr('算法执行时间为录制时的测量值；此页面只加载数据和绘图，不能用于测量当前设备的算法性能。')}</p>
-            <p><a href="https://ieeexplore.ieee.org/document/11437528/" target="_blank" rel="noopener noreferrer">IEEE TMC paper ↗</a> · <a href="https://ieeexplore.ieee.org/document/11206535/" target="_blank" rel="noopener noreferrer">IEEE Magazine paper ↗</a></p>
-          </DialogContent>
-        </Dialog>
       </header>
       <section className="intro">
         <div>
-          <small>{tr('空间网络智能')}</small>
           <h1>
             {tr('赋能超大规模低轨星座语义通信')}
             <span className="demo-subtitle">{tr('基于 Starlink 的演示')}</span>
           </h1>
-          <p>{tr('预录演示 · 同屏比较语义通信带宽节省与传播时延成本')}</p>
-        </div>
-        <div className="actions">
-          <button className="ghost" onClick={exportResult} disabled={!net}>
-            <Download size={15} /> {tr(' 导出实验')}
-          </button>
-          <button
-            className="primary"
-            disabled={busy}
-            onClick={() => run()}
-          >
-            <Play size={14} />
-            {busy
-              ? tr('正在载入回放…')
-              : dirty
-                ? tr('应用配置并运行')
-                : tr('重新播放')}
-          </button>
+          <div className="actions intro-actions">
+            <button className="primary" disabled={busy} onClick={startDemo}>
+              <Play size={14} aria-hidden="true" />
+              {tr(busy ? '正在载入…' : demoStarted ? '重新演示' : '一键演示')}
+            </button>
+            <button className="ghost" onClick={exportResult} disabled={!net}>
+              <Download size={15} /> {tr(' 导出实验')}
+            </button>
+          </div>
         </div>
       </section>
       <div className="workspace">
         <aside className="panel config">
           <small>{tr('01 / 场景控制')}</small>
-          <p className="replay-notice">{tr('预录场景参数 · 只读。切换地球上方四种模式以查看对应录制结果。')}</p>
           <h2>
             <Settings2 size={16} /> {tr(' 场景配置')}
           </h2>
@@ -556,7 +531,7 @@ export default function Page() {
             />
           </details>
           <button className="ghost full" onClick={() => { setMode(3); run(); }}>
-            <RotateCcw size={13} /> {tr('回到默认录制场景')}
+            <RotateCcw size={13} /> {tr('恢复默认场景')}
           </button>
           <div className="paper-link">
             <small>{tr('相关论文')}</small>
@@ -567,7 +542,6 @@ export default function Page() {
             className="research-contact"
             aria-label={tr('学术与产业合作')}
           >
-            <small>{tr('学术与产业合作')}</small>
             <strong>Binquan Guo</strong>
             <div className="profile-links">
               <a
@@ -601,9 +575,6 @@ export default function Page() {
                 {tr('微信')}：<span>QuantifyingAll</span>
               </p>
             </details>
-            <p className="contact-note">
-              {tr('学术交流与产业合作，请注明机构与来意。')}
-            </p>
           </section>
         </aside>
         <div className="stage">
@@ -643,20 +614,14 @@ export default function Page() {
             <div className="dynamic-meta">
               <span>
                 {tr(running ? '正在回放' : '已暂停')} ·{' '}
-                {net?.time.slice(11, 19)} UTC · {tr('录制帧')} {frameCount}/{replay?.frames.length ?? '—'} ·{' '}
-                {tr('录制时计算周期')} {fmt(frameInfo.frameMs, 0)} ms
+                {net?.time.slice(11, 19)} UTC · {tr('录制帧')} {frameCount}/{replay?.frames.length ?? '—'}
               </span>
               <span>
-                {tr('预录轨道场景')} · {catalogCount.toLocaleString()}{' '}
+                {catalogCount.toLocaleString()}{' '}
                 {tr('目录卫星')} · {tr('数据历元')}{' '}
                 {net?.epoch.slice(0, 16).replace('T', ' ')} UTC
               </span>
             </div>
-            <p>
-              {tr(
-                '公开回放：每帧间隔 30 秒，1× 每 2 秒播放一帧。轨道、路径与指标均为预录仿真，非实时遥测。',
-              )}
-            </p>
           </section>
           <div className="map-comparison" ref={comparisonRef}>
             <section className="globe-frame">
@@ -749,7 +714,7 @@ export default function Page() {
                 <div className="map-footer">
                   <span>
                     {tr(
-                      '链路标注：占用 / 总容量 Mbps · 传播时延 ms；悬停查看，完整明细见下表',
+                      '链路：占用 / 总容量 Mbps · 传播时延 ms',
                     )}
                   </span>
                   {tr('拖动旋转 · 点击查看卫星 ')}
@@ -763,7 +728,6 @@ export default function Page() {
             </section>
             <aside className="path-controls panel">
               <h3>{tr('路径对比')}</h3>
-              <p>{tr('勾选叠加路径，点击名称聚焦路径')}</p>
               {methods.map((m) => {
                 const r = results.find((r) => r.name === m);
                 return (
@@ -794,8 +758,7 @@ export default function Page() {
                   </div>
                 );
               })}
-              <p>{tr('实线：语义方法 · 虚线：BitCom；重合路径错开显示')}</p>
-              <p>{tr('源 / 目的与 ENC / DEC 标记对应当前指标方案')}</p>
+              <p>{tr('实线：语义方法 · 虚线：BitCom')}</p>
             </aside>
             <div className="metrics comparison-metrics">
               {[
@@ -868,15 +831,7 @@ export default function Page() {
               ))}
             </div>
           </div>
-          <div className={'status ' + (dirty ? 'warning' : '')} role="status">
-            <span className="live" />
-            {failure
-              ? tr(failure)
-              : dirty
-                ? tr('配置已修改；地图与结果仍为上一次运行，请应用配置。')
-                : tr(message)}
-            <SingaporeClock />
-          </div>
+          {failure && <div className="status warning" role="alert">{tr(failure)}</div>}
           <section className="panel flow">
             <div className="section-heading">
               <div>
@@ -988,9 +943,7 @@ export default function Page() {
                 {tr('° 经度 / ')}
                 {fmt(chosen.alt)} {tr(' km 高度')}
               </p>
-              {chosen.ground ? (
-                <p>{tr('此处为录制时的终端能力，切换四种模式可查看其他场景。')}</p>
-              ) : (
+              {!chosen.ground && (
                 <>
                   <div className="node-models">
                     {models.map((m, i) => (
@@ -1041,36 +994,9 @@ export default function Page() {
                   </div>
                   <p>
                     {tr(
-                      '只读的录制节点能力：0 表示不支持或暂无空闲槽位。',
+                      '0 表示不支持或暂无空闲槽位。',
                     )}
                   </p>
-                  <div className="actions">
-                    <button
-                      className="ghost"
-                      disabled
-                      onClick={() =>
-                        change({ manualEnc: chosen.id, us: false })
-                      }
-                    >
-                      {tr('固定为编码节点')}
-                    </button>
-                    <button
-                      className="ghost"
-                      disabled
-                      onClick={() =>
-                        change({ manualDec: chosen.id, ud: false })
-                      }
-                    >
-                      {tr('固定为解码节点')}
-                    </button>
-                    <button
-                      className="ghost"
-                      disabled
-                      onClick={() => change({ manualEnc: -1, manualDec: -1 })}
-                    >
-                      {tr('恢复自动选择')}
-                    </button>
-                  </div>
                 </>
               )}
             </section>
@@ -1079,7 +1005,7 @@ export default function Page() {
             <div className="section-heading">
               <div>
                 <small>{tr('03 / 性能分析')}</small>
-                <h2>{tr('预录算法表现与逐链路指标')}</h2>
+                <h2>{tr('算法表现与逐链路指标')}</h2>
               </div>
               <button
                 className="ghost"
@@ -1177,16 +1103,6 @@ export default function Page() {
                     ))}
                   </TableBody>
                 </Table>
-                <p className="note">
-                  {tr('点击一行查看该算法的卫星路径。KSP 最多检查 ')}
-                  {applied.current.k}{' '}
-                  {tr(
-                    ' 条简单候选路径；无路径不等于全局不可行。CGR 为原始数据快照基准。附加分层图用于交叉校验最短时延。',
-                  )}
-                </p>
-                <p className="note">
-                  {tr('算法执行时间为录制时的测量值；此页面只加载数据和绘图，不能用于测量当前设备的算法性能。')}
-                </p>
               </TabsContent>
               <TabsContent value="links">
                 <Table>
@@ -1237,7 +1153,6 @@ export default function Page() {
                 )}
               </TabsContent>
               <TabsContent value="codec">
-                <p className="replay-notice">{tr('公开版本仅播放预录语义传输流程，不执行编码、解码或路径求解。核心算法与模型不包含在此公开仓库中。')}</p>
                 <div className="codec-output">
                   <article><small>{tr('原始数据')}</small><p>{applied.current.rate} Mbps · R</p></article>
                   <article><small>{tr('语义传输')}</small><p>{fmt(applied.current.rate * applied.current.sigma, 2)} Mbps · σR</p></article>
@@ -1245,11 +1160,6 @@ export default function Page() {
               </TabsContent>
               <TabsContent value="batch">
                 <div className="actions">
-                  <p>
-                    {tr(
-                      '当前模式的全部录制帧汇总：沿时间轴变化的预录结果，非本次浏览器中新运行的独立实验。',
-                    )}
-                  </p>
                   <button
                     className="ghost"
                     disabled={!trials.length}
@@ -1319,9 +1229,6 @@ export default function Page() {
           </section>
           <footer>
             <span>{platformName}</span>
-            <span>
-              {tr('公开轨道 · 预录仿真回放 · 非实时 Starlink 遥测')}
-            </span>
           </footer>
         </div>
       </div>

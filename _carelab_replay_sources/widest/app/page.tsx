@@ -3,7 +3,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Orbit,
   Satellite,
-  Shuffle,
   Play,
   Pause,
   RotateCcw,
@@ -11,7 +10,6 @@ import {
   MapPin,
   Layers,
   Maximize2,
-  Info,
   RefreshCw,
   X,
   ArrowUpRight,
@@ -23,7 +21,6 @@ import {
   Gauge,
 } from 'lucide-react';
 import Globe from '../components/globe';
-import CityPicker from '../components/city-picker';
 import Recorder from '../components/recorder';
 import { City, cityName, fallbackCities, globeCities } from '../lib/cities';
 import { defaults, colors, names, random } from '../lib/engine';
@@ -57,7 +54,8 @@ export default function Home() {
     [catalogCount, setCatalogCount] = useState(0),
     [epoch, setEpoch] = useState('');
   const [selected, setSelected] = useState('GFO'),
-    [running, setRunning] = useState(true),
+    [running, setRunning] = useState(false),
+    [demoStarted, setDemoStarted] = useState(false),
     [speed, setSpeed] = useState(1),
     [time, setTime] = useState(0),
     [overlay, setOverlay] = useState(false),
@@ -67,7 +65,6 @@ export default function Home() {
   const [pick, setPick] = useState<'source' | 'destination' | null>(null),
     [edgeKey, setEdgeKey] = useState<string | null>(null),
     [step, setStep] = useState(-1),
-    [modal, setModal] = useState<'about' | 'export' | null>(null),
     [error, setError] = useState(''),
     [busy, setBusy] = useState(true),
     [refreshing, setRefreshing] = useState(false);
@@ -275,7 +272,6 @@ export default function Home() {
     setStep(-1);
     setRunning(true);
   }
-  async function refresh() { setError(language === 'zh' ? '回放版使用预录数据，请在上方切换场景。' : 'Replay uses recorded data. Choose a scenario above.'); }
   const route = snap?.routes.find((r) => r.name === selected),
     gfo = snap?.routes[0],
     raw = snap?.routes[1],
@@ -316,7 +312,30 @@ export default function Home() {
       'Reference: maximize capacity without a delay bound; break ties by delay.',
     ),
   };
-  function exportNow() { if (snap) save(new Blob([JSON.stringify({schema:'carelab-replay-frame/1', config, snapshot:snap})],{type:'application/json'}), 'carelab-replay-frame.json'); }
+  function startDemo(next: Config) {
+    cfg.current = next;
+    setConfig(next);
+    setSelected('GFO');
+    setOverlay(false);
+    setLinks(false);
+    setTrails(true);
+    setPick(null);
+    setEdgeKey(null);
+    setReset(value => value + 1);
+    setError('');
+    setSpeed(10);
+    setRunning(true);
+    setDemoStarted(true);
+    flags.current.running = true;
+    flags.current.speed = 10;
+    hold.current = false;
+    setStep(-1);
+    changeTime(REPLAY_START);
+    if (window.innerWidth <= 1000) {
+      document.querySelector('.center-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  function exportNow() { if (snap) download(new Blob([JSON.stringify({schema:'carelab-replay-frame/1', config, snapshot:snap})],{type:'application/json'}), 'carelab-replay-frame.json'); }
   return (
     <main data-language={language} className="widest-app">
       <header className="topbar">
@@ -357,13 +376,6 @@ export default function Home() {
             </select>
           </label>
           <button
-            className="icon-button"
-            title={t('方法说明', 'Methods')}
-            onClick={() => setModal('about')}
-          >
-            <Info size={18} />
-          </button>
-          <button
             className="export-button"
             onClick={() => {
               setExportStart(utc(clock.current));
@@ -378,300 +390,52 @@ export default function Home() {
           </button>
         </div>
       </header>
-      <ReplayBar language={language} scenario={config.replayScenario || '0'} time={snap?.time || REPLAY_START} onSeek={changeTime} onScenario={(c: Config) => {setConfig(c); setError(''); changeTime(REPLAY_START);}} />
+      <ReplayBar language={language} scenario={config.replayScenario || '0'} time={snap?.time || REPLAY_START}
+        running={running} started={demoStarted} ready={!!snap} onDemo={startDemo} onToggle={() => running ? setRunning(false) : resume()}
+        onSeek={value => { setRunning(false); changeTime(value); }}
+        onScenario={(next: Config) => {cfg.current = next; setConfig(next); setError(''); changeTime(REPLAY_START);}} />
       <div className="workspace">
-        <aside className="left-panel"><fieldset disabled className="replay-locked" title="Recorded settings / 预录场景参数">
+        <aside className="left-panel">
           <div className="panel-heading">
-            <span className="eyebrow">01 / NETWORK & SERVICE</span>
-            <h2>
-              {t('让带宽，满足时限。', 'More capacity. Within the deadline.')}
-            </h2>
-            <p>
-              {t(
-                '查看预录网络与服务时延上限。',
-                'Recorded network and service constraints.',
-              )}
-            </p>
+            <span className="eyebrow">01 / SCENARIO</span>
+            <h2>{t('场景参数', 'Scenario parameters')}</h2>
           </div>
           <section>
-            <div className="section-title">
-              <Satellite size={16} />
-              <h3>{t('Starlink 星座', 'Starlink constellation')}</h3>
-            </div>
-            <label className="field-label">
-              {t('随机卫星样本', 'Random satellite sample')}
-              <span>{config.count.toLocaleString()}</span>
-            </label>
-            <input
-              aria-label={t('卫星数量', 'Satellite count')}
-              type="range"
-              min="1"
-              max={countLimit}
-              value={config.count}
-              disabled={!catalogCount}
-              onChange={(e) => update('count', +e.target.value)}
-            />
-            <div className="range-ends">
-              <span>1</span>
-              <span>{countLimit.toLocaleString()}</span>
-            </div>
-            <div className="inline-controls">
-              <label>
-                {t('数量', 'Count')}
-                <input
-                  type="number"
-                  min="1"
-                  max={countLimit}
-                  value={config.count}
-                  onChange={(e) =>
-                    update(
-                      'count',
-                      Math.round(clamp(e.target.value, 1, countLimit)),
-                    )
-                  }
-                />
-              </label>
-              <label>
-                {t('种子', 'Seed')}
-                <input
-                  type="number"
-                  min="0"
-                  max="999999"
-                  value={config.seed}
-                  onChange={(e) =>
-                    update('seed', Math.round(clamp(e.target.value, 0, 999999)))
-                  }
-                />
-              </label>
-              <button
-                title={t('更换样本', 'Resample')}
-                onClick={() => update('seed', (config.seed + 1) % 1000000)}
-              >
-                <Shuffle size={14} />
-              </button>
-            </div>
-            <button
-              className="text-button full"
-              disabled={!catalogCount}
-              onClick={() => update('count', catalogCount)}
-            >
-              {t('全选当前星座', 'Use full constellation')} ·{' '}
-              {catalogCount.toLocaleString()}
-            </button>
+            <div className="section-title"><Satellite size={16} /><h3>{t('卫星星座', 'Constellation')}</h3><span className="subtle">STARLINK</span></div>
+            <dl className="scenario-values">
+              <div><dt>{t('卫星数量', 'Satellites')}</dt><dd>{config.count.toLocaleString()}</dd></div>
+              <div><dt>{t('样本种子', 'Sample seed')}</dt><dd>{config.seed}</dd></div>
+            </dl>
           </section>
           <section>
-            <div className="section-title">
-              <MapPin size={16} />
-              <h3>{t('地面终端 / Cell', 'Ground terminals / cells')}</h3>
-            </div>
-            {(['source', 'destination'] as const).map((key, i) => (
-              <div className="ground-control" key={key}>
-                <div className={'ground-dot ' + (i ? 'destination' : '')}>
-                  {i ? 'D' : 'S'}
+            <div className="section-title"><MapPin size={16} /><h3>{t('地面节点', 'Ground terminals')}</h3></div>
+            {(['source', 'destination'] as const).map((key, index) => (
+              <div className="scenario-terminal" key={key}>
+                <span className={'ground-dot ' + (index ? 'destination' : '')}>{index ? 'D' : 'S'}</span>
+                <div><span>{index ? t('目的节点', 'Destination') : t('源节点', 'Source')}</span><strong>{groundName(config[key])}</strong>
+                  <small>{Math.abs(config[key].lat).toFixed(2)}°{config[key].lat >= 0 ? 'N' : 'S'} · {Math.abs(config[key].lon).toFixed(2)}°{config[key].lon >= 0 ? 'E' : 'W'}</small>
                 </div>
-                <div className="ground-fields">
-                  <label>
-                    {i ? t('目的终端', 'Destination') : t('源终端', 'Source')}
-                    <CityPicker
-                      key={language}
-                      cities={cities}
-                      cityId={
-                        config[key].cityId ||
-                        cities.find(
-                          (c) =>
-                            c.name === config[key].name ||
-                            c.zh === config[key].name,
-                        )?.id
-                      }
-                      language={language}
-                      label={
-                        i
-                          ? t('搜索目的城市', 'Search destination city')
-                          : t('搜索源城市', 'Search source city')
-                      }
-                      onSelect={(city) => {
-                        update(key, {
-                          name: city.name,
-                          lat: city.lat,
-                          lon: city.lon,
-                          cityId: city.id,
-                        });
-                        setPick(null);
-                      }}
-                    />
-                  </label>
-                  <div className="coordinates">
-                    {(['lat', 'lon'] as const).map((k) => (
-                      <input
-                        key={k}
-                        aria-label={`${key} ${k}`}
-                        type="number"
-                        step=".1"
-                        min={k === 'lat' ? -90 : -180}
-                        max={k === 'lat' ? 90 : 180}
-                        value={+config[key][k].toFixed(3)}
-                        onChange={(e) =>
-                          update(key, {
-                            ...config[key],
-                            name: '自定义',
-                            cityId: undefined,
-                            [k]: clamp(
-                              e.target.value,
-                              k === 'lat' ? -90 : -180,
-                              k === 'lat' ? 90 : 180,
-                            ),
-                          })
-                        }
-                      />
-                    ))}
-                    <span>°</span>
-                  </div>
-                </div>
-                <button
-                  className={'icon-button ' + (pick === key ? 'active' : '')}
-                  title={t('球面选点', 'Pick on globe')}
-                  onClick={() => setPick(pick === key ? null : key)}
-                >
-                  <MapPin size={15} />
-                </button>
               </div>
             ))}
-            <button
-              className="text-button full"
-              onClick={() => {
-                const rng = random(
-                    config.seed + Math.floor(clock.current / 1000),
-                  ),
-                  a = cities[Math.floor(rng() * cities.length)],
-                  b = cities[Math.floor(rng() * cities.length)];
-                setConfig((c) => ({
-                  ...c,
-                  source: {
-                    name: a.name,
-                    cityId: a.id,
-                    lat: a.lat,
-                    lon: a.lon,
-                  },
-                  destination: {
-                    name: b.name,
-                    cityId: b.id,
-                    lat: b.lat,
-                    lon: b.lon,
-                  },
-                }));
-              }}
-            >
-              <Shuffle size={13} />
-              {t('随机全球城市', 'Random global cities')}
-            </button>
           </section>
           <section>
-            <div className="section-title">
-              <Gauge size={16} />
-              <h3>{t('时延与链路容量', 'Delay & link capacity')}</h3>
-            </div>
-            <label className="field-label">
-              {t('时延上限 λ', 'Delay bound λ')}
-              <span>{config.lambda} ms</span>
-            </label>
-            <input
-              aria-label="Delay bound"
-              type="range"
-              min="1"
-              max="180"
-              value={Math.min(180, config.lambda)}
-              onChange={(e) => update('lambda', +e.target.value)}
-            />
-            <div className="param-grid">
-              <label>
-                λ (ms)
-                <input
-                  type="number"
-                  min=".1"
-                  max="1000"
-                  step=".1"
-                  value={config.lambda}
-                  onChange={(e) =>
-                    update('lambda', clamp(e.target.value, 0.1, 1000))
-                  }
-                />
-              </label>
-              <label>
-                {t('资源预留比例 %', 'Reserved links %')}
-                <input
-                  type="number"
-                  min="0"
-                  max="100"
-                  value={config.reservation}
-                  onChange={(e) =>
-                    update('reservation', clamp(e.target.value, 0, 100))
-                  }
-                />
-              </label>
-            </div>
-            <p className="hint">
-              {t(
-                '容量 = 路径中最小剩余速率；时延 = 各跳传播时延之和。',
-                'Capacity = minimum residual rate; delay = sum of per-hop propagation delays.',
-              )}
-            </p>
+            <div className="section-title"><Layers size={16} /><h3>{t('服务约束', 'Service constraints')}</h3></div>
+            <dl className="scenario-values">
+              <div><dt>{t('时延上限 λ', 'Delay bound λ')}</dt><dd>{config.lambda} ms</dd></div>
+              <div><dt>{t('资源预留比例', 'Resource reservation')}</dt><dd>{config.reservation}%</dd></div>
+            </dl>
+            <p className="hint">{t('容量 = 最小剩余速率；时延 = 各跳传播时延之和。', 'Capacity = minimum residual rate; delay = sum of propagation delays.')}</p>
             <details>
-              <summary>
-                {t('链路与搜索参数', 'Link & search settings')}
-                <ChevronRight size={12} />
-              </summary>
-              <div className="param-grid">
-                {(
-                  [
-                    ['range', 'ISL km', 500, 5000],
-                    ['degree', t('每星 ISL', 'ISLs / satellite'), 2, 12],
-                    ['elevation', t('最低仰角 °', 'Elevation °'), 0, 60],
-                    ['kmax', 'KSP max K', 1, 200],
-                  ] as const
-                ).map(([key, label, min, max]) => (
-                  <label key={key}>
-                    {label}
-                    <input
-                      type="number"
-                      min={min}
-                      max={max}
-                      value={config[key]}
-                      onChange={(e) =>
-                        update(key, Math.round(clamp(e.target.value, min, max)))
-                      }
-                    />
-                  </label>
-                ))}
-              </div>
+              <summary>{t('链路与算法参数', 'Link & algorithm settings')} <ChevronRight size={12} /></summary>
+              <dl className="scenario-values">
+                <div><dt>{t('ISL 最远距离', 'Max ISL range')}</dt><dd>{config.range.toLocaleString()} km</dd></div>
+                <div><dt>{t('每星 ISL 上限', 'Max ISLs / satellite')}</dt><dd>{config.degree}</dd></div>
+                <div><dt>{t('最低仰角', 'Minimum elevation')}</dt><dd>{config.elevation}°</dd></div>
+                <div><dt>KSP max K</dt><dd>{config.kmax}</dd></div>
+                <div><dt>{t('T1 复用子图', 'T1 Reuse subgraphs')}</dt><dd>{config.t1 ? t('开启', 'On') : t('关闭', 'Off')}</dd></div>
+                <div><dt>{t('T2 容量跳跃', 'T2 Capacity jumps')}</dt><dd>{config.t2 ? t('开启', 'On') : t('关闭', 'Off')}</dd></div>
+              </dl>
             </details>
-          </section>
-          <section>
-            <div className="section-title">
-              <Filter size={16} />
-              <h3>{t('GFO 加速开关', 'GFO acceleration')}</h3>
-            </div>
-            <label className="acceleration">
-              <input
-                type="checkbox"
-                checked={config.t1}
-                onChange={(e) => update('t1', e.target.checked)}
-              />
-              <span>
-                <b>T1</b>
-                {t('复用相同子图', 'Reuse unchanged subgraphs')}
-              </span>
-            </label>
-            <label className="acceleration">
-              <input
-                type="checkbox"
-                checked={config.t2}
-                onChange={(e) => update('t2', e.target.checked)}
-              />
-              <span>
-                <b>T2</b>
-                {t('跳到实际容量', 'Jump to actual capacity')}
-              </span>
-            </label>
           </section>
           <div className="paper-note">
             <span>IEEE TVT · 2025 · 74(4), 6573–6585</span>
@@ -689,7 +453,7 @@ export default function Home() {
               <ArrowUpRight size={12} />
             </a>
           </div>
-        </fieldset></aside>
+        </aside>
         <div className="center-panel">
           <div className="scene-top">
             <div>
@@ -727,20 +491,11 @@ export default function Home() {
             overlay={overlay}
             links={links}
             trails={trails}
-            picking={!!pick}
+            picking={false}
             reset={reset}
             filterThreshold={currentStep?.threshold || 0}
             tracePath={currentStep?.path}
-            onGround={(lat, lon, city) => {
-              if (pick)
-                update(
-                  pick,
-                  city
-                    ? { name: city.name, cityId: city.id, lat, lon }
-                    : { name: '自定义', lat, lon },
-                );
-              setPick(null);
-            }}
+            onGround={() => {}}
             onLink={(i) => {
               if (snap?.edges[i]) {
                 const e = snap.edges[i];
@@ -753,20 +508,9 @@ export default function Home() {
           {!snap && (
             <div className="loading">
               {t(
-                '正在推演轨道并构建网络…',
-                'Loading recorded scenario…',
+                '正在加载场景…',
+                'Loading scenario…',
               )}
-            </div>
-          )}
-          {pick && (
-            <div className="pick-banner">
-              {t(
-                '点击城市圆点或任意地表位置',
-                'Pick a city dot or any surface location',
-              )}
-              <button onClick={() => setPick(null)}>
-                <X size={13} />
-              </button>
             </div>
           )}
           <div className="scene-legend">
@@ -1160,12 +904,7 @@ export default function Home() {
               ) : (
                 <div className="empty-path">
                   {status(route?.status)}
-                  <p>
-                    {t(
-                      '可放宽时延上限、增加卫星或调整终端位置。',
-                      'Try a larger delay bound, more satellites, or other terminals.',
-                    )}
-                  </p>
+
                 </div>
               )}
             </div>
@@ -1177,175 +916,18 @@ export default function Home() {
                 '先满足时延，再最大化容量',
                 'Meet the delay bound, then maximize capacity',
               )}
-              <p>
-                {t(
-                  '各方法独立使用同一快照。',
-                  'All methods use the same snapshot independently.',
-                )}
-              </p>
+
             </div>
           </div>
         </aside>
       </div>
-      <footer><span>CARELab · {language === 'zh' ? '公开预录演示 · 非实时计算' : 'Public recorded demonstration · No live solving'}</span><span>2026-09-07 13:00–13:06 UTC · 30 s / frame</span></footer>
+      <footer><span>CARELab · Widest-path routing</span><a href="./THIRD_PARTY_NOTICES.txt">Credits</a></footer>
       {error && (
         <div className="toast" role="alert">
           <span>{translate(error, language)}</span>
           <button onClick={() => setError('')}>
             <X size={15} />
           </button>
-        </div>
-      )}
-      {modal && (
-        <div
-          className="modal-backdrop"
-          onClick={() => {
-            if (progress === null) setModal(null);
-          }}
-        >
-          <div
-            className="modal"
-            role="dialog"
-            aria-modal="true"
-            aria-label={
-              modal === 'about'
-                ? t('方法说明', 'Methods')
-                : t('导出回放帧', 'Export contacts')
-            }
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="close"
-              disabled={progress !== null}
-              onClick={() => setModal(null)}
-            >
-              <X size={18} />
-            </button>
-            {modal === 'about' ? (
-              <>
-                <span className="eyebrow">METHOD & PROVENANCE</span>
-                <h2>
-                  {t(
-                    '从论文到动态路径演示',
-                    'From the paper to dynamic routes',
-                  )}
-                </h2>
-                <p>
-                  {t(
-                    'GFO 对应 Algorithm 3–4；KSP 对应 Algorithm 2。Bisection 为关闭 T1/T2 的消融；Shortest、Widest 是解释性参照，不是论文的 ILP。',
-                    'GFO implements Algorithms 3–4; KSP implements Algorithm 2. Bisection disables T1/T2. Shortest and Widest are illustrative references, not the paper’s ILP.',
-                  )}
-                </p>
-                <h3>{t('目标与精度', 'Objective & precision')}</h3>
-                <p>
-                  {t(
-                    '在总传播时延 ≤ λ 下，最大化路径最小剩余容量。速率量化为 0.001 Mbps，整数阈值二分在此模型上给出精确最优容量；保留初始最短路，正确处理上下界相等的情况。',
-                    'Maximize the minimum residual capacity subject to total propagation delay ≤ λ. Rates are quantized to 0.001 Mbps; integer threshold bisection gives the exact optimum for this model. The initial shortest path is retained, including equal-bound cases.',
-                  )}
-                </p>
-                <h3>{t('模型与实验边界', 'Model & experiment boundaries')}</h3>
-                <p>
-                  {t(
-                    '公开 CelesTrak OMM + SGP4 推演，不是遥测或实际 Starlink 链路。ISL 为有度数约束的视线近邻图，USL 由仰角决定。基础速率 300–350 Mbps，预留因子 0、1/8、1/4、1/2、1，每分钟更新。',
-                    'Public CelesTrak OMM and SGP4, not telemetry or actual Starlink links. ISLs form a degree-limited visible-neighbor graph; USLs use elevation. Base rates are 300–350 Mbps with reservation factors 0, 1/8, 1/4, 1/2, 1, updated each minute.',
-                  )}
-                </p>
-                <p>
-                  {t(
-                    '传播时延按距离/光速计算，不采用论文实验的每链路 5–15 ms 设置。不含排队、序列化或计算时间。未复现 STK、Gurobi ILP 和整日批量统计；采样连接导出不等同于 Algorithm 1 的精确事件分割。',
-                    'Delay is distance/light-speed, not the paper’s experimental 5–15 ms per-link setting. Queueing, serialization and computation are excluded. STK, Gurobi ILP and full-day statistics are not reproduced; sampled contact export is not the exact event partition of Algorithm 1.',
-                  )}
-                </p>
-                <p>
-                  {t(
-                    'KSP 的“当前最好”不能当作最优性证明。设备求解耗时不是论文性能数据。',
-                    'KSP best-found results are not proof of optimality. Device runtime measurements are not paper performance results.',
-                  )}
-                </p>
-                <div className="source-links">
-                  <a href={paperUrl} target="_blank" rel="noreferrer">
-                    IEEE TVT paper
-                  </a>
-                  <a
-                    href="https://celestrak.org/NORAD/documentation/gp-data-formats.php"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    CelesTrak
-                  </a>
-                  <a
-                    href="https://www.geonames.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GeoNames · CC BY 4.0
-                  </a>
-                </div>
-              </>
-            ) : (
-              <>
-                <span className="eyebrow">CONTACT PLAN EXPORT</span>
-                <h2>{t('保存动态网络连接', 'Export network contacts')}</h2>
-                <p>
-                  {t(
-                    '保存距离、传播时延、剩余容量与采样连通时段。',
-                    'Save distances, propagation delays, residual capacities and sampled contact intervals.',
-                  )}
-                </p>
-                <label className="modal-field">
-                  {t('开始时间 UTC', 'Start UTC')}
-                  <input
-                    type="datetime-local"
-                    step="1"
-                    value={exportStart}
-                    onChange={(e) => setExportStart(e.target.value)}
-                  />
-                </label>
-                <label className="modal-field">
-                  {t('结束时间 UTC', 'End UTC')}
-                  <input
-                    type="datetime-local"
-                    step="1"
-                    value={exportEnd}
-                    onChange={(e) => setExportEnd(e.target.value)}
-                  />
-                </label>
-                <label className="modal-field">
-                  {t('采样间隔', 'Sample interval')}
-                  <select
-                    value={exportStep}
-                    onChange={(e) => setExportStep(+e.target.value)}
-                  >
-                    {[5, 10, 30, 60, 120, 300].map((n) => (
-                      <option value={n} key={n}>
-                        {n} s
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <p className="export-info">
-                  JSON.gz · Python / pickle · {t('当前最多', 'Maximum')}{' '}
-                  {stepLimit} {t('步', 'samples')}
-                </p>
-                <p className="hint">
-                  {t(
-                    '时段为 [开始, 结束) 采样近似，可能漏掉短于步长的接触；边界误差最多一步。',
-                    'Intervals are sampled approximations [start, end); shorter contacts may be missed and boundary uncertainty is up to one step.',
-                  )}
-                </p>
-                <button
-                  className="primary"
-                  disabled={progress !== null || !snap}
-                  onClick={exportNow}
-                >
-                  <Download size={16} />
-                  {progress === null
-                    ? t('生成并下载', 'Generate & download')
-                    : progress + '%'}
-                </button>
-              </>
-            )}
-          </div>
         </div>
       )}
     </main>

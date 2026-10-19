@@ -48,7 +48,6 @@ export default function ScreenRecorder({
   const [saving, setSaving] = useState(false);
   const [supported, setSupported] = useState(false);
   const [directorySupported, setDirectorySupported] = useState(false);
-  const [mp4, setMp4] = useState(false);
   const recorder = useRef<MediaRecorder | null>(null);
   const stream = useRef<MediaStream | null>(null);
   const chunks = useRef<Blob[]>([]);
@@ -64,10 +63,6 @@ export default function ScreenRecorder({
         typeof MediaRecorder !== 'undefined',
     );
     setDirectorySupported(!!(window as PickerWindow).showDirectoryPicker);
-    if (typeof MediaRecorder !== 'undefined')
-      setMp4(
-        recordingMime((m) => MediaRecorder.isTypeSupported(m)).includes('mp4'),
-      );
     return () => {
       if (recorder.current) {
         recorder.current.onstop = null;
@@ -118,23 +113,6 @@ export default function ScreenRecorder({
           t(
             '无法访问目录，可以使用“下载视频”保存。',
             'Folder access unavailable. Use Download video instead.',
-          ),
-        );
-    }
-  }
-  async function openFolder() {
-    try {
-      await (window as PickerWindow).showDirectoryPicker?.({
-        id: 'carelab-recordings',
-        mode: 'read',
-        startIn: folder ?? 'videos',
-      });
-    } catch (error) {
-      if ((error as DOMException).name !== 'AbortError')
-        setMessage(
-          t(
-            '请在浏览器下载列表中选择“在文件夹中显示”。',
-            'Choose Show in folder in your browser downloads.',
           ),
         );
     }
@@ -344,7 +322,7 @@ export default function ScreenRecorder({
           aria-label={t('界面视频录制', 'Screen recording')}
         >
           <div className="record-heading">
-            <strong>{t('录制演示视频', 'Record your demonstration')}</strong>
+            <strong>{t('屏幕录制', 'Screen recording')}</strong>
             <button
               className="icon-button"
               aria-label={t('收起录制面板', 'Close recording panel')}
@@ -353,28 +331,11 @@ export default function ScreenRecorder({
               <X size={16} />
             </button>
           </div>
-          <p>
-            {t(
-              '先进入全屏演示，再开始录制并选择本网页或窗口。录制当前可见的整个画面，无音频。',
-              'Enter fullscreen first, then start recording and select this tab or window. Captures the entire visible view, without audio.',
-            )}
-          </p>
-          <p className="record-format">
-            {mp4
-              ? t(
-                  'MP4 · H.264 优先 · 最高 1080p / 30 fps · 约 30 MB/分钟',
-                  'MP4 · H.264 preferred · up to 1080p / 30 fps · about 30 MB/min',
-                )
-              : t(
-                  '当前浏览器使用 WebM；若要微信直接播放，建议使用支持 MP4 录制的新版 Chrome / Edge。',
-                  'This browser records WebM. For inline WeChat playback, use a recent Chrome / Edge with MP4 recording support.',
-                )}
-          </p>
           {!supported && (
             <p role="alert">
               {t(
-                '此浏览器不支持屏幕录制，请在桌面版 Chrome 或 Edge 中打开网站。',
-                'Screen recording is unavailable here. Open the site in desktop Chrome or Edge.',
+                '当前浏览器不支持屏幕录制。',
+                'Screen recording is not supported in this browser.',
               )}
             </p>
           )}
@@ -410,14 +371,7 @@ export default function ScreenRecorder({
               </>
             )}
           </div>
-          <p>
-            {folder
-              ? `${t('保存目录：', 'Save folder: ')}${folder.name}`
-              : t(
-                  '未选择目录：结束后点击“下载视频”，保存到浏览器下载位置。',
-                  'No folder selected: use Download video after recording to save through your browser.',
-                )}
-          </p>
+          {folder && <p>{t('保存目录：', 'Save folder: ')}{folder.name}</p>}
           {phase === 'selecting' && (
             <p role="status">
               {t(
@@ -455,33 +409,10 @@ export default function ScreenRecorder({
                   <Download size={15} />
                   {t('下载视频', 'Download video')}
                 </a>
-                {folder && directorySupported && (
-                  <button className="ghost" onClick={openFolder}>
-                    <FolderOpen size={15} />
-                    {t('打开保存目录', 'Open save folder')}
-                  </button>
-                )}
                 <button className="ghost" disabled={saving} onClick={clearClip}>
                   {t('录制下一段', 'New recording')}
                 </button>
               </div>
-              <p>
-                {t(
-                  'MP4 保存后可拖入电脑微信聊天发送。WebM 可作为文件发送，直接播放需转为 MP4。',
-                  'Drag a saved MP4 into a desktop WeChat chat to send it. WebM can be sent as a file; inline playback requires MP4.',
-                )}
-              </p>
-              <p>
-                {folder
-                  ? t(
-                      '“打开保存目录”通过浏览器文件夹窗口定位；如需系统文件管理器，请从下载列表选择“在文件夹中显示”。',
-                      'Open save folder uses the browser folder dialog. For your system file manager, use Show in folder in browser downloads.',
-                    )
-                  : t(
-                      '打开浏览器下载列表，选择“在文件夹中显示”即可找到保存的视频。',
-                      'Open browser downloads and choose Show in folder to locate the saved video.',
-                    )}
-              </p>
             </>
           )}
           {message && (

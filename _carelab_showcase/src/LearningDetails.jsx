@@ -16,10 +16,9 @@ export default function LearningDetails({selection,history,model,dimensions,lang
  const next=()=>onSelect({...selection,index:selection.index+1});
  const count=kind==='vm'?history.length:kind==='pattern'?model?.patterns.length:model?.rules.length;
  return <aside className="learning-inspection" aria-label={t('Selected resource profile','选中的资源画像')}>
-  <div className="learning-inspection-heading"><MousePointer2 size={14}/><span>{t('LIVE INSPECTOR','资源详情')}</span><i/></div>
+  <div className="learning-inspection-heading"><MousePointer2 size={14}/><span>{t('RESOURCE PROFILE','资源详情')}</span><i/></div>
   <div className="learning-inspection-title"><h3>{title}</h3>{item&&<div className="inspection-pager"><button className="icon-button" disabled={selection.index===0} aria-label={t('Previous profile','上一个画像')} onClick={previous}><ChevronLeft size={15}/></button><button className="icon-button" disabled={selection.index>=count-1} aria-label={t('Next profile','下一个画像')} onClick={next}><ChevronRight size={15}/></button></div>}</div>
-  <p className="learning-inspection-hint">{t('Select any card. Details update here.','随时点击其他卡片，详情在这里更新。')}</p>
-  {!item?<div className="learning-inspection-empty"><MousePointer2 size={24}/><span>{t('History, patterns and combinations stay available while you inspect.','查看详情时，仍可自由选择历史业务、模式与组合。')}</span></div>:<>
+  {!item?<div className="learning-inspection-empty"><MousePointer2 size={24}/><span>{t('Select a workload profile.','请选择业务画像。')}</span></div>:<>
    <div className="learning-inspection-stats">{kind==='vm'?<span>{t('Historical workload','历史业务')}<b>{dimensions.length} {t('resources','维资源')}</b></span>:kind==='pattern'?<><span>{t('Historical VMs','历史 VM')}<b>{item.count}</b></span><span>{t('Share of history','历史占比')}<b>{pct(item.count/Math.max(1,history.length))}</b></span></>:<><span>{t('VMs together','VM 总数')}<b>{item.counts.reduce((a,b)=>a+b,0)}</b></span><span>{t('Pattern types','模式种类')}<b>{item.counts.filter(Boolean).length}</b></span></>}</div>
    <Radar values={values} second={kind==='pattern'?item.centroid:undefined} color={color} dimensions={dimensions} size={235}/>
    {kind==='pattern'&&<div className="learning-radar-key"><span><i/>{t('Upper envelope','保守需求上界')}</span><span><i className="dashed"/>{t('Centroid','聚类中心')}</span></div>}

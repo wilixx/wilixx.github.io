@@ -1929,9 +1929,6 @@ html:fullscreen .comparison-metrics article:nth-child(2) p b {
   cursor: not-allowed;
 }
 
-/* Public replay: the original display, with recorded inputs clearly distinguished. */
-.replay-notice { padding: 10px 12px; border: 1px solid #315451; border-radius: 8px; background: #12322e70; color: #a4cfc6; font-size: 11px; line-height: 1.65; }
-.config > .replay-notice { grid-column: 1 / -1; margin: 0 0 14px; }
 .config [data-disabled], .config input:disabled { opacity: .72; cursor: default; }
 .paper-link a + a { margin-top: 9px; }
 @media (max-width: 850px) {
@@ -1962,3 +1959,16 @@ html:fullscreen .comparison-metrics article:nth-child(2) p b {
   .map-comparison .comparison-metrics .metric-pair,
   .map-comparison .comparison-metrics p { font-size:12px; }
 }
+
+.intro .intro-actions {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.intro .intro-actions button { min-height: 42px; }
+.intro .intro-actions button:focus-visible { outline: 2px solid #e4edf6; outline-offset: 3px; }
+.intro .intro-actions button:disabled { opacity: .6; cursor: wait; }
+
+header .language-control { margin-left: auto; }
+.picker-value { display: flex; align-items: center; padding: 0 12px; border: 1px solid #2b3b49; border-radius: 6px; color: #acbecd; }
+@media (max-width: 650px) { header .language-control { margin-left: 0; } }
