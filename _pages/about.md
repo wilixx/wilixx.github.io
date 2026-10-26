@@ -22,6 +22,7 @@ Life is a hard but precious journey. **If you are interested to collaborate with
 
 News
 ======
+* [09/2026] Received a Young Professional (YP) Travel Grant from the IEEE Communications Society to attend IEEE PIMRC 2026 in Singapore.
 <!-- * [06/2026] Binquan Guo, Zhou Zhang, Marie Siew, et. al., "Optimizing Virtual Network Embedding Utilization in Data Center Networks", accepted by PIMRC 26.这段文字不会显示 -->
 * [08/2026] Q. Dang, X. Gao, B. Li, Q. Liu, and Binquan Guo, "CoMGS: A Multi-Objective Coevolutionary Algorithm for Transferable Adversarial Attacks ", accepted by IEEE Transactions on Evolutionary Computation, 2026.
 * [07/2026] J. Zhai, Z. Li, T. Shang, Binquan Guo, Z. Chang, "Vision Mamba demodulation with efficient channel attention for LDPC-coded orbital angular momentum shift keying over turbulent free-space optical links", accepted by Optics Express 26.
